@@ -1,0 +1,20 @@
+{
+  "slug": "melody-loop",
+  "date": "2026-10-03",
+  "emoji": "🐦",
+  "title": {"ko": "멜로디 루프", "en": "Melody Loop"},
+  "tagline": {"ko": "귀와 눈으로 푸는 노래 퍼즐 · 노을 전깃줄", "en": "A song puzzle for ear and eye · sunset wires"},
+  "desc": {
+    "ko": "노래새가 짧은 가락을 되풀이해 부르면, 다섯 줄 전깃줄 위에 음표새를 앉혀 그 노래를 똑같이 다시 짓는 퍼즐입니다. 재생선이 줄 위를 계속 훑고 지나가며 내가 놓은 새들이 차례로 울기 때문에, 고칠 때마다 결과를 바로 귀로 확인할 수 있습니다. 말풍선의 화살표는 가락이 올라가는지 내려가는지만 알려 주고, 한 바퀴가 끝날 때마다 초록 불(정답)과 노랑 불(음은 맞지만 박자 자리가 다름)이 켜집니다. 음을 귀로 못 잡아도 화살표와 불빛만으로 추리할 수 있고, 노래는 4박에서 8박까지 점점 길어집니다.",
+    "en": "A songbird keeps singing a short looping tune, and you rebuild it by seating note birds on five telegraph wires. A playhead sweeps the wires non-stop and your birds chirp as it passes, so every change you make is heard right away. The speech bubble's arrows reveal only whether the tune rises or falls, and after every loop each beat lights green (correct) or yellow (right note, wrong beat). You can deduce the answer from arrows and lamps alone even if you cannot name a pitch by ear, while the songs grow from four beats to eight."
+  },
+  "controls": {
+    "ko": "모바일: 전깃줄의 칸을 누르면 음표새가 앉고, 같은 새를 다시 누르면 날아갑니다. 한 박에는 새 한 마리만 앉을 수 있어서 다른 줄을 누르면 새가 옮겨 갑니다. 아래의 '새 노래 듣기' 버튼이나 노래새를 누르면 정답 가락을 한 번 들려준 뒤 내 가락으로 돌아옵니다. PC: 방향키(WASD)로 점선 커서를 옮기고 스페이스로 놓거나 치우며, L 키로 새 노래를 다시 듣습니다.",
+    "en": "Mobile: tap a spot on a wire to seat a note bird, and tap the same bird again to shoo it away. Each beat holds only one bird, so tapping another wire moves it. Tap the 'Hear the bird' button or the songbird itself to hear the target tune once before your own loop resumes. Desktop: move the dashed cursor with the arrow keys (or WASD), press Space to place or remove a bird, and press L to hear the bird again."
+  },
+  "tips": {
+    "ko": "모든 노래는 맨 아랫줄(으뜸음)이나 아래에서 넷째 줄에서 시작하고 끝나므로 첫 박과 끝 박부터 잡으면 빠릅니다. 초록 불이 하나라도 켜지면 화살표를 따라 양옆 박의 높낮이를 좁혀 갈 수 있고, 노랑 불이 켜진 새는 버리지 말고 다른 박으로 옮겨 보세요. 적은 시도로 맞힐수록 보너스가 크고 세 번 안에 연달아 맞히면 연속 점수가 붙습니다. 노래 하나를 완성할 때마다 시간이 15초 늘어나며, 뒤로 가면 화살표나 노랑 불이 사라지는 어려운 노래가 섞여 나옵니다.",
+    "en": "Every song starts and ends on the bottom wire (the root) or the fourth wire from the bottom, so pin down the first and last beats first. Once a single lamp turns green, follow the arrows outward to narrow the neighbouring beats, and when a bird glows yellow, move it to another beat instead of throwing it away. Solving in fewer tries pays a bigger bonus, and solving within three tries in a row builds a streak. Each finished song adds 15 seconds, and later songs sometimes hide the arrows or switch off the yellow lamps."
+  },
+  "tags": ["puzzle", "music", "rhythm", "birds", "deduction", "casual"]
+}

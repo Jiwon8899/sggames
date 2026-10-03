@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-03",
+  "emoji": "🧊",
+  "title": {"ko": "녹는 얼음이", "en": "Melt Cube"},
+  "tagline": {"ko": "크기가 곧 자원인 퍼즐", "en": "A puzzle where size is your resource"},
+  "desc": {
+    "ko": "무더운 날 부엌 조리대 위, 얼음 조각 얼음이를 냉동실 문까지 데려다 주세요. 따뜻한 나무 칸을 밟을 때마다 크기가 1씩 줄고, 0이 되면 증발해 버립니다. 그런데 무거운 발판과 상자는 커야 움직이고, 좁은 틈은 작아야 지나갈 수 있어서 어디에 어떤 크기로 도착할지 미리 계획해야 합니다. 손으로 만든 14개 레벨 뒤에는 풀이가 검증된 무작위 레벨이 끝없이 이어집니다.",
+    "en": "It is a hot day on the kitchen counter, and a little ice cube needs to get back to the freezer door. Every warm wooden tile melts it by one size, and at zero it evaporates. But heavy plates and crates need a big cube while narrow gaps only admit a small one, so you have to plan what size you will be when you arrive. After 14 handcrafted levels, solver-checked random levels keep coming."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 원하는 방향으로 밀면 한 칸 움직입니다. 아래 버튼으로 되돌리기, 다시 하기, 나누기를 누릅니다. PC: 방향키 또는 WASD로 이동하고, Z나 백스페이스로 되돌리기, R로 다시 하기, X를 누른 뒤 방향키로 나누기를 합니다.",
+    "en": "Mobile: swipe in any direction to slide one tile. Use the buttons below the board to undo, restart, or split. Desktop: move with the arrow keys or WASD, press Z or Backspace to undo, R to restart, and X followed by a direction to split."
+  },
+  "tips": {
+    "ko": "발판은 덩치가 클 때 먼저 누르고, 틈은 그다음에 일부러 따뜻한 칸을 오가며 녹아서 지나가세요. 히터 옆 붉은 칸은 한 번에 2씩 녹고, 눈 더미는 한 번만 +1 해 줍니다. 최소 이동 수(파) 이하로 풀거나 큰 크기로 문에 도착하면 보너스 점수를 받고, 레벨을 깰 때마다 시간이 12초 늘어납니다.",
+    "en": "Press plates first while you are still big, then pace across warm tiles on purpose to shrink for the gaps. Red tiles next to a heater melt two at once, and each snow pile gives +1 only once. Solving at or under par and arriving at the door with size to spare both earn bonus points, and every cleared level adds 12 seconds."
+  },
+  "tags": ["puzzle", "sokoban", "sliding", "logic", "cute", "ice"]
+}

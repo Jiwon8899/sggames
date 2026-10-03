@@ -1,0 +1,20 @@
+{
+  "slug": "grow-light",
+  "date": "2026-10-03",
+  "emoji": "🌱",
+  "title": { "ko": "빛 따라 덩굴", "en": "Grow Light" },
+  "tagline": { "ko": "빛이 되어 덩굴을 이끄는 퍼즐", "en": "Be the light, lead the vine" },
+  "desc": {
+    "ko": "한밤의 유리 온실에서 당신은 덩굴이 아니라 빛입니다. 등불 반딧불이를 끌고 다니면 화분에서 돋은 덩굴이 고집스럽게 휘어지며 빛을 따라 자라고, 지나온 줄기는 그대로 남습니다. 덩굴은 자기 줄기와 선반을 넘지 못하니, 꽃봉오리를 모두 피우고 맨 위 시렁에 닿는 길을 미리 그려야 합니다. 그림자 속에서는 빛을 바짝 대야 자라고, 달팽이와 박쥐, 거미줄과 거울이 방마다 새로운 고민을 던집니다.",
+    "en": "In a glass greenhouse at night you are not the vine — you are the light. Drag the lamp firefly and the sprout from the pot bends stubbornly after it, leaving a permanent stem behind. The vine cannot cross its own stem or the shelves, so you have to plan a path that blooms every bud and still reaches the trellis at the top. Shadows stall growth unless the light is close, and snails, a sleeping bat, cobwebs and mirrors add a new twist in each room."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 누른 채 끌면 반딧불이가 손가락 바로 위를 따라옵니다. 화면을 짧게 톡 치면 번쩍 빛을 내 달팽이와 박쥐를 쫓습니다. PC: 방향키나 WASD로 반딧불이를 움직이고 스페이스로 번쩍 빛을 냅니다. 마우스를 누른 채 끌어도 됩니다.",
+    "en": "Mobile: hold and drag, and the firefly follows just above your finger. A quick tap makes a bright flash that scares snails and bats away. Desktop: move the firefly with the arrow keys or WASD and press Space to flash. Holding and dragging the mouse works too."
+  },
+  "tips": {
+    "ko": "덩굴은 급하게 꺾지 못하니 빛을 한 뼘쯤 앞에 두고 크게 돌려 주세요. 빛이 멀어지면 천천히 자라고, 선반에 가려 빛이 닿지 않으면 거의 멈춥니다. 방마다 수액 양이 정해져 있어 돌아가는 길은 손해이고, 남은 수액과 한 번도 시들지 않은 방은 보너스 점수가 됩니다. 박쥐가 자는 선반 밑에서는 빛을 조금 떨어뜨려 지나가세요.",
+    "en": "The vine cannot turn sharply, so keep the light a short way ahead and steer in wide arcs. Growth slows when the light is far away and nearly stops when a shelf blocks it. Each room has a fixed amount of sap, so detours cost you, while leftover sap and a room with no wilting both pay bonus points. Keep the light a little away from the shelf where the bat is sleeping."
+  },
+  "tags": ["puzzle", "plants", "drawing", "light", "cozy", "one-button"]
+}

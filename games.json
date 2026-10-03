@@ -155,6 +155,105 @@
     ]
   },
   {
+    "slug": "grow-light",
+    "date": "2026-10-03",
+    "emoji": "🌱",
+    "title": {
+      "ko": "빛 따라 덩굴",
+      "en": "Grow Light"
+    },
+    "tagline": {
+      "ko": "빛이 되어 덩굴을 이끄는 퍼즐",
+      "en": "Be the light, lead the vine"
+    },
+    "desc": {
+      "ko": "한밤의 유리 온실에서 당신은 덩굴이 아니라 빛입니다. 등불 반딧불이를 끌고 다니면 화분에서 돋은 덩굴이 고집스럽게 휘어지며 빛을 따라 자라고, 지나온 줄기는 그대로 남습니다. 덩굴은 자기 줄기와 선반을 넘지 못하니, 꽃봉오리를 모두 피우고 맨 위 시렁에 닿는 길을 미리 그려야 합니다. 그림자 속에서는 빛을 바짝 대야 자라고, 달팽이와 박쥐, 거미줄과 거울이 방마다 새로운 고민을 던집니다.",
+      "en": "In a glass greenhouse at night you are not the vine — you are the light. Drag the lamp firefly and the sprout from the pot bends stubbornly after it, leaving a permanent stem behind. The vine cannot cross its own stem or the shelves, so you have to plan a path that blooms every bud and still reaches the trellis at the top. Shadows stall growth unless the light is close, and snails, a sleeping bat, cobwebs and mirrors add a new twist in each room."
+    },
+    "controls": {
+      "ko": "모바일: 화면을 누른 채 끌면 반딧불이가 손가락 바로 위를 따라옵니다. 화면을 짧게 톡 치면 번쩍 빛을 내 달팽이와 박쥐를 쫓습니다. PC: 방향키나 WASD로 반딧불이를 움직이고 스페이스로 번쩍 빛을 냅니다. 마우스를 누른 채 끌어도 됩니다.",
+      "en": "Mobile: hold and drag, and the firefly follows just above your finger. A quick tap makes a bright flash that scares snails and bats away. Desktop: move the firefly with the arrow keys or WASD and press Space to flash. Holding and dragging the mouse works too."
+    },
+    "tips": {
+      "ko": "덩굴은 급하게 꺾지 못하니 빛을 한 뼘쯤 앞에 두고 크게 돌려 주세요. 빛이 멀어지면 천천히 자라고, 선반에 가려 빛이 닿지 않으면 거의 멈춥니다. 방마다 수액 양이 정해져 있어 돌아가는 길은 손해이고, 남은 수액과 한 번도 시들지 않은 방은 보너스 점수가 됩니다. 박쥐가 자는 선반 밑에서는 빛을 조금 떨어뜨려 지나가세요.",
+      "en": "The vine cannot turn sharply, so keep the light a short way ahead and steer in wide arcs. Growth slows when the light is far away and nearly stops when a shelf blocks it. Each room has a fixed amount of sap, so detours cost you, while leftover sap and a room with no wilting both pay bonus points. Keep the light a little away from the shelf where the bat is sleeping."
+    },
+    "tags": [
+      "puzzle",
+      "plants",
+      "drawing",
+      "light",
+      "cozy",
+      "one-button"
+    ]
+  },
+  {
+    "slug": "melody-loop",
+    "date": "2026-10-03",
+    "emoji": "🐦",
+    "title": {
+      "ko": "멜로디 루프",
+      "en": "Melody Loop"
+    },
+    "tagline": {
+      "ko": "귀와 눈으로 푸는 노래 퍼즐 · 노을 전깃줄",
+      "en": "A song puzzle for ear and eye · sunset wires"
+    },
+    "desc": {
+      "ko": "노래새가 짧은 가락을 되풀이해 부르면, 다섯 줄 전깃줄 위에 음표새를 앉혀 그 노래를 똑같이 다시 짓는 퍼즐입니다. 재생선이 줄 위를 계속 훑고 지나가며 내가 놓은 새들이 차례로 울기 때문에, 고칠 때마다 결과를 바로 귀로 확인할 수 있습니다. 말풍선의 화살표는 가락이 올라가는지 내려가는지만 알려 주고, 한 바퀴가 끝날 때마다 초록 불(정답)과 노랑 불(음은 맞지만 박자 자리가 다름)이 켜집니다. 음을 귀로 못 잡아도 화살표와 불빛만으로 추리할 수 있고, 노래는 4박에서 8박까지 점점 길어집니다.",
+      "en": "A songbird keeps singing a short looping tune, and you rebuild it by seating note birds on five telegraph wires. A playhead sweeps the wires non-stop and your birds chirp as it passes, so every change you make is heard right away. The speech bubble's arrows reveal only whether the tune rises or falls, and after every loop each beat lights green (correct) or yellow (right note, wrong beat). You can deduce the answer from arrows and lamps alone even if you cannot name a pitch by ear, while the songs grow from four beats to eight."
+    },
+    "controls": {
+      "ko": "모바일: 전깃줄의 칸을 누르면 음표새가 앉고, 같은 새를 다시 누르면 날아갑니다. 한 박에는 새 한 마리만 앉을 수 있어서 다른 줄을 누르면 새가 옮겨 갑니다. 아래의 '새 노래 듣기' 버튼이나 노래새를 누르면 정답 가락을 한 번 들려준 뒤 내 가락으로 돌아옵니다. PC: 방향키(WASD)로 점선 커서를 옮기고 스페이스로 놓거나 치우며, L 키로 새 노래를 다시 듣습니다.",
+      "en": "Mobile: tap a spot on a wire to seat a note bird, and tap the same bird again to shoo it away. Each beat holds only one bird, so tapping another wire moves it. Tap the 'Hear the bird' button or the songbird itself to hear the target tune once before your own loop resumes. Desktop: move the dashed cursor with the arrow keys (or WASD), press Space to place or remove a bird, and press L to hear the bird again."
+    },
+    "tips": {
+      "ko": "모든 노래는 맨 아랫줄(으뜸음)이나 아래에서 넷째 줄에서 시작하고 끝나므로 첫 박과 끝 박부터 잡으면 빠릅니다. 초록 불이 하나라도 켜지면 화살표를 따라 양옆 박의 높낮이를 좁혀 갈 수 있고, 노랑 불이 켜진 새는 버리지 말고 다른 박으로 옮겨 보세요. 적은 시도로 맞힐수록 보너스가 크고 세 번 안에 연달아 맞히면 연속 점수가 붙습니다. 노래 하나를 완성할 때마다 시간이 15초 늘어나며, 뒤로 가면 화살표나 노랑 불이 사라지는 어려운 노래가 섞여 나옵니다.",
+      "en": "Every song starts and ends on the bottom wire (the root) or the fourth wire from the bottom, so pin down the first and last beats first. Once a single lamp turns green, follow the arrows outward to narrow the neighbouring beats, and when a bird glows yellow, move it to another beat instead of throwing it away. Solving in fewer tries pays a bigger bonus, and solving within three tries in a row builds a streak. Each finished song adds 15 seconds, and later songs sometimes hide the arrows or switch off the yellow lamps."
+    },
+    "tags": [
+      "puzzle",
+      "music",
+      "rhythm",
+      "birds",
+      "deduction",
+      "casual"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "emoji": "🧊",
+    "title": {
+      "ko": "녹는 얼음이",
+      "en": "Melt Cube"
+    },
+    "tagline": {
+      "ko": "크기가 곧 자원인 퍼즐",
+      "en": "A puzzle where size is your resource"
+    },
+    "desc": {
+      "ko": "무더운 날 부엌 조리대 위, 얼음 조각 얼음이를 냉동실 문까지 데려다 주세요. 따뜻한 나무 칸을 밟을 때마다 크기가 1씩 줄고, 0이 되면 증발해 버립니다. 그런데 무거운 발판과 상자는 커야 움직이고, 좁은 틈은 작아야 지나갈 수 있어서 어디에 어떤 크기로 도착할지 미리 계획해야 합니다. 손으로 만든 14개 레벨 뒤에는 풀이가 검증된 무작위 레벨이 끝없이 이어집니다.",
+      "en": "It is a hot day on the kitchen counter, and a little ice cube needs to get back to the freezer door. Every warm wooden tile melts it by one size, and at zero it evaporates. But heavy plates and crates need a big cube while narrow gaps only admit a small one, so you have to plan what size you will be when you arrive. After 14 handcrafted levels, solver-checked random levels keep coming."
+    },
+    "controls": {
+      "ko": "모바일: 화면을 원하는 방향으로 밀면 한 칸 움직입니다. 아래 버튼으로 되돌리기, 다시 하기, 나누기를 누릅니다. PC: 방향키 또는 WASD로 이동하고, Z나 백스페이스로 되돌리기, R로 다시 하기, X를 누른 뒤 방향키로 나누기를 합니다.",
+      "en": "Mobile: swipe in any direction to slide one tile. Use the buttons below the board to undo, restart, or split. Desktop: move with the arrow keys or WASD, press Z or Backspace to undo, R to restart, and X followed by a direction to split."
+    },
+    "tips": {
+      "ko": "발판은 덩치가 클 때 먼저 누르고, 틈은 그다음에 일부러 따뜻한 칸을 오가며 녹아서 지나가세요. 히터 옆 붉은 칸은 한 번에 2씩 녹고, 눈 더미는 한 번만 +1 해 줍니다. 최소 이동 수(파) 이하로 풀거나 큰 크기로 문에 도착하면 보너스 점수를 받고, 레벨을 깰 때마다 시간이 12초 늘어납니다.",
+      "en": "Press plates first while you are still big, then pace across warm tiles on purpose to shrink for the gaps. Red tiles next to a heater melt two at once, and each snow pile gives +1 only once. Solving at or under par and arriving at the door with size to spare both earn bonus points, and every cleared level adds 12 seconds."
+    },
+    "tags": [
+      "puzzle",
+      "sokoban",
+      "sliding",
+      "logic",
+      "cute",
+      "ice"
+    ],
+    "slug": "melt-cube"
+  },
+  {
     "slug": "mirror-twins",
     "date": "2026-10-03",
     "emoji": "🪞",
@@ -382,6 +481,39 @@
       "mobile"
     ],
     "slug": "sheep-herd"
+  },
+  {
+    "slug": "time-step",
+    "date": "2026-10-03",
+    "emoji": "⏳",
+    "title": {
+      "ko": "멈춘 시간 배달부",
+      "en": "Time-Step Courier"
+    },
+    "tagline": {
+      "ko": "내가 움직일 때만 시간이 흐른다",
+      "en": "Time only moves when you move"
+    },
+    "desc": {
+      "ko": "닌자 고양이 배달부가 편지를 우체통까지 배달합니다. 방 안의 털실 공, 장난감 화살, 흔들리는 등롱, 청소 로봇은 고양이가 움직일 때만 움직이고, 멈추면 공중에 그대로 멈춥니다. 멈춘 동안 점선으로 보이는 앞길을 읽고, 실시간 피하기를 퍼즐처럼 풀어 보세요. 손으로 만든 방 10개 뒤에는 봇이 풀 수 있다고 확인한 방이 끝없이 이어집니다.",
+      "en": "A ninja-cat courier has to carry a letter to the mailbox. The yarn balls, toy darts, swinging lanterns and vacuum bots in each room only move while the cat moves, and hang frozen in the air the moment it stops. Read the dotted paths while everything is frozen and solve a real-time dodge like a puzzle. After ten handcrafted rooms come endless rooms that a bot has confirmed are beatable."
+    },
+    "controls": {
+      "ko": "모바일: 화면 아무 곳이나 누른 채 끌면 그 방향으로 걷습니다. 조금만 끌면 천천히 걷고 시간도 느리게 흐릅니다. 왼쪽 아래 모래시계를 누르고 있으면 서 있는 채로 시간이 흐릅니다. PC: 방향키나 WASD로 이동, Shift를 누르면 절반 속도, Space가 모래시계입니다.",
+      "en": "Mobile: hold anywhere and drag to walk in that direction. A short drag walks slowly, and time crawls with you. Hold the hourglass in the bottom-left corner to let time run while standing still. Desktop: arrow keys or WASD to move, hold Shift for half speed, and Space is the hourglass."
+    },
+    "tips": {
+      "ko": "남은 시간 막대는 멈춰 있어도 줄어드니 너무 오래 고민하지는 마세요. 방을 통과하면 12초가 늘고, 부딪히면 방이 처음으로 되감기며 2초를 잃습니다. 보라색 장애물은 반대로 고양이가 멈춰 있을 때만 움직입니다. 빨간 눈이 뜬 구역에서는 움직이면 들키므로 모래시계로 기다리세요. 한 번에, 그리고 짧은 게임 시간 안에 통과하면 보너스 점수를 받습니다.",
+      "en": "The countdown bar keeps draining even while the room is frozen, so do not think forever. Clearing a room adds 12 seconds, and getting bonked rewinds the room and costs 2 seconds. Purple hazards are reversed and move only while the cat stands still. Inside a zone watched by an open red eye, moving gets you spotted, so wait with the hourglass instead. Clearing a room first try and in little game-time earns bonus points."
+    },
+    "tags": [
+      "puzzle",
+      "action",
+      "time-manipulation",
+      "cat",
+      "dodge",
+      "arcade"
+    ]
   },
   {
     "slug": "wind-seed",
