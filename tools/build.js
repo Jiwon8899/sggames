@@ -3,7 +3,7 @@
    node tools/build.js            → 사이트 전체 생성
    node tools/build.js pack slug  → itch.io 업로드용 dist/slug.zip */
 const fs=require('fs'),path=require('path'),cp=require('child_process');
-const ROOT=path.join(__dirname,'..'),SITE='https://sggames.pages.dev';
+const ROOT=path.join(__dirname,'..'),SITE='https://sg-minigames.pages.dev';
 const games=JSON.parse(fs.readFileSync(path.join(ROOT,'games.json'),'utf8')).sort((a,b)=>b.date.localeCompare(a.date));
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const bi=(o,tag='span')=>`<${tag} class="ko">${esc(o.ko)}</${tag}><${tag} class="en">${esc(o.en)}</${tag}>`;
@@ -48,7 +48,7 @@ function pack(slug){
   const d=path.join(ROOT,'dist',slug);fs.rmSync(d,{recursive:true,force:true});fs.mkdirSync(d,{recursive:true});
   const css=fs.readFileSync(path.join(ROOT,'assets/style.css'),'utf8');
   const js=fs.readFileSync(path.join(ROOT,'assets/sg.js'),'utf8')+'\n'+fs.readFileSync(path.join(ROOT,'games',slug,'game.js'),'utf8');
-  fs.writeFileSync(path.join(d,'index.html'),`<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(g.title.en)}</title><style>${css}body{background:#000}.stage{max-height:100vh;border:0;border-radius:0}</style></head><body><div class="stage" id="stage"></div><script>${js}</script></body></html>`);
+  fs.writeFileSync(path.join(d,'index.html'),`<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(g.title.en)}</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap"><style>${css.replace(/@import[^;]+;/,"")}body{background:#000}.stage{max-height:100vh;border:0;border-radius:0}</style></head><body><div class="stage" id="stage"></div><script>${js}</script></body></html>`);
   cp.execSync(`cd "${d}" && zip -q -r ../${slug}.zip .`);
   fs.writeFileSync(path.join(ROOT,'dist',slug+'-itch.txt'),`Title: ${g.title.en}\nKind: HTML · Embed 360x640 · Mobile friendly ON\nTags: cat, arcade, casual, mobile, html5\n\n${g.desc.en}\n\nHow to play: ${g.controls.en}\n\n${g.desc.ko}\n조작법: ${g.controls.ko}\n\nMore games: ${SITE}/\n`);
   console.log('packed dist/'+slug+'.zip');

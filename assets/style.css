@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap');
 :root{--bg:#fff8ec;--ink:#2b2320;--sub:#7a6a60;--card:#ffffff;--accent:#ff7a3d;--line:#eadfce}
 @media (prefers-color-scheme:dark){:root{--bg:#1c1816;--ink:#f6ede2;--sub:#b3a396;--card:#2a2421;--line:#3a322d}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.6}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Gowun Dodum",system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.6}
 a{color:var(--accent)}
 header.site{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
 header.site a.logo{font-weight:800;font-size:20px;text-decoration:none;color:var(--ink)}
@@ -25,3 +26,17 @@ html[lang=ko] .en,html[lang=en] .ko{display:none}
 .hud{position:absolute;top:8px;left:12px;right:12px;display:flex;justify-content:space-between;color:#fff;font-weight:800;text-shadow:0 1px 3px #000;pointer-events:none}
 .ad-slot{min-height:0;margin:18px auto;text-align:center}
 footer.site{border-top:1px solid var(--line);margin-top:32px;padding:16px;text-align:center;font-size:13px;color:var(--sub)}
+h1,h2,.btn,.hud,.overlay h2,header.site a.logo,.grid .name{font-family:Jua,"Gowun Dodum",system-ui,sans-serif;font-weight:400}
+.hud{font-size:19px}
+.hud .bump{display:inline-block;animation:bump .25s}
+@keyframes bump{50%{transform:scale(1.35)}}
+.overlay{animation:fade .25s;backdrop-filter:blur(3px)}
+.overlay h2{font-size:34px;animation:drop .45s cubic-bezier(.2,1.6,.4,1)}
+@keyframes fade{from{opacity:0}}
+@keyframes drop{from{transform:translateY(-30px) scale(.8);opacity:0}}
+.btn{box-shadow:0 5px 0 #c9541f;transition:transform .08s,box-shadow .08s}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 #c9541f}
+.mute{position:absolute;right:8px;bottom:8px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(0,0,0,.35);font-size:17px;cursor:pointer;z-index:2}
+.stage{box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.grid a{transition:transform .12s,box-shadow .12s}
+.grid a:hover{transform:translateY(-4px);box-shadow:0 8px 18px rgba(0,0,0,.12)}

@@ -11,7 +11,7 @@ const srv=http.createServer((q,r)=>{let p=decodeURIComponent(q.url.split('?')[0]
   let b;try{b=await chromium.launch()}catch(e){b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'})}
   for(const lang of ['ko','en']){
     const pg=await b.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true});
-    pg.on('console',m=>{if(m.type()==='error')fail.push(lang+' console: '+m.text())});
+    pg.on('console',m=>{if(m.type()==='error'&&!/ERR_TUNNEL/.test(m.text()))fail.push(lang+' console: '+m.text())});
     pg.on('pageerror',e=>fail.push(lang+' pageerror: '+e.message));
     const res=await pg.goto(`http://localhost:${port}/games/${slug}/?lang=${lang}`);
     if(!res.ok())fail.push('http '+res.status());
