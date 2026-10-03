@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sggames.pages.dev/sitemap.xml
