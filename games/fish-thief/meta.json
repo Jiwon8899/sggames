@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-03",
+  "emoji": "🐟",
+  "title": {
+    "ko": "생선 도둑은 누구냥",
+    "en": "Who Stole the Fish?"
+  },
+  "tagline": {
+    "ko": "거짓말 추리 · 매번 새로운 사건",
+    "en": "Liar logic · a new case every time"
+  },
+  "desc": {
+    "ko": "접시 위 생선이 사라졌고, 줄지어 앉은 고양이들이 저마다 한마디씩 증언합니다. 맨 위에는 '범인만 거짓말을 한다', '딱 한 마리만 진실을 말한다' 같은 이번 사건의 규칙이 적혀 있습니다. 규칙과 증언을 맞춰 보면 범인은 언제나 딱 한 마리로 좁혀집니다. 사건은 매번 새로 만들어지고, 풀수록 고양이가 늘고 규칙이 까다로워집니다.",
+    "en": "The fish is gone from the plate, and every cat in the line-up has something to say about it. The banner on top gives the rule for the case, such as \"Only the thief lies\" or \"Exactly one cat tells the truth\". Check the statements against the rule and exactly one cat can be the thief. Every case is freshly generated, and later cases add more cats and trickier rules."
+  },
+  "controls": {
+    "ko": "모바일: 고양이를 한 번 탭하면 선택, 같은 고양이를 한 번 더 탭하면 범인으로 지목합니다. 증언 말풍선을 탭하면 오른쪽에 O(진실)·X(거짓) 메모 도장이 차례로 찍힙니다. 왼쪽 아래 힌트 버튼은 5초를 내고 결백한 고양이 한 마리를 지워 줍니다. PC: ← → 로 고양이를 고르고 Space 로 지목, ↑ ↓ 로 메모 도장, H 로 힌트를 씁니다. 마우스는 고양이를 클릭하면 바로 지목됩니다.",
+    "en": "Mobile: tap a cat once to select it, then tap the same cat again to accuse. Tap a statement bubble to cycle an O (truth) or X (lie) note stamp on its right side. The hint button at the bottom left rules out one innocent cat for 5 seconds. Desktop: use ← → to choose a cat and Space to accuse, ↑ ↓ to stamp notes, and H for a hint. With a mouse, clicking a cat accuses it right away."
+  },
+  "tips": {
+    "ko": "틀리게 지목하면 8초를 잃고, 맞히면 15초를 돌려받으니 찍기보다 한 번에 맞히는 쪽이 훨씬 이득입니다. 한 마리를 범인이라고 가정한 뒤 거짓말하는 고양이 수가 규칙과 맞는지 세어 보세요. '왼쪽(←)'과 '오른쪽(→)'은 화면에서 보이는 방향 그대로입니다. 틀리지 않고 연달아 풀면 '조용한 수사' 보너스 점수가 붙습니다.",
+    "en": "A wrong accusation costs 8 seconds while a correct one gives back 15, so solving on the first try beats guessing. Assume one cat is the thief, then count how many cats would be lying and compare that with the rule. \"Left (←)\" and \"right (→)\" always mean the directions as you see them on screen. Solving cases in a row without a wrong accusation builds a Quiet Streak bonus."
+  },
+  "tags": ["puzzle", "logic", "deduction", "cats", "detective", "brain-teaser"]
+}

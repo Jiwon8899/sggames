@@ -1,0 +1,20 @@
+{
+  "slug": "wind-seed",
+  "date": "2026-10-03",
+  "emoji": "🌬️",
+  "title": {"ko": "바람이 되어", "en": "Be the Wind"},
+  "tagline": {"ko": "바람 그리기 · 간접 조종", "en": "Paint the wind · indirect control"},
+  "desc": {
+    "ko": "이 게임에서 당신은 캐릭터가 아니라 바람입니다. 화면을 쓸면 바람결이 그려지고, 민들레 씨앗 포포와 꽃잎, 꽃가루, 빗방울까지 가벼운 것은 모두 그 바람을 탑니다. 포포를 위쪽 정원의 부드러운 흙까지 데려가면 꽃이 피고, 그 꽃에서 새 씨앗이 다시 날아오릅니다. 해가 지기 전에 최대한 많은 꽃을 심어 보세요.",
+    "en": "In this game you are not the character, you are the wind. Every swipe paints a gust, and Popo the dandelion seed rides it along with petals, pollen and even raindrops. Carry Popo up to a patch of soft soil and a flower blooms, then a fresh seed lifts off from it and the climb continues. Plant as many flowers as you can before the sun goes down."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 쓸어 바람을 긋습니다. 빠르게 쓸수록 바람이 세지고, 누르기만 하면 바람이 생기지 않습니다. PC: 마우스로 끌거나, 방향키·WASD를 누르고 있으면 씨앗 자리에서 그 방향으로 바람이 불고 스페이스는 위로 센 바람 한 번을 붑니다. 왼쪽 아래 막대는 바람 기력으로, 다 쓰면 잠깐 쉬어야 다시 불 수 있습니다.",
+    "en": "Mobile: swipe across the screen to draw a gust. Faster swipes blow harder, and a tap without movement makes no wind at all. Desktop: drag with the mouse, or hold the arrow keys or WASD to blow from the seed's position in that direction, and press Space for one strong upward puff. The bar at the bottom left is your breath, and when it runs out you must rest a moment before blowing again."
+  },
+  "tips": {
+    "ko": "씨앗을 직접 건드리지 말고 씨앗 아래쪽에서 가고 싶은 방향으로 짧게 쓸어 주면 가장 잘 실립니다. 거미줄이나 개구리 혀에 걸리면 2초 안에 세게 한 번 불어야 풀려나고, 빗방울은 맞기 전에 옆으로 불어 날릴 수 있습니다. 가시덤불에 닿으면 솜털 세 개 중 하나를 잃습니다. 붓질 두 번 이하로 흙에 내려앉으면 살랑 보너스 15점을 받고, 꽃을 심을 때마다 해가 조금씩 늦게 집니다.",
+    "en": "Do not swipe on the seed itself; a short stroke starting just below it and pointing where you want to go carries it best. If a spider web or the frog's tongue catches the seed, one hard gust within two seconds tears it free, and raindrops can be blown aside before they land. Touching the brambles costs one of your three tufts of fluff. Landing on soil with two strokes or fewer earns the 15-point gentle bonus, and every flower you plant holds back the sunset a little longer."
+  },
+  "tags": ["wind", "physics", "relaxing", "arcade", "nature", "touch"]
+}

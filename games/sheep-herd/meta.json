@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-03",
+  "emoji": "🐑",
+  "title": {"ko": "살살 양몰이", "en": "Gentle Herd"},
+  "tagline": {"ko": "양 떼 몰이 · 돌진 금지", "en": "Flock herding · no charging"},
+  "desc": {
+    "ko": "양치기 개 보리가 되어 양 떼를 우리 안으로 몰아넣는 게임입니다. 양을 직접 건드릴 수는 없고, 양들은 개가 가까이 빠르게 올수록 더 세게 달아납니다. 한가운데로 돌진하면 떼가 둘로 갈라지니 뒤로 빙 돌아가 살살 밀어야 합니다. 뒤로 갈수록 개울과 다리, 진흙, 고집쟁이 염소, 검은 양 나누기, 해질녘 늑대 그림자가 등장합니다.",
+    "en": "You are Bori the sheepdog, and your job is to get the whole flock into the pen. You never touch the sheep: they bunch together like a real flock and bolt harder the closer and faster you come. Charge through the middle and the flock splits in two, so circle around behind it and push gently. Later fields add a stream with a narrow bridge, mud, a stubborn goat the sheep like to follow, black sheep that must be sorted into the dark pen, and a wolf shadow at dusk."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 누르고 있으면 보리가 손가락 쪽으로 달려갑니다. 손가락이 가까우면 천천히 걷습니다. 아래쪽 '멍!' 버튼이나 빠른 두 번 탭으로 짖습니다. PC: 방향키 또는 WASD로 이동하고 스페이스로 짖습니다. 키를 짧게 누르면 살살 걷고 길게 누르면 전력으로 달립니다.",
+    "en": "Mobile: hold the screen and Bori runs toward your finger, slowing to a walk when the finger is close. Tap the Bark button at the bottom or double-tap to bark. Desktop: move with the arrow keys or WASD and bark with Space. Short key presses walk gently, while holding a key builds up to a full sprint."
+  },
+  "tips": {
+    "ko": "보리 주위의 점선 고리가 붉어질 때 양이 그 안에 들어오면 겁을 먹고 멀리 흩어집니다. 양이 한 번도 겁먹지 않으면 '살살 양치기' 보너스를 받습니다. 짖기는 떼의 방향을 확 틀거나 늑대 그림자를 쫓을 때 쓰되, 양 바로 옆에서는 쓰지 마세요. 양 한 마리를 넣을 때마다 1초, 한 판을 끝낼 때마다 15초가 늘어납니다.",
+    "en": "When the dashed ring around Bori glows red, any sheep inside it panics and scatters far away. Finish a field without a single panic to earn the Gentle Shepherd bonus. Save the bark for turning the flock in a hurry or chasing off the wolf shadow, and never use it right next to the sheep. Each penned sheep adds one second and each cleared field adds fifteen."
+  },
+  "tags": ["herding", "simulation", "animals", "casual", "cute", "mobile"]
+}
