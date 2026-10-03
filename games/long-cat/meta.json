@@ -1,8 +1,14 @@
 {
   "date": "2026-10-03",
   "emoji": "🐈",
-  "title": {"ko": "쭈욱 고양이", "en": "Long Cat"},
-  "tagline": {"ko": "늘어나는 몸 감기 퍼즐 · 햇살 거실", "en": "Stretchy rope-wrap puzzle · sunny living room"},
+  "title": {
+    "ko": "쭈욱 고양이",
+    "en": "Long Cat"
+  },
+  "tagline": {
+    "ko": "늘어나는 몸 감기 퍼즐 · 햇살 거실",
+    "en": "Stretchy rope-wrap puzzle · sunny living room"
+  },
   "desc": {
     "ko": "뒷발은 방석에 붙인 채 머리만 끌면 몸이 고무줄처럼 쭈욱 늘어나는 고양이 퍼즐입니다. 몸은 팽팽한 줄이라서 스크래처 기둥에 닿으면 실제 밧줄처럼 감기고, 되돌아가면 풀립니다. 기둥을 어느 쪽으로, 어떤 순서로 감느냐에 따라 몸이 지나가는 자리가 달라지니, 모든 생선 간식을 몸으로 덮은 채 머리를 베개에 올려야 합니다. 선인장, 잠자는 멍멍이, 한 방향 문, 옮길 수 있는 파란 기둥, 자고 있는 친구 고양이가 차례로 등장합니다.",
     "en": "A puzzle about a cat whose back paws stay on the mat while its body stretches like a rubber band behind the head you drag. The body is a taut string, so it winds around scratching posts like a real rope and unwinds when you swing back. Which side of each post you pass, and in what order, decides where the body lies, and you must cover every fish treat with the body before resting the head on the pillow. Cacti, a sleeping dog, one-way gates, a movable blue post and a snoozing friend cat join in one by one."
@@ -15,5 +21,13 @@
     "ko": "몸은 기둥 사이에서 항상 직선이니, 간식들이 놓인 줄을 보고 어느 기둥에서 꺾어야 할지 먼저 읽어 보세요. 위쪽 고양이 게이지가 빨개지면 더는 늘어나지 않으니 더 짧게 감는 길을 찾아야 합니다. 스테이지를 깰 때마다 13초가 더해지고, 남은 길이와 한 번에 성공한 연속 기록이 보너스 점수가 됩니다. 놓쳐도 시간만 흐를 뿐이니 과감하게 감아 보세요.",
     "en": "The body is always straight between posts, so read the line the treats sit on and work out which post it must bend around. When the cat meter at the top turns red the body will not stretch further, so look for a shorter winding. Each cleared stage adds 13 seconds, and leftover stretch plus a streak of first-try clears become bonus points. A snap-back only costs time, so wind boldly."
   },
-  "tags": ["puzzle", "cat", "rope", "physics", "casual", "cute"]
+  "tags": [
+    "puzzle",
+    "cat",
+    "rope",
+    "physics",
+    "casual",
+    "cute"
+  ],
+  "draft": true
 }
