@@ -22,5 +22,12 @@
     "ko": "맞힌 음 하나마다 1점이고, 한 라운드를 빠르게 끝내면 스피드 보너스가, 리믹스 라운드를 넘기면 5점이 추가로 붙습니다. 음 하나를 누를 때마다 타이머가 다시 차오르지만, 시간이 다 되거나 틀린 젤리를 누르면 두 개뿐인 하트가 하나 줄어듭니다. 색보다 위·왼쪽·오른쪽·아래의 위치와 멜로디를 함께 흥얼거리며 외우면 긴 순서도 훨씬 잘 기억납니다.",
     "en": "Each correct note is worth 1 point, finishing a round quickly earns a speed bonus, and clearing a remix round adds 5 more. The timer refills after every note, but running out of time or tapping the wrong jelly costs one of your two hearts. Hum the melody and think in positions (top, left, right, bottom) rather than colors to hold longer sequences."
   },
-  "tags": ["memory", "music", "casual", "cute", "arcade"]
+  "tags": [
+    "memory",
+    "music",
+    "casual",
+    "cute",
+    "arcade"
+  ],
+  "draft": true
 }

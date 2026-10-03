@@ -1,0 +1,26 @@
+{
+  "slug": "echo-maze",
+  "date": "2026-10-03",
+  "emoji": "🦇",
+  "title": {
+    "ko": "메아리 미로",
+    "en": "Echo Maze"
+  },
+  "tagline": {
+    "ko": "소리로 보는 미로 · 40초 한 판",
+    "en": "See with sound · 40-second runs"
+  },
+  "desc": {
+    "ko": "캄캄한 동굴에서 아기 박쥐가 열매를 찾습니다. 화면에는 아무것도 보이지 않고, 메아리를 한 번 내면 소리가 닿은 벽만 잠깐 빛났다가 1.5초 만에 사라집니다. 하지만 메아리는 잠든 귀쟁이를 깨우고, 귀쟁이는 박쥐가 아니라 소리가 난 자리로 달려옵니다. 열매를 먹으면 시간이 늘어나고 더 큰 미로가 열립니다.",
+    "en": "A baby bat is looking for fruit in a pitch-dark cave. You see nothing until you call out: the echo lights only the walls it touches, and the glow fades in about a second and a half. Every call also wakes the sleeping Listeners, who rush to the spot the sound came from rather than to the bat itself. Each fruit adds time and opens a bigger maze."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 짧게 탭하면 메아리, 누른 채 끌면 그 방향으로 날아갑니다. 오른쪽 아래 메아리 버튼을 써도 됩니다. PC: 방향키 또는 WASD로 이동, 스페이스로 메아리.",
+    "en": "Mobile: a quick tap sends an echo, and holding and dragging flies the bat in that direction. The echo button at the bottom right works too. Desktop: arrow keys or WASD to move, Space to echo."
+  },
+  "tips": {
+    "ko": "메아리를 낸 뒤에는 그 자리를 바로 떠나세요. 막다른 길에서 소리를 내면 달려온 귀쟁이에게 갇히기 쉬우니 갈림길에서 부르는 편이 안전합니다. 잠든 귀쟁이 옆은 조용히 지나갈 수 있고, 메아리를 8번보다 적게 쓰면 조용 보너스를 받습니다. 벽 너머는 소리가 약해져 어둡게 보이고, 열매가 스스로 내는 주황빛 핑이 방향을 알려 줍니다.",
+    "en": "Leave the spot as soon as you call. Calling from a dead end is how you get cornered, so echo at junctions where you have somewhere to go. You can slip quietly past a sleeping Listener, and using fewer than eight echoes in a maze earns a quiet bonus. Sound dims behind walls, and the fruit's own orange ping tells you which way to head."
+  },
+  "tags": ["maze", "stealth", "sonar", "dark", "arcade"]
+}

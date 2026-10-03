@@ -22,5 +22,13 @@
     "ko": "귀가 긴 흰 토끼를 치면 시간이 3초 줄고 콤보가 끊기니 귀부터 확인하세요. 반짝이는 황금 두더지는 금방 숨지만 맞히면 시간이 5초 늘고 점수도 세 배입니다. 빈 구멍을 쳐도 콤보가 끊기므로 마구 누르기보다 정확하게 치는 쪽이 점수가 높습니다.",
     "en": "Tapping the long-eared white bunny costs 3 seconds and resets your combo, so check the ears first. The sparkling golden mole hides quickly, but hitting it adds 5 seconds and pays triple points. Swinging at an empty hole also breaks the combo, so accurate taps beat frantic mashing."
   },
-  "tags": ["arcade", "reflex", "whack-a-mole", "casual", "cute", "mobile"]
+  "tags": [
+    "arcade",
+    "reflex",
+    "whack-a-mole",
+    "casual",
+    "cute",
+    "mobile"
+  ],
+  "draft": true
 }

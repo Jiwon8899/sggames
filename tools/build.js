@@ -6,7 +6,7 @@ const fs=require('fs'),path=require('path'),cp=require('child_process');
 const ROOT=path.join(__dirname,'..'),SITE='https://sg-minigames.pages.dev';
 const GD=path.join(ROOT,'games');
 const games=fs.readdirSync(GD).filter(d=>fs.existsSync(path.join(GD,d,'meta.json'))&&fs.existsSync(path.join(GD,d,'game.js')))
-  .map(d=>Object.assign(JSON.parse(fs.readFileSync(path.join(GD,d,'meta.json'),'utf8')),{slug:d})).sort((a,b)=>b.date.localeCompare(a.date)||a.slug.localeCompare(b.slug));
+  .map(d=>Object.assign(JSON.parse(fs.readFileSync(path.join(GD,d,'meta.json'),'utf8')),{slug:d})).filter(g=>!g.draft||process.env.DRAFTS).sort((a,b)=>b.date.localeCompare(a.date)||a.slug.localeCompare(b.slug));
 fs.writeFileSync(path.join(ROOT,'games.json'),JSON.stringify(games,null,2));
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const bi=(o,tag='span')=>`<${tag} class="ko">${esc(o.ko)}</${tag}><${tag} class="en">${esc(o.en)}</${tag}>`;

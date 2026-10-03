@@ -22,5 +22,13 @@
     "ko": "별은 3점에 콤보 배율이 곱해지므로 콤보를 쌓은 뒤에 먹는 별이 훨씬 값집니다. 초록 구역을 벗어나 착지하면 콤보가 0으로 돌아가니, 2단 점프는 아껴 두었다가 착지 지점을 맞추는 데 쓰세요. 틈이 좁을 때는 지붕 끝까지 달린 뒤 늦게 뛰어야 모서리에 떨어집니다.",
     "en": "A star is worth 3 points times your multiplier, so stars grabbed during a long combo pay far more. Landing outside the green strip resets the combo to zero, so save the double jump for adjusting where you come down. On narrow gaps, run to the very end of the roof and jump late to drop onto the edge."
   },
-  "tags": ["runner", "endless", "cat", "arcade", "one-button", "mobile"]
+  "tags": [
+    "runner",
+    "endless",
+    "cat",
+    "arcade",
+    "one-button",
+    "mobile"
+  ],
+  "draft": true
 }

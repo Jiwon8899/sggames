@@ -1,0 +1,20 @@
+{
+  "slug": "one-stroke",
+  "date": "2026-10-03",
+  "emoji": "🖍️",
+  "title": {"ko": "한붓 굴리기", "en": "One Stroke"},
+  "tagline": {"ko": "선 하나 물리 퍼즐 · 크레용 그림책", "en": "One-line physics puzzle · crayon storybook"},
+  "desc": {
+    "ko": "잠꾸러기 몽이를 별까지 데려다주는 한붓 퍼즐입니다. 선을 딱 하나만 그을 수 있고, 손을 떼는 순간 잉크가 굳으면서 중력이 켜져 몽이가 굴러가기 시작합니다. 통통 튀는 버섯, 바람을 뿜는 선풍기, 잉크가 묻지 않는 빗금 구역이 스테이지마다 다른 답을 요구합니다. 전체 제한 시간 안에 최대한 많은 스테이지를 넘겨 보세요.",
+    "en": "A one-line puzzle about getting sleepy Mong to the star. You may draw exactly one line; the moment you let go, the ink dries, gravity switches on and Mong starts to roll. Bouncy mushrooms, wind fans and hatched zones where ink will not stick make every stage ask for a different answer. Clear as many stages as you can before the shared clock runs out."
+  },
+  "controls": {
+    "ko": "모바일: 손가락으로 화면에 선을 긋고 떼면 바로 출발합니다. PC: 마우스로 드래그하거나, 방향키(WASD)로 연필을 옮기고 스페이스를 누른 채 이동해 선을 그은 뒤 스페이스를 떼세요. 굴러가는 도중에 화면을 누르거나 스페이스를 치면 바로 다시 그릴 수 있습니다.",
+    "en": "Mobile: draw a line with your finger and lift to launch. Desktop: drag with the mouse, or move the pencil with the arrow keys (WASD), hold Space while moving to draw, then release Space. Tap or press Space during a roll to reset at once and redraw."
+  },
+  "tips": {
+    "ko": "잉크를 아낄수록 보너스가 크고, 한 번에 성공하면 배수가 최대 3배까지 쌓입니다. 실패해도 시간만 흐를 뿐이니 짧은 선으로 과감하게 시험해 보세요. 스테이지를 깰 때마다 12초가 더해집니다. 선은 꼭 내리막길일 필요가 없습니다. 벽으로 세우거나 활주로처럼 눕혀도 됩니다.",
+    "en": "Leftover ink is bonus points, and consecutive first-try clears build a multiplier up to x3. A failed attempt only costs time, so test bold short lines. Each cleared stage adds 12 seconds. A line does not have to be a ramp: stand it up as a wall or lay it flat as a runway."
+  },
+  "tags": ["puzzle", "physics", "drawing", "one-line", "casual"]
+}

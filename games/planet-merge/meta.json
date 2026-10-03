@@ -22,5 +22,13 @@
     "ko": "큰 천체는 한쪽 구석에 모으고 작은 것들은 크기 순서대로 옆에 쌓아 두세요. 그러면 합체 하나가 다음 합체를 불러 연쇄가 길게 이어집니다. 노란 고리가 다 차기 전에 직접 떨어뜨려야 원하는 자리에 놓을 수 있고, 가만히 두면 자동 낙하가 점점 빨라집니다. 왼쪽 위의 '다음' 천체를 보고 지금 놓을 자리를 정하는 습관이 고득점의 지름길입니다.",
     "en": "Park your biggest body in one corner and line the smaller ones up beside it in size order, so one merge rolls into the next and the chain keeps climbing. Drop before the yellow ring fills up, because auto-drops land wherever the UFO happens to be and they speed up the longer you stay idle. Check the NEXT bubble in the top left before every drop and decide where the current one should go with the following one in mind."
   },
-  "tags": ["merge", "physics", "space", "casual", "puzzle", "cute"]
+  "tags": [
+    "merge",
+    "physics",
+    "space",
+    "casual",
+    "puzzle",
+    "cute"
+  ],
+  "draft": true
 }

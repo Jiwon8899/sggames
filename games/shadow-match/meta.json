@@ -1,0 +1,20 @@
+{
+  "slug": "shadow-match",
+  "date": "2026-10-03",
+  "emoji": "🏮",
+  "title": {"ko": "그림자 극장", "en": "Shadow Theatre"},
+  "tagline": {"ko": "입체 퍼즐 · 돌려서 그림자 맞추기", "en": "3D puzzle · rotate to cast the right shadow"},
+  "desc": {
+    "ko": "등불 앞에 떠 있는 블록 덩어리를 90도씩 돌려, 종이 스크린에 비친 그림자를 빨간 점선 그림과 똑같이 만드는 퍼즐입니다. 같은 물체인데 앞에서 보면 하트, 옆에서 보면 계단처럼 방향마다 전혀 다른 그림자가 나옵니다. 5막부터는 스크린이 두 장으로 늘어나 앞 그림자와 옆 그림자를 동시에 맞춰야 합니다.",
+    "en": "A lump of blocks floats in front of a lantern. Turn it in quarter turns until the shadow on the paper screen fills the red dashed outline exactly. The same object throws a heart from the front and a staircase from the side, so every angle is a surprise. From Act 5 there are two screens, and the front and side shadows must both match at once."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 좌우로 밀면 옆으로, 위아래로 밀면 앞뒤로 구릅니다. 화면의 화살표 버튼을 눌러도 됩니다. PC: 방향키 또는 WASD.",
+    "en": "Mobile: swipe left or right to spin the object, swipe up or down to tip it over, or tap the on-screen arrows. Desktop: arrow keys or WASD."
+  },
+  "tips": {
+    "ko": "시간은 40초로 시작하고 한 막을 풀 때마다 조금씩 늘어나며, 목표 횟수 안에 풀면 보너스 점수와 연속 완벽 배수가 붙습니다. 그림이 옆으로 누워 있다면 위로 한 번, 옆으로 한 번, 아래로 한 번 돌려 보세요. 8초 넘게 막히면 어긋난 칸이 빨강과 노랑으로 깜빡입니다.",
+    "en": "You start with 40 seconds and earn a little more for each act; solving within par gives bonus points and builds a perfect streak. If the picture is lying on its side, try up, sideways, then down, which rolls it upright. After 8 seconds stuck, the wrong cells blink red and the missing ones blink yellow."
+  },
+  "tags": ["puzzle", "3d", "shadow", "rotation", "spatial", "timed"]
+}

@@ -22,5 +22,13 @@
     "ko": "틀린 식은 정답과 1, 2, 10 차이이거나 자릿수가 뒤바뀐 숫자라서 일의 자리만 먼저 확인해도 꽤 걸러집니다. 연속 정답 3개마다 점수 배수가 올라가지만 제한 시간도 조금씩 짧아지니 리듬을 유지하세요. 황금 문제를 1초 안에 맞히면 잃었던 하트 하나가 돌아옵니다.",
     "en": "Wrong equations are off by 1, 2 or 10, or have swapped digits, so checking the last digit first catches many of them. Every three correct answers in a row raises the score multiplier, but the timer also gets a little shorter. Answer a golden question correctly within one second to win back a lost heart."
   },
-  "tags": ["math", "brain-training", "educational", "arcade", "fast-paced", "true-or-false"]
+  "tags": [
+    "math",
+    "brain-training",
+    "educational",
+    "arcade",
+    "fast-paced",
+    "true-or-false"
+  ],
+  "draft": true
 }

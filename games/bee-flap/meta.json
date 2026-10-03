@@ -22,5 +22,13 @@
     "ko": "틈 하나를 지나면 1점, 다섯 번째 틈마다 보너스 2점, 꿀방울은 2점, 대시 중 부순 줄기는 5점입니다. 황금 대시 중에는 줄기에 부딪혀도 안전하니 일부러 줄기 쪽으로 날아가 최대한 많이 부수세요. 화면 맨 위에 닿아도 죽지 않지만 땅에 닿으면 끝나므로 조금 높게 나는 편이 안전합니다.",
     "en": "Each gap is worth 1 point with a 2-point bonus on every fifth, a nectar drop is 2, and a stalk smashed during the dash is 5. You cannot be hurt by stalks while golden, so steer into them on purpose and break as many as you can. Touching the top of the screen is harmless but the ground ends the run, so flying a little high is the safer habit."
   },
-  "tags": ["arcade", "one-button", "flying", "cute", "casual", "high-score"]
+  "tags": [
+    "arcade",
+    "one-button",
+    "flying",
+    "cute",
+    "casual",
+    "high-score"
+  ],
+  "draft": true
 }

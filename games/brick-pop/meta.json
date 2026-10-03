@@ -22,5 +22,13 @@
     "ko": "공이 받침대에 닿지 않고 젤리를 연달아 터뜨리면 콤보가 쌓여 점수가 최대 6배까지 오릅니다. 받침대 가장자리로 받으면 공이 비스듬히 날아가니, 가장 아래까지 내려온 젤리 쪽으로 노려 보세요. 떨어지는 사탕은 꼭 받으세요. 파랑은 받침대를 길게, 초록은 공을 세 개로, 주황은 몇 초 동안 젤리를 뚫고 지나가는 불꽃 공으로 만들어 줍니다. 하트는 세 개뿐이고 흰 테두리 젤리는 두 번 맞혀야 터집니다.",
     "en": "Pop several jellies in a row without the ball touching your paddle and the combo multiplier climbs up to x6. Catching the ball on the edge of the paddle sends it off at a sharp angle, so aim at whichever jelly has sunk the lowest. Always grab the falling candies: blue stretches the paddle, green splits the ball into three, and orange turns it into a fireball that tears straight through jellies for a few seconds. You only have three hearts, and white-rimmed jellies need two hits."
   },
-  "tags": ["arcade", "breakout", "brick-breaker", "casual", "cute", "mobile"]
+  "tags": [
+    "arcade",
+    "breakout",
+    "brick-breaker",
+    "casual",
+    "cute",
+    "mobile"
+  ],
+  "draft": true
 }

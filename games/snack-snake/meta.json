@@ -22,5 +22,13 @@
     "ko": "사과는 1점, 몇 초 뒤 사라지는 도넛은 3점이고 배고픔도 가장 많이 채워 줍니다. 고추를 먹으면 4초 동안 빨라지는 대신 점수가 두 배가 됩니다. 3초 안에 연달아 먹으면 콤보가 쌓여 한 입마다 보너스 점수가 붙으니, 고추를 먹기 전에 다음 간식까지의 길을 먼저 봐 두세요.",
     "en": "Apples are worth 1 point, while donuts are worth 3, refill the most hunger, and vanish after a few seconds. A chili pepper speeds you up for 4 seconds but doubles every point you score. Eating again within about 3 seconds builds a combo that adds a bonus to each bite, so plan your route to the next snack before you grab the chili."
   },
-  "tags": ["snake", "arcade", "casual", "retro", "high-score", "mobile"]
+  "tags": [
+    "snake",
+    "arcade",
+    "casual",
+    "retro",
+    "high-score",
+    "mobile"
+  ],
+  "draft": true
 }

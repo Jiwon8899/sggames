@@ -22,5 +22,13 @@
     "ko": "연료는 가만히 두면 15초 만에 바닥나니 초록색 연료통은 꼭 챙기세요. 앞차 바로 뒤까지 붙었다가 마지막 순간에 빠져나오면 '간발의 차' 보너스로 15점과 함께 터보 게이지가 훨씬 빨리 찹니다. 터보 중에는 연료가 줄지 않고 차를 밀어낼 때마다 20점이니, 차가 몰려 있을 때 쓰는 것이 이득입니다.",
     "en": "A full tank only lasts about 15 seconds, so never skip a green fuel can. Tailing a car and pulling out at the last moment earns the 'Super close' bonus: 15 points and a much bigger chunk of turbo. Fuel does not drain during turbo and every car you bump is worth 20, so save it for when the road ahead is crowded."
   },
-  "tags": ["arcade", "racing", "endless", "synthwave", "one-button", "mobile"]
+  "tags": [
+    "arcade",
+    "racing",
+    "endless",
+    "synthwave",
+    "one-button",
+    "mobile"
+  ],
+  "draft": true
 }

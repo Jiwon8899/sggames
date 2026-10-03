@@ -1,0 +1,20 @@
+{
+  "slug": "ghost-coop",
+  "date": "2026-10-03",
+  "emoji": "👻",
+  "title": {"ko": "고스트 협동", "en": "Ghost Co-op"},
+  "tagline": {"ko": "과거의 나와 협동 · 되감기 퍼즐", "en": "Co-op with your past selves · rewind puzzle"},
+  "desc": {
+    "ko": "혼자서는 절대 열 수 없는 문이 있습니다. 발판 위에 서서 시간을 되감으면, 방금 전의 내가 반투명한 유령 고양이가 되어 똑같이 움직이며 문을 열어 줍니다. 8초짜리 루프를 두세 번 겹쳐서 생선이 있는 곳까지 길을 만들어 보세요. 방을 깰 때마다 시간이 늘어나고, 전체 시간이 0이 되면 끝납니다.",
+    "en": "Some doors cannot be opened alone. Stand on a pressure plate and rewind time, and the cat you just were comes back as a translucent ghost that repeats your exact steps and holds the door for you. Stack two or three 8-second loops to build a path to the fish. Every cleared room adds time to the clock, and the run ends when the clock hits zero."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 누른 채 끌면 그 방향으로 걷습니다. 왼쪽 아래 되감기 버튼을 누르면 루프를 바로 끝냅니다. PC: 방향키 또는 WASD로 이동, 스페이스로 되감기.",
+    "en": "Mobile: press anywhere and drag to walk in that direction, and tap the Rewind button at the bottom left to end a loop early. Desktop: arrow keys or WASD to move, Space to rewind."
+  },
+  "tips": {
+    "ko": "루프 시계는 내가 처음 움직일 때 시작하니, 먼저 유령들의 길을 보고 계획을 세우세요. 발판에 도착하자마자 되감으면 유령은 그 자리에 계속 서 있습니다. 유령 한 마리가 발판 두 개를 차례로 밟게 하면 루프를 아껴 보너스 점수를 받습니다. 초록 스위치는 고양이 두 마리가 동시에 밟으면 한 번만 바뀝니다.",
+    "en": "The loop clock only starts when you first move, so read the ghost trails and plan before you step. If you rewind the moment you reach a plate, that ghost keeps standing there for the whole loop. Making one ghost press two plates in sequence saves a loop and earns bonus points. Two cats stepping on the green switch at the same moment only flip it once."
+  },
+  "tags": ["puzzle", "time-loop", "cat", "co-op", "rewind"]
+}
