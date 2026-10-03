@@ -188,6 +188,72 @@
     ]
   },
   {
+    "date": "2026-10-03",
+    "emoji": "🐈",
+    "title": {
+      "ko": "쭈욱 고양이",
+      "en": "Long Cat"
+    },
+    "tagline": {
+      "ko": "늘어나는 몸 감기 퍼즐 · 햇살 거실",
+      "en": "Stretchy rope-wrap puzzle · sunny living room"
+    },
+    "desc": {
+      "ko": "뒷발은 방석에 붙인 채 머리만 끌면 몸이 고무줄처럼 쭈욱 늘어나는 고양이 퍼즐입니다. 몸은 팽팽한 줄이라서 스크래처 기둥에 닿으면 실제 밧줄처럼 감기고, 되돌아가면 풀립니다. 기둥을 어느 쪽으로, 어떤 순서로 감느냐에 따라 몸이 지나가는 자리가 달라지니, 모든 생선 간식을 몸으로 덮은 채 머리를 베개에 올려야 합니다. 선인장, 잠자는 멍멍이, 한 방향 문, 옮길 수 있는 파란 기둥, 자고 있는 친구 고양이가 차례로 등장합니다.",
+      "en": "A puzzle about a cat whose back paws stay on the mat while its body stretches like a rubber band behind the head you drag. The body is a taut string, so it winds around scratching posts like a real rope and unwinds when you swing back. Which side of each post you pass, and in what order, decides where the body lies, and you must cover every fish treat with the body before resting the head on the pillow. Cacti, a sleeping dog, one-way gates, a movable blue post and a snoozing friend cat join in one by one."
+    },
+    "controls": {
+      "ko": "모바일: 고양이 머리 근처를 누른 채 끌고, 베개 위에서 손을 떼면 완성입니다. 다른 곳에서 손을 떼면 고양이가 고무줄처럼 방석으로 튕겨 돌아옵니다. PC: 마우스로 끌거나, 방향키(WASD)로 머리를 움직이고 스페이스로 놓습니다. 파란 기둥은 고양이가 쉬고 있을 때 끌거나 Q/E 키로 옮길 수 있습니다.",
+      "en": "Mobile: press near the cat's head, drag, and lift your finger on the pillow to finish. Letting go anywhere else makes the cat snap back to its mat like elastic. Desktop: drag with the mouse, or move the head with the arrow keys (WASD) and press Space to let go. The blue post can be dragged, or moved with Q/E, while the cat is resting."
+    },
+    "tips": {
+      "ko": "몸은 기둥 사이에서 항상 직선이니, 간식들이 놓인 줄을 보고 어느 기둥에서 꺾어야 할지 먼저 읽어 보세요. 위쪽 고양이 게이지가 빨개지면 더는 늘어나지 않으니 더 짧게 감는 길을 찾아야 합니다. 스테이지를 깰 때마다 13초가 더해지고, 남은 길이와 한 번에 성공한 연속 기록이 보너스 점수가 됩니다. 놓쳐도 시간만 흐를 뿐이니 과감하게 감아 보세요.",
+      "en": "The body is always straight between posts, so read the line the treats sit on and work out which post it must bend around. When the cat meter at the top turns red the body will not stretch further, so look for a shorter winding. Each cleared stage adds 13 seconds, and leftover stretch plus a streak of first-try clears become bonus points. A snap-back only costs time, so wind boldly."
+    },
+    "tags": [
+      "puzzle",
+      "cat",
+      "rope",
+      "physics",
+      "casual",
+      "cute"
+    ],
+    "slug": "long-cat"
+  },
+  {
+    "slug": "magnet-flip",
+    "date": "2026-10-03",
+    "emoji": "🧲",
+    "title": {
+      "ko": "자석 뒤집기",
+      "en": "Magnet Flip"
+    },
+    "tagline": {
+      "ko": "원버튼 물리 · 극을 뒤집어 건너기",
+      "en": "One-button physics · flip your pole"
+    },
+    "desc": {
+      "ko": "말굽자석 로봇 자비는 노을 진 고물상을 혼자서 걸어갑니다. 여러분이 할 수 있는 일은 단 하나, 자비의 극을 N과 S로 뒤집는 것뿐입니다. 같은 극 자석은 자비를 튕겨 내고 다른 극 자석은 끌어당기기 때문에, 알맞은 순간에 뒤집으면 구덩이를 훌쩍 넘고 천장에 거꾸로 붙어 걷고 가시밭 위를 둥실 떠서 지나갈 수 있습니다. 손으로 만든 10개 구역을 지나면 매번 새로 조립되는 구역이 끝없이 이어집니다.",
+      "en": "Zabi the horseshoe-magnet robot walks through a sunset scrapyard all by itself. The only thing you can do is flip Zabi's pole between N and S. Like poles fling Zabi away and opposite poles pull it in, so a well-timed flip launches it over pits, sticks it to the ceiling to walk upside down, or lets it hover across a bed of spikes. After ten handcrafted zones, freshly assembled zones keep coming for as long as your clock lasts."
+    },
+    "controls": {
+      "ko": "모바일: 화면 아무 곳이나 탭하면 극이 뒤집힙니다. PC: 스페이스 또는 위쪽 방향키를 누르세요. 걷기와 이동은 자동이라 다른 조작은 없습니다.",
+      "en": "Mobile: tap anywhere to flip your pole. Desktop: press Space or the Up arrow. Walking is automatic, so there is nothing else to press."
+    },
+    "tips": {
+      "ko": "자비 앞에 보이는 흰 점은 지금 극 그대로 갈 때의 길이고, 색깔 점은 지금 뒤집으면 가게 될 길입니다. 색깔 점이 안전한 곳에 닿는 순간 탭하세요. 구역마다 정해진 목표 횟수 이하로 뒤집으면 알뜰 보너스가 붙고, 반대 극 상자에 닿으면 찰싹 붙어 버리니 같은 극으로 밀어서 구멍을 메우세요. 구역 문을 지나면 언제나 N극으로 돌아갑니다.",
+      "en": "The white dots ahead of Zabi show where it goes if you do nothing, and the coloured dots show where it would go if you flipped right now. Tap the moment the coloured path lands somewhere safe. Clearing a zone within its par number of flips earns a thrift bonus, and an opposite-pole crate will clamp onto you, so push crates with the same pole to plug holes instead. Every zone gate resets you to N."
+    },
+    "tags": [
+      "physics",
+      "one-button",
+      "magnets",
+      "arcade",
+      "puzzle-platformer",
+      "robots"
+    ]
+  },
+  {
     "slug": "melody-loop",
     "date": "2026-10-03",
     "emoji": "🐦",
@@ -481,6 +547,39 @@
       "mobile"
     ],
     "slug": "sheep-herd"
+  },
+  {
+    "date": "2026-10-03",
+    "emoji": "🌊",
+    "title": {
+      "ko": "밀물 썰물",
+      "en": "Tide Lift"
+    },
+    "tagline": {
+      "ko": "바다 높이를 조종하는 퍼즐 항해",
+      "en": "Steer the sea level, not the boat"
+    },
+    "desc": {
+      "ko": "이 게임에서 움직일 수 있는 것은 배가 아니라 바다의 높이 하나뿐입니다. 꼬마 선원 모리가 탄 종이배는 물에 떠 있는 동안 해류를 따라 오른쪽으로 흘러가고, 바위에 얹히면 그대로 멈춥니다. 암초는 물을 높여 넘고, 낮은 바위 아치는 물을 낮춰 돛대가 걸리지 않게 지나가야 합니다. 통나무, 수문, 소용돌이, 해파리, 새 둥지가 모두 수위에 반응하니 숨 쉬듯 밀물과 썰물을 오가며 등대 부두까지 가 보세요.",
+      "en": "The only thing you control here is the height of the sea, never the boat itself. Mori the little sailor rides a paper boat that drifts right on the current whenever it floats and sits still whenever it rests on rock. Raise the tide to clear reefs, then drop it so the mast slips under low rock arches. Logs, sluice gates, whirlpools, jellyfish and a grumpy bird's nest all react to the water level, so breathe the tide in and out until you reach the lighthouse dock."
+    },
+    "controls": {
+      "ko": "모바일: 화면 아무 곳이나 누른 채 위로 끌면 물이 차오르고 아래로 끌면 빠집니다. PC: 위쪽 방향키(또는 W)를 누르고 있으면 밀물, 아래쪽 방향키(또는 S)를 누르고 있으면 썰물입니다. 왼쪽 가장자리의 흰 화살표가 목표 수위를 보여 줍니다.",
+      "en": "Mobile: hold anywhere and drag up to raise the water, drag down to drain it. Desktop: hold the Up arrow (or W) for high tide and the Down arrow (or S) for low tide. The white arrow on the left edge shows the level the water is heading to."
+    },
+    "tips": {
+      "ko": "수문은 물이 점선 위로 올라가면 닫히기 시작하니, 먼저 물을 낮춰 문을 연 다음 재빨리 올려서 통과하세요. 소용돌이는 물이 깊을 때만 생기므로 점선 아래로 수위를 유지하면 조용히 지나갈 수 있습니다. 배가 4초 동안 멈춰 있으면 파도가 가까운 부표로 되돌려 주니 막혀도 걱정하지 마세요. 만 하나를 끝낼 때마다 시간이 14초 늘고, 별 조개와 새를 놀라게 하지 않은 보너스로 점수가 오릅니다.",
+      "en": "A sluice gate starts closing once the water rises above its dotted line, so dip to open it and then rise quickly to slip through. Whirlpools only wake in deep water, so keep the surface below their dotted line to pass calmly. If the boat sits still for four seconds a wave carries it back to the nearest buoy, so you can never get truly stuck. Each cove you finish adds 14 seconds, and star shells plus an unbothered bird add bonus points."
+    },
+    "tags": [
+      "puzzle",
+      "physics",
+      "water",
+      "one-button",
+      "casual",
+      "arcade"
+    ],
+    "slug": "tide-lift"
   },
   {
     "slug": "time-step",

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-03",
+  "emoji": "🌊",
+  "title": { "ko": "밀물 썰물", "en": "Tide Lift" },
+  "tagline": { "ko": "바다 높이를 조종하는 퍼즐 항해", "en": "Steer the sea level, not the boat" },
+  "desc": {
+    "ko": "이 게임에서 움직일 수 있는 것은 배가 아니라 바다의 높이 하나뿐입니다. 꼬마 선원 모리가 탄 종이배는 물에 떠 있는 동안 해류를 따라 오른쪽으로 흘러가고, 바위에 얹히면 그대로 멈춥니다. 암초는 물을 높여 넘고, 낮은 바위 아치는 물을 낮춰 돛대가 걸리지 않게 지나가야 합니다. 통나무, 수문, 소용돌이, 해파리, 새 둥지가 모두 수위에 반응하니 숨 쉬듯 밀물과 썰물을 오가며 등대 부두까지 가 보세요.",
+    "en": "The only thing you control here is the height of the sea, never the boat itself. Mori the little sailor rides a paper boat that drifts right on the current whenever it floats and sits still whenever it rests on rock. Raise the tide to clear reefs, then drop it so the mast slips under low rock arches. Logs, sluice gates, whirlpools, jellyfish and a grumpy bird's nest all react to the water level, so breathe the tide in and out until you reach the lighthouse dock."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 누른 채 위로 끌면 물이 차오르고 아래로 끌면 빠집니다. PC: 위쪽 방향키(또는 W)를 누르고 있으면 밀물, 아래쪽 방향키(또는 S)를 누르고 있으면 썰물입니다. 왼쪽 가장자리의 흰 화살표가 목표 수위를 보여 줍니다.",
+    "en": "Mobile: hold anywhere and drag up to raise the water, drag down to drain it. Desktop: hold the Up arrow (or W) for high tide and the Down arrow (or S) for low tide. The white arrow on the left edge shows the level the water is heading to."
+  },
+  "tips": {
+    "ko": "수문은 물이 점선 위로 올라가면 닫히기 시작하니, 먼저 물을 낮춰 문을 연 다음 재빨리 올려서 통과하세요. 소용돌이는 물이 깊을 때만 생기므로 점선 아래로 수위를 유지하면 조용히 지나갈 수 있습니다. 배가 4초 동안 멈춰 있으면 파도가 가까운 부표로 되돌려 주니 막혀도 걱정하지 마세요. 만 하나를 끝낼 때마다 시간이 14초 늘고, 별 조개와 새를 놀라게 하지 않은 보너스로 점수가 오릅니다.",
+    "en": "A sluice gate starts closing once the water rises above its dotted line, so dip to open it and then rise quickly to slip through. Whirlpools only wake in deep water, so keep the surface below their dotted line to pass calmly. If the boat sits still for four seconds a wave carries it back to the nearest buoy, so you can never get truly stuck. Each cove you finish adds 14 seconds, and star shells plus an unbothered bird add bonus points."
+  },
+  "tags": ["puzzle", "physics", "water", "one-button", "casual", "arcade"]
+}
