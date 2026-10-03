@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-03",
+  "emoji": "⚗️",
+  "title": {
+    "ko": "냥금술사의 실험실",
+    "en": "Cat Alchemy"
+  },
+  "tagline": {
+    "ko": "조합 발견 · 도감 75종",
+    "en": "Combine & discover · 75 items"
+  },
+  "desc": {
+    "ko": "마법사 모자를 쓴 고양이 연금술사와 함께 물, 불, 흙, 공기 네 가지 원소를 합쳐 새로운 것을 발견하는 조합 게임입니다. 물과 불은 수증기가 되고, 용암에 물을 부으면 돌이 되며, 깊이 파고들면 무지개와 로봇 고양이, 우주 고양이까지 만들 수 있습니다. 한 판은 양초가 다 탈 때까지이고, 새로 발견할 때마다 양초가 6초씩 길어집니다. 한 번이라도 발견한 것은 도감에 영원히 남고, 다음 판은 그중 몇 가지를 들고 시작하므로 판을 거듭할수록 75종 도감이 채워집니다.",
+    "en": "Join a cat alchemist in a wizard hat and combine water, fire, earth and air to discover new things. Water and fire make steam, lava and water make stone, and deep in the tree you will find rainbows, a robot cat and even a space cat. A run lasts until the candle burns out, and every new discovery adds six seconds to it. Everything you have ever found stays in your collection book, and each new run starts with a few of those finds, so every session moves you closer to completing all 75 entries."
+  },
+  "controls": {
+    "ko": "모바일: 재료를 손가락으로 끌어 다른 재료 위에 놓으면 합쳐집니다. 재료를 하나 누르고 다른 재료를 눌러도 되고, 같은 재료를 두 번 누르면 자기끼리 합쳐집니다. PC: 마우스로 끌거나, 방향키로 재료를 고르고 스페이스로 집은 뒤 다른 재료에서 스페이스를 한 번 더 누르세요. 왼쪽 아래 도감 버튼을 누르면 양초가 멈춘 채로 지금까지의 발견을 볼 수 있습니다.",
+    "en": "Mobile: drag a token onto another token to combine them. You can also tap one token and then another, and tapping the same token twice combines it with itself. Desktop: drag with the mouse, or move with the arrow keys, press Space to pick a token up and Space again on the second one. The Book button at the bottom left opens your collection and pauses the candle."
+  },
+  "tips": {
+    "ko": "조합은 대부분 상식대로 풀립니다. 비와 흙은 새싹, 모래와 불은 유리, 구름끼리 부딪히면 번개가 됩니다. 같은 원소 두 개도 합쳐 보세요. 물과 물은 바다, 불과 불은 태양입니다. 고양이가 말풍선으로 주문하는 것을 만들면 50점을 더 받고, 실패 없이 연달아 발견하면 점수 배수가 3배까지 올라갑니다. 도감에서 아직 못 찾은 칸을 누르면 재료 하나를 귀띔해 줍니다.",
+    "en": "Most recipes follow common sense: rain and earth grow a sprout, sand and fire make glass, and two clouds make lightning. Try combining an element with itself too, since water and water is the sea and fire and fire is the sun. Making what the cat asks for in its speech bubble is worth 50 extra points, and discoveries in a row without a fizzle build a multiplier up to x3. Tap an empty slot in the book to get a hint showing one of its ingredients."
+  },
+  "tags": ["puzzle", "crafting", "cats", "casual", "alchemy", "mobile"]
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-03",
+  "emoji": "🕊️",
+  "title": { "ko": "꾹꾹 종이접기", "en": "Paper Fold" },
+  "tagline": { "ko": "거울처럼 접는 도장 퍼즐", "en": "A fold-in-the-mirror stamp puzzle" },
+  "desc": {
+    "ko": "도장이 찍힌 색종이를 격자 선을 따라 접는 퍼즐입니다. 접힌 쪽은 거울처럼 뒤집혀 올라가고, 같은 도장 위에 정확히 포개지면 꾹 눌려 하나로 합쳐집니다. 정해진 횟수 안에 색마다 도장을 하나씩만 남기면 다음 종이가 나옵니다. 12판을 지나면 종이가 계속 새로 만들어져 시간이 다할 때까지 이어집니다.",
+    "en": "A puzzle about folding a stamped sheet of paper along its grid lines. The folded side flips over like a mirror image, and a stamp that lands exactly on a matching stamp gets pressed into one. Leave a single stamp of every colour within the fold limit to move on to the next sheet. After the twelve opening sheets, new ones keep being generated until the clock runs out."
+  },
+  "controls": {
+    "ko": "모바일: 종이의 한쪽을 잡고 접고 싶은 방향으로 끌면 접힐 자리가 미리 보이고, 손을 떼면 접힙니다. 왼쪽 아래 버튼으로 마지막 접기를 되돌립니다. PC: 방향키로 접는 방향을 고르고, 같은 방향키를 다시 눌러 접는 선을 바꾼 뒤 스페이스로 접습니다. Z 또는 백스페이스는 되돌리기입니다.",
+    "en": "Mobile: grab one side of the paper and drag the way you want it to fold; a preview shows where it will land, and letting go makes the fold. The button at the bottom left undoes the last fold. Desktop: pick a direction with the arrow keys, press the same arrow again to move the crease, then press Space to fold. Z or Backspace undoes."
+  },
+  "tips": {
+    "ko": "미리보기에서 노란 고리가 뜨는 자리가 도장이 합쳐지는 곳입니다. 다른 도장이 사이에 끼면 같은 도장끼리도 붙지 않으니 접는 순서를 바꿔 보세요. 접기를 남기고 풀면 한 번당 5점, 되돌리기 없이 연달아 풀면 연속 보너스가 붙습니다. 한 판을 풀 때마다 시간이 14초 늘어납니다.",
+    "en": "In the preview, a yellow ring marks a spot where two stamps will merge. A different stamp caught in between keeps matching stamps apart, so try folding in another order. Every unused fold is worth 5 points, and solving sheets back to back without undoing builds a streak bonus. Each solved sheet adds 14 seconds to the clock."
+  },
+  "tags": ["puzzle", "origami", "folding", "logic", "casual", "cute"]
+}

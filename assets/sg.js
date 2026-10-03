@@ -81,7 +81,7 @@
     window.addEventListener('keydown',function(e){if(!playing&&(e.key==='Enter'||e.key===' ')){e.preventDefault();start();return}k(e,true)});
     window.addEventListener('keyup',function(e){k(e,false)});
     btn.addEventListener('click',start);
-    function loop(t){var dt=Math.min(.05,(t-last)/1000);last=t;
+    function loop(t){var dt=Math.max(0,Math.min(.05,(t-last)/1000));last=t;
       if(playing){game.update(dt,inp,api);inp.tap=false;inp.swipe=null}
       g.save();if(shake>.3){g.translate((Math.random()-.5)*shake,(Math.random()-.5)*shake);shake*=Math.pow(.002,dt)}else shake=0;
       game.draw(g,api,dt);

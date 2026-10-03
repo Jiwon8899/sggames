@@ -1,0 +1,20 @@
+{
+  "slug": "mirror-twins",
+  "date": "2026-10-03",
+  "emoji": "🪞",
+  "title": {"ko": "거울 쌍둥이", "en": "Mirror Twins"},
+  "tagline": {"ko": "퍼즐 · 입력 하나, 몸은 둘", "en": "Puzzle · two bodies, one input"},
+  "desc": {
+    "ko": "해냥이와 달냥이는 빛나는 거울 선을 사이에 둔 쌍둥이 고양이입니다. 한 번 밀면 둘이 동시에 움직이는데, 해냥이는 미는 방향 그대로, 달냥이는 거울에 비친 것처럼 반대로 갑니다. 벽에 한쪽만 부딪히게 해서 둘의 박자를 어긋나게 만들고, 두 고양이를 같은 순간에 각자의 발판 위에 세우면 레벨이 끝납니다. 얼음, 구멍, 일방통행 화살표, 버튼과 문, 무너지는 타일, 자리바꿈 소용돌이가 차례로 등장하고 14개의 레벨 뒤에는 자동으로 만들어지는 레벨이 끝없이 이어집니다.",
+    "en": "Sunny and Moony are twin kittens separated by a shimmering mirror line. Every swipe moves both of them at once: Sunny goes where you point, while Moony moves like a reflection. Bump just one of them into a wall to knock the pair out of step, then land each kitten on its own pad at the same moment to clear the level. Ice, holes, one-way arrows, a button and gate, crumbling tiles and a swap swirl arrive one at a time, and after the 14 handmade levels the game keeps generating new ones forever."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 상하좌우로 밀면 두 고양이가 함께 움직입니다. 왼쪽 아래의 되돌리기 버튼은 한 수를 무르고, 다시 버튼은 레벨을 처음 상태로 돌립니다. PC: 방향키 또는 WASD로 이동, 스페이스(또는 Z)로 되돌리기, R로 다시 시작합니다.",
+    "en": "Mobile: swipe anywhere in any of the four directions to move both kittens together. The Undo button at the bottom left takes back one move, and Reset puts the level back to its starting position. Desktop: arrow keys or WASD to move, Space (or Z) to undo, R to reset."
+  },
+  "tips": {
+    "ko": "오른쪽 아래 배지가 지금 거울 규칙을 보여 줍니다. 세로 선이면 좌우가, 가로 선이면 위아래가 반대이고, 보라색 선이면 달냥이가 시계 방향으로 90도 돌려서 움직입니다. 한 마리가 벽에 막혀 제자리에 있는 동안 다른 한 마리만 움직인다는 점이 모든 풀이의 열쇠입니다. 화면 위에 적힌 목표 수 이하로 풀면 보너스 점수와 연속 보너스를 받고, 레벨을 깰 때마다 시간이 12초 늘어납니다.",
+    "en": "The badge at the bottom right shows the current mirror rule. A vertical line flips left and right, a horizontal line flips up and down, and a purple line means Moony turns your move 90 degrees clockwise. Every solution hinges on one kitten being stuck against a wall while the other keeps walking. Finish at or under the par shown at the top for bonus points and a streak bonus, and each cleared level adds 12 seconds to the clock."
+  },
+  "tags": ["puzzle", "sokoban-like", "cats", "mirror", "brain-teaser"]
+}
