@@ -1,0 +1,26 @@
+{
+  "slug": "snack-snake",
+  "date": "2026-10-03",
+  "emoji": "🐍",
+  "title": {
+    "ko": "냠냠 스네이크",
+    "en": "Snack Snake"
+  },
+  "tagline": {
+    "ko": "스네이크 · 배고프면 끝",
+    "en": "Snake · Eat or starve"
+  },
+  "desc": {
+    "ko": "쉬지 않고 기어가는 뱀을 조종해 잔디밭에 놓인 간식을 먹이세요. 간식을 먹을 때마다 몸이 길어지고 속도도 조금씩 빨라집니다. 화면 위 배고픔 게이지는 계속 줄어들어서, 12초쯤 아무것도 못 먹으면 벽에 부딪히지 않아도 게임이 끝납니다.",
+    "en": "Steer a snake that never stops moving and feed it the snacks scattered across the lawn. Every bite makes the body longer and the pace a little quicker. The hunger bar at the top keeps draining, so about twelve seconds without food ends the run even if you never touch a wall."
+  },
+  "controls": {
+    "ko": "모바일: 가고 싶은 방향으로 화면을 밀면 뱀이 꺾습니다. 손을 떼지 않고 연달아 밀어도 됩니다. PC: 방향키 또는 W/A/S/D. 방향은 두 번까지 미리 입력되고, 정반대 방향으로는 돌 수 없습니다.",
+    "en": "Mobile: swipe in the direction you want to turn, and you can chain swipes without lifting your finger. Desktop: arrow keys or W/A/S/D. Up to two turns are queued ahead, and the snake cannot reverse straight back onto itself."
+  },
+  "tips": {
+    "ko": "사과는 1점, 몇 초 뒤 사라지는 도넛은 3점이고 배고픔도 가장 많이 채워 줍니다. 고추를 먹으면 4초 동안 빨라지는 대신 점수가 두 배가 됩니다. 3초 안에 연달아 먹으면 콤보가 쌓여 한 입마다 보너스 점수가 붙으니, 고추를 먹기 전에 다음 간식까지의 길을 먼저 봐 두세요.",
+    "en": "Apples are worth 1 point, while donuts are worth 3, refill the most hunger, and vanish after a few seconds. A chili pepper speeds you up for 4 seconds but doubles every point you score. Eating again within about 3 seconds builds a combo that adds a bonus to each bite, so plan your route to the next snack before you grab the chili."
+  },
+  "tags": ["snake", "arcade", "casual", "retro", "high-score", "mobile"]
+}

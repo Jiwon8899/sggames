@@ -1,0 +1,26 @@
+{
+  "slug": "pancake-stack",
+  "date": "2026-10-03",
+  "emoji": "🥞",
+  "title": {
+    "ko": "팬케이크 탑",
+    "en": "Pancake Stack"
+  },
+  "tagline": {
+    "ko": "타이밍 쌓기 · 1분 한 판",
+    "en": "Timing stacker · 1-minute runs"
+  },
+  "desc": {
+    "ko": "접시 위로 팬케이크가 좌우로 미끄러집니다. 타이밍을 맞춰 떨어뜨리면 아래 팬케이크와 겹친 부분만 남고, 삐져나온 부분은 잘려 나가 다음 팬케이크가 그만큼 좁아집니다. 탑이 높아질수록 팬케이크가 빨라지고 하늘은 밤으로 바뀌며, 탑을 완전히 빗나가면 한 판이 끝납니다.",
+    "en": "A pancake slides back and forth above the plate. Drop it at the right moment and only the part resting on the stack stays, while the overhang is sliced off and the next pancake gets that much narrower. The higher the tower climbs, the faster the pancakes slide and the darker the sky turns, and a drop that misses the stack completely ends the run."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 탭하면 팬케이크가 떨어집니다. PC: 스페이스 또는 위쪽 방향키, 마우스 클릭으로 떨어뜨립니다. 약 6초 동안 떨어뜨리지 않으면 요리사 고양이가 졸면서 팬케이크가 저절로 떨어지고 크게 깎입니다.",
+    "en": "Mobile: tap anywhere on the screen to drop the pancake. Desktop: press Space or the Up arrow, or click the mouse. If you wait about six seconds the chef cat dozes off and the pancake drops by itself, losing a big chunk of its width."
+  },
+  "tips": {
+    "ko": "기본 착지는 2점이지만, 거의 정확히 겹치면 '완벽'이 되어 폭이 조금 회복되고 연속으로 이어갈수록 보너스 점수와 효과음 음높이가 올라갑니다. 버터나 딸기가 올라간 팬케이크는 올리기만 해도 10점을 더 줍니다. 탑 위에 비치는 밝은 기둥이 목표 구역이니, 팬케이크 가장자리가 기둥 끝에 닿기 직전에 누르는 감각으로 맞춰 보세요.",
+    "en": "A normal landing is worth 2 points, but a near-exact drop counts as a Perfect, which gives back a little width and pays a growing bonus with a rising chime for every Perfect in a row. Pancakes topped with butter or a strawberry add 10 extra points just for landing. The pale column above the tower marks the target zone, so tap a split second before the pancake's edge lines up with it."
+  },
+  "tags": ["stacker", "timing", "one-button", "arcade", "cute", "cats"]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "night-drive",
+  "date": "2026-10-03",
+  "emoji": "🏎️",
+  "title": {
+    "ko": "나이트 드라이브",
+    "en": "Night Drive"
+  },
+  "tagline": {
+    "ko": "네온 고속도로 · 아슬아슬 터보",
+    "en": "Neon highway · near-miss turbo"
+  },
+  "desc": {
+    "ko": "고양이가 모는 오픈카로 네온 불빛이 흐르는 3차선 밤 고속도로를 달립니다. 차선을 바꿔 앞차를 피하고, 코인과 연료통을 챙기며 최대한 멀리 가세요. 옆 차선의 차를 아슬아슬하게 스칠수록 터보 게이지가 차오르고, 가득 차면 3초 동안 무적 터보로 앞차들을 반짝반짝 밀어내며 질주할 수 있습니다.",
+    "en": "A cat in a convertible cruises a three-lane neon highway at night. Switch lanes to slip past traffic, scoop up coins and fuel cans, and see how far you get. Every car you squeeze past in the next lane charges your turbo gauge, and a full gauge buys three seconds of invincible speed that nudges traffic aside in a shower of sparkles."
+  },
+  "controls": {
+    "ko": "모바일: 화면 왼쪽이나 오른쪽을 누르거나 좌우로 밀어 한 칸씩 차선을 바꾸고, 게이지가 가득 차면 위로 밀어 터보를 씁니다. PC: 좌우 방향키(또는 A/D)로 차선 변경, 위 방향키나 스페이스바로 터보를 발동합니다.",
+    "en": "Mobile: tap the left or right side of the screen, or swipe sideways, to move one lane; swipe up to fire the turbo once the gauge is full. Desktop: Left/Right arrows (or A/D) change lanes, and the Up arrow or Space triggers turbo."
+  },
+  "tips": {
+    "ko": "연료는 가만히 두면 15초 만에 바닥나니 초록색 연료통은 꼭 챙기세요. 앞차 바로 뒤까지 붙었다가 마지막 순간에 빠져나오면 '간발의 차' 보너스로 15점과 함께 터보 게이지가 훨씬 빨리 찹니다. 터보 중에는 연료가 줄지 않고 차를 밀어낼 때마다 20점이니, 차가 몰려 있을 때 쓰는 것이 이득입니다.",
+    "en": "A full tank only lasts about 15 seconds, so never skip a green fuel can. Tailing a car and pulling out at the last moment earns the 'Super close' bonus: 15 points and a much bigger chunk of turbo. Fuel does not drain during turbo and every car you bump is worth 20, so save it for when the road ahead is crowded."
+  },
+  "tags": ["arcade", "racing", "endless", "synthwave", "one-button", "mobile"]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "bee-flap",
+  "date": "2026-10-03",
+  "emoji": "🐝",
+  "title": {
+    "ko": "꿀벌 붕붕",
+    "en": "Bee Flap"
+  },
+  "tagline": {
+    "ko": "원버튼 비행 · 황금 대시",
+    "en": "One-button flying · Golden dash"
+  },
+  "desc": {
+    "ko": "통통한 꿀벌이 해바라기 들판을 날아갑니다. 화면을 눌러 날갯짓하며 위아래에서 뻗어 나온 해바라기 줄기 사이 틈을 통과하세요. 아슬아슬한 자리에 떠 있는 꿀방울 5개를 모으면 꿀 미터가 가득 차고, 4초 동안 황금 대시가 발동해 줄기를 부수며 큰 점수를 얻습니다. 멀리 갈수록 속도가 빨라지고 틈이 좁아집니다.",
+    "en": "A chubby bee is crossing a sunflower meadow. Tap to flap and slip through the gaps between sunflower stalks reaching from above and below. Nectar drops hover in awkward spots; collect five to fill the honey meter and trigger a 4-second golden dash that smashes straight through stalks for big points. The further you fly, the faster it gets and the tighter the gaps become."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 탭하면 한 번 날갯짓합니다. PC: 스페이스바나 위쪽 방향키, 또는 마우스 클릭으로 날갯짓합니다. 누르지 않으면 꿀벌이 아래로 떨어지니 리듬에 맞춰 눌러 주세요.",
+    "en": "Mobile: tap anywhere on the screen to flap once. Desktop: press Space or the Up arrow, or click the mouse. The bee sinks whenever you stop, so keep a steady rhythm."
+  },
+  "tips": {
+    "ko": "틈 하나를 지나면 1점, 다섯 번째 틈마다 보너스 2점, 꿀방울은 2점, 대시 중 부순 줄기는 5점입니다. 황금 대시 중에는 줄기에 부딪혀도 안전하니 일부러 줄기 쪽으로 날아가 최대한 많이 부수세요. 화면 맨 위에 닿아도 죽지 않지만 땅에 닿으면 끝나므로 조금 높게 나는 편이 안전합니다.",
+    "en": "Each gap is worth 1 point with a 2-point bonus on every fifth, a nectar drop is 2, and a stalk smashed during the dash is 5. You cannot be hurt by stalks while golden, so steer into them on purpose and break as many as you can. Touching the top of the screen is harmless but the ground ends the run, so flying a little high is the safer habit."
+  },
+  "tags": ["arcade", "one-button", "flying", "cute", "casual", "high-score"]
+}

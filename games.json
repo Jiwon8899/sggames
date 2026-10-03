@@ -1,10 +1,114 @@
 [
   {
+    "slug": "bee-flap",
+    "date": "2026-10-03",
+    "emoji": "🐝",
+    "title": {
+      "ko": "꿀벌 붕붕",
+      "en": "Bee Flap"
+    },
+    "tagline": {
+      "ko": "원버튼 비행 · 황금 대시",
+      "en": "One-button flying · Golden dash"
+    },
+    "desc": {
+      "ko": "통통한 꿀벌이 해바라기 들판을 날아갑니다. 화면을 눌러 날갯짓하며 위아래에서 뻗어 나온 해바라기 줄기 사이 틈을 통과하세요. 아슬아슬한 자리에 떠 있는 꿀방울 5개를 모으면 꿀 미터가 가득 차고, 4초 동안 황금 대시가 발동해 줄기를 부수며 큰 점수를 얻습니다. 멀리 갈수록 속도가 빨라지고 틈이 좁아집니다.",
+      "en": "A chubby bee is crossing a sunflower meadow. Tap to flap and slip through the gaps between sunflower stalks reaching from above and below. Nectar drops hover in awkward spots; collect five to fill the honey meter and trigger a 4-second golden dash that smashes straight through stalks for big points. The further you fly, the faster it gets and the tighter the gaps become."
+    },
+    "controls": {
+      "ko": "모바일: 화면 아무 곳이나 탭하면 한 번 날갯짓합니다. PC: 스페이스바나 위쪽 방향키, 또는 마우스 클릭으로 날갯짓합니다. 누르지 않으면 꿀벌이 아래로 떨어지니 리듬에 맞춰 눌러 주세요.",
+      "en": "Mobile: tap anywhere on the screen to flap once. Desktop: press Space or the Up arrow, or click the mouse. The bee sinks whenever you stop, so keep a steady rhythm."
+    },
+    "tips": {
+      "ko": "틈 하나를 지나면 1점, 다섯 번째 틈마다 보너스 2점, 꿀방울은 2점, 대시 중 부순 줄기는 5점입니다. 황금 대시 중에는 줄기에 부딪혀도 안전하니 일부러 줄기 쪽으로 날아가 최대한 많이 부수세요. 화면 맨 위에 닿아도 죽지 않지만 땅에 닿으면 끝나므로 조금 높게 나는 편이 안전합니다.",
+      "en": "Each gap is worth 1 point with a 2-point bonus on every fifth, a nectar drop is 2, and a stalk smashed during the dash is 5. You cannot be hurt by stalks while golden, so steer into them on purpose and break as many as you can. Touching the top of the screen is harmless but the ground ends the run, so flying a little high is the safer habit."
+    },
+    "tags": [
+      "arcade",
+      "one-button",
+      "flying",
+      "cute",
+      "casual",
+      "high-score"
+    ]
+  },
+  {
+    "slug": "brick-pop",
+    "date": "2026-10-03",
+    "emoji": "🍬",
+    "title": {
+      "ko": "젤리 팡팡",
+      "en": "Jelly Pop Rush"
+    },
+    "tagline": {
+      "ko": "벽돌깨기 · 내려오는 젤리와의 경주",
+      "en": "Brick breaker · Race the sinking wall"
+    },
+    "desc": {
+      "ko": "눈 달린 젤리 벽돌이 쉬지 않고 아래로 내려옵니다. 받침대로 공을 튕겨 젤리를 터뜨리고, 벽이 점선에 닿기 전에 길을 뚫으세요. 위에서는 새 줄이 끝없이 생기고 내려오는 속도도 점점 빨라져서, 천천히 다 깨는 게임이 아니라 시간과의 경주입니다.",
+      "en": "A wall of wide-eyed jelly bricks never stops sinking toward you. Bounce the ball off your paddle to pop them before any brick touches the dotted line. Fresh rows keep appearing at the top and the wall speeds up, so this is a race against the clock rather than a slow clean-up."
+    },
+    "controls": {
+      "ko": "모바일: 화면을 누른 채 좌우로 끌면 받침대가 손가락을 따라옵니다. PC: 마우스를 움직이거나 방향키 좌우(A/D)를 누르세요. 공은 1초 뒤 저절로 출발하고, 화면을 누르거나 스페이스를 누르면 바로 쏠 수 있습니다.",
+      "en": "Mobile: hold and drag left or right and the paddle follows your finger. Desktop: move the mouse or use the left and right arrow keys (A/D). The ball launches by itself after one second, or tap the screen or press Space to fire it right away."
+    },
+    "tips": {
+      "ko": "공이 받침대에 닿지 않고 젤리를 연달아 터뜨리면 콤보가 쌓여 점수가 최대 6배까지 오릅니다. 받침대 가장자리로 받으면 공이 비스듬히 날아가니, 가장 아래까지 내려온 젤리 쪽으로 노려 보세요. 떨어지는 사탕은 꼭 받으세요. 파랑은 받침대를 길게, 초록은 공을 세 개로, 주황은 몇 초 동안 젤리를 뚫고 지나가는 불꽃 공으로 만들어 줍니다. 하트는 세 개뿐이고 흰 테두리 젤리는 두 번 맞혀야 터집니다.",
+      "en": "Pop several jellies in a row without the ball touching your paddle and the combo multiplier climbs up to x6. Catching the ball on the edge of the paddle sends it off at a sharp angle, so aim at whichever jelly has sunk the lowest. Always grab the falling candies: blue stretches the paddle, green splits the ball into three, and orange turns it into a fireball that tears straight through jellies for a few seconds. You only have three hearts, and white-rimmed jellies need two hits."
+    },
+    "tags": [
+      "arcade",
+      "breakout",
+      "brick-breaker",
+      "casual",
+      "cute",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "color-echo",
+    "date": "2026-10-03",
+    "emoji": "🎶",
+    "title": {
+      "ko": "컬러 에코",
+      "en": "Color Echo"
+    },
+    "tagline": {
+      "ko": "기억력 · 젤리 합창단 따라 부르기",
+      "en": "Memory · Sing back the jelly choir"
+    },
+    "desc": {
+      "ko": "무대 위 네 마리 젤리가 저마다 다른 색과 음으로 노래를 부릅니다. 불이 켜진 순서를 기억했다가 그대로 따라 눌러 주세요. 라운드마다 음이 하나씩 늘어나고, 4라운드마다 재생 속도가 확 빨라지는 리믹스 라운드가 찾아옵니다.",
+      "en": "Four jelly singers take the stage, each with its own color and note. Remember the order they light up in and play it back exactly. Every round adds one more note, and every fourth round is a remix round where the playback suddenly speeds up."
+    },
+    "controls": {
+      "ko": "모바일: 따라 부를 젤리를 순서대로 터치하세요. PC: 방향키 또는 W/A/S/D로 위·왼쪽·오른쪽·아래 젤리를 고르거나 마우스로 클릭하면 됩니다. 젤리들이 노래하는 동안에는 입력이 받아들여지지 않으니 '네 차례!' 표시가 뜬 뒤에 누르세요.",
+      "en": "Mobile: tap the jellies in the order they sang. Desktop: use the arrow keys or W/A/S/D for the top, left, right and bottom jelly, or click with the mouse. Input is ignored while the choir is singing, so wait for the \"Your turn!\" banner."
+    },
+    "tips": {
+      "ko": "맞힌 음 하나마다 1점이고, 한 라운드를 빠르게 끝내면 스피드 보너스가, 리믹스 라운드를 넘기면 5점이 추가로 붙습니다. 음 하나를 누를 때마다 타이머가 다시 차오르지만, 시간이 다 되거나 틀린 젤리를 누르면 두 개뿐인 하트가 하나 줄어듭니다. 색보다 위·왼쪽·오른쪽·아래의 위치와 멜로디를 함께 흥얼거리며 외우면 긴 순서도 훨씬 잘 기억납니다.",
+      "en": "Each correct note is worth 1 point, finishing a round quickly earns a speed bonus, and clearing a remix round adds 5 more. The timer refills after every note, but running out of time or tapping the wrong jelly costs one of your two hearts. Hum the melody and think in positions (top, left, right, bottom) rather than colors to hold longer sequences."
+    },
+    "tags": [
+      "memory",
+      "music",
+      "casual",
+      "cute",
+      "arcade"
+    ]
+  },
+  {
     "slug": "cucumber-cat",
     "date": "2026-10-03",
     "emoji": "🥒",
-    "title": {"ko": "오이 피하는 고양이", "en": "Cucumber Cat"},
-    "tagline": {"ko": "피하기 · 30초 한 판", "en": "Dodge · 30-second runs"},
+    "title": {
+      "ko": "오이 피하는 고양이",
+      "en": "Cucumber Cat"
+    },
+    "tagline": {
+      "ko": "피하기 · 30초 한 판",
+      "en": "Dodge · 30-second runs"
+    },
     "desc": {
       "ko": "하늘에서 오이가 쏟아집니다. 고양이를 좌우로 움직여 오이를 피하고, 파란 생선을 먹어 점수를 올리세요. 시간이 지날수록 오이가 더 빠르고 많이 떨어집니다.",
       "en": "Cucumbers are raining from the sky. Slide your cat left and right to dodge them and grab the blue fish for bonus points. The longer you last, the faster and thicker they fall."
@@ -17,5 +121,236 @@
       "ko": "피한 오이는 1점, 생선은 5점입니다. 생선을 쫓다가 오이에 맞기 쉬우니 가운데 근처에서 짧게 움직이는 편이 오래 버팁니다.",
       "en": "Each dodged cucumber is 1 point and each fish is 5. Chasing fish is how most runs end, so stay near the middle and make small moves."
     }
+  },
+  {
+    "slug": "mole-tap",
+    "date": "2026-10-03",
+    "emoji": "🔨",
+    "title": {
+      "ko": "두더지 톡톡",
+      "en": "Mole Tap"
+    },
+    "tagline": {
+      "ko": "순발력 · 45초 한 판",
+      "en": "Reflex · 45-second runs"
+    },
+    "desc": {
+      "ko": "텃밭 구멍 아홉 개에서 두더지가 쏙쏙 올라옵니다. 45초 안에 뿅망치로 최대한 많이 톡 쳐서 점수를 모으세요. 연속으로 맞히면 콤보 배수가 5배까지 올라가고, 시간이 갈수록 두더지가 더 빨리 숨습니다.",
+      "en": "Moles keep popping out of nine holes in a little garden. You have 45 seconds to bonk as many as you can with a squeaky toy hammer. Consecutive hits build a combo multiplier up to x5, and the moles duck away faster as the clock runs down."
+    },
+    "controls": {
+      "ko": "모바일: 올라온 두더지를 바로 터치하세요. PC: 방향키나 WASD로 흰 점선 커서를 옮기고 스페이스바로 내려칩니다. 마우스 클릭으로도 칠 수 있어요.",
+      "en": "Mobile: tap a mole the moment it pops up. Desktop: move the dashed white cursor with the arrow keys or WASD and press Space to swing. Mouse clicks work too."
+    },
+    "tips": {
+      "ko": "귀가 긴 흰 토끼를 치면 시간이 3초 줄고 콤보가 끊기니 귀부터 확인하세요. 반짝이는 황금 두더지는 금방 숨지만 맞히면 시간이 5초 늘고 점수도 세 배입니다. 빈 구멍을 쳐도 콤보가 끊기므로 마구 누르기보다 정확하게 치는 쪽이 점수가 높습니다.",
+      "en": "Tapping the long-eared white bunny costs 3 seconds and resets your combo, so check the ears first. The sparkling golden mole hides quickly, but hitting it adds 5 seconds and pays triple points. Swinging at an empty hole also breaks the combo, so accurate taps beat frantic mashing."
+    },
+    "tags": [
+      "arcade",
+      "reflex",
+      "whack-a-mole",
+      "casual",
+      "cute",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "night-drive",
+    "date": "2026-10-03",
+    "emoji": "🏎️",
+    "title": {
+      "ko": "나이트 드라이브",
+      "en": "Night Drive"
+    },
+    "tagline": {
+      "ko": "네온 고속도로 · 아슬아슬 터보",
+      "en": "Neon highway · near-miss turbo"
+    },
+    "desc": {
+      "ko": "고양이가 모는 오픈카로 네온 불빛이 흐르는 3차선 밤 고속도로를 달립니다. 차선을 바꿔 앞차를 피하고, 코인과 연료통을 챙기며 최대한 멀리 가세요. 옆 차선의 차를 아슬아슬하게 스칠수록 터보 게이지가 차오르고, 가득 차면 3초 동안 무적 터보로 앞차들을 반짝반짝 밀어내며 질주할 수 있습니다.",
+      "en": "A cat in a convertible cruises a three-lane neon highway at night. Switch lanes to slip past traffic, scoop up coins and fuel cans, and see how far you get. Every car you squeeze past in the next lane charges your turbo gauge, and a full gauge buys three seconds of invincible speed that nudges traffic aside in a shower of sparkles."
+    },
+    "controls": {
+      "ko": "모바일: 화면 왼쪽이나 오른쪽을 누르거나 좌우로 밀어 한 칸씩 차선을 바꾸고, 게이지가 가득 차면 위로 밀어 터보를 씁니다. PC: 좌우 방향키(또는 A/D)로 차선 변경, 위 방향키나 스페이스바로 터보를 발동합니다.",
+      "en": "Mobile: tap the left or right side of the screen, or swipe sideways, to move one lane; swipe up to fire the turbo once the gauge is full. Desktop: Left/Right arrows (or A/D) change lanes, and the Up arrow or Space triggers turbo."
+    },
+    "tips": {
+      "ko": "연료는 가만히 두면 15초 만에 바닥나니 초록색 연료통은 꼭 챙기세요. 앞차 바로 뒤까지 붙었다가 마지막 순간에 빠져나오면 '간발의 차' 보너스로 15점과 함께 터보 게이지가 훨씬 빨리 찹니다. 터보 중에는 연료가 줄지 않고 차를 밀어낼 때마다 20점이니, 차가 몰려 있을 때 쓰는 것이 이득입니다.",
+      "en": "A full tank only lasts about 15 seconds, so never skip a green fuel can. Tailing a car and pulling out at the last moment earns the 'Super close' bonus: 15 points and a much bigger chunk of turbo. Fuel does not drain during turbo and every car you bump is worth 20, so save it for when the road ahead is crowded."
+    },
+    "tags": [
+      "arcade",
+      "racing",
+      "endless",
+      "synthwave",
+      "one-button",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "pancake-stack",
+    "date": "2026-10-03",
+    "emoji": "🥞",
+    "title": {
+      "ko": "팬케이크 탑",
+      "en": "Pancake Stack"
+    },
+    "tagline": {
+      "ko": "타이밍 쌓기 · 1분 한 판",
+      "en": "Timing stacker · 1-minute runs"
+    },
+    "desc": {
+      "ko": "접시 위로 팬케이크가 좌우로 미끄러집니다. 타이밍을 맞춰 떨어뜨리면 아래 팬케이크와 겹친 부분만 남고, 삐져나온 부분은 잘려 나가 다음 팬케이크가 그만큼 좁아집니다. 탑이 높아질수록 팬케이크가 빨라지고 하늘은 밤으로 바뀌며, 탑을 완전히 빗나가면 한 판이 끝납니다.",
+      "en": "A pancake slides back and forth above the plate. Drop it at the right moment and only the part resting on the stack stays, while the overhang is sliced off and the next pancake gets that much narrower. The higher the tower climbs, the faster the pancakes slide and the darker the sky turns, and a drop that misses the stack completely ends the run."
+    },
+    "controls": {
+      "ko": "모바일: 화면 아무 곳이나 탭하면 팬케이크가 떨어집니다. PC: 스페이스 또는 위쪽 방향키, 마우스 클릭으로 떨어뜨립니다. 약 6초 동안 떨어뜨리지 않으면 요리사 고양이가 졸면서 팬케이크가 저절로 떨어지고 크게 깎입니다.",
+      "en": "Mobile: tap anywhere on the screen to drop the pancake. Desktop: press Space or the Up arrow, or click the mouse. If you wait about six seconds the chef cat dozes off and the pancake drops by itself, losing a big chunk of its width."
+    },
+    "tips": {
+      "ko": "기본 착지는 2점이지만, 거의 정확히 겹치면 '완벽'이 되어 폭이 조금 회복되고 연속으로 이어갈수록 보너스 점수와 효과음 음높이가 올라갑니다. 버터나 딸기가 올라간 팬케이크는 올리기만 해도 10점을 더 줍니다. 탑 위에 비치는 밝은 기둥이 목표 구역이니, 팬케이크 가장자리가 기둥 끝에 닿기 직전에 누르는 감각으로 맞춰 보세요.",
+      "en": "A normal landing is worth 2 points, but a near-exact drop counts as a Perfect, which gives back a little width and pays a growing bonus with a rising chime for every Perfect in a row. Pancakes topped with butter or a strawberry add 10 extra points just for landing. The pale column above the tower marks the target zone, so tap a split second before the pancake's edge lines up with it."
+    },
+    "tags": [
+      "stacker",
+      "timing",
+      "one-button",
+      "arcade",
+      "cute",
+      "cats"
+    ]
+  },
+  {
+    "slug": "planet-merge",
+    "date": "2026-10-03",
+    "emoji": "🪐",
+    "title": {
+      "ko": "행성 합치기",
+      "en": "Planet Merge"
+    },
+    "tagline": {
+      "ko": "떨어뜨려 합치기 · 연쇄 폭발",
+      "en": "Drop & merge · chain reactions"
+    },
+    "desc": {
+      "ko": "UFO가 우주 유리병 위에서 조약돌, 달, 작은 행성을 하나씩 떨어뜨립니다. 같은 천체 둘이 닿으면 한 단계 큰 천체로 합쳐지고, 아홉 번째 단계에서는 눈부신 별이 태어납니다. 합체가 1초 안에 이어지면 연쇄 배수가 붙어 점수가 몇 배로 불어납니다. 천체가 위험선 위에 2초 동안 머물면 병이 넘쳐 게임이 끝납니다.",
+      "en": "A little UFO drops pebbles, moons and small planets into a glass jar floating in space. When two matching bodies touch they fuse into the next size up, all the way to a blazing star at the ninth tier. Merges that land within one second of each other build a chain multiplier that multiplies your score. If any body rests above the danger line for two seconds, the jar overflows and the run ends."
+    },
+    "controls": {
+      "ko": "모바일: 화면을 누른 채 좌우로 끌어 조준하고 손을 떼면 떨어집니다. PC: 방향키 또는 A/D로 UFO를 움직이고 스페이스로 떨어뜨리거나, 마우스로 조준하고 클릭하세요. 3초 동안 떨어뜨리지 않으면 UFO가 그 자리에서 알아서 놓아 버리고, 그때마다 병 바닥이 조금씩 차오릅니다.",
+      "en": "Mobile: hold and drag left or right to aim, then lift your finger to drop. Desktop: move the UFO with the arrow keys or A/D and press Space to drop, or aim with the mouse and click. If you wait three seconds, the UFO lets go on its own right where it is, and every auto-drop raises the jar floor a little."
+    },
+    "tips": {
+      "ko": "큰 천체는 한쪽 구석에 모으고 작은 것들은 크기 순서대로 옆에 쌓아 두세요. 그러면 합체 하나가 다음 합체를 불러 연쇄가 길게 이어집니다. 노란 고리가 다 차기 전에 직접 떨어뜨려야 원하는 자리에 놓을 수 있고, 가만히 두면 자동 낙하가 점점 빨라집니다. 왼쪽 위의 '다음' 천체를 보고 지금 놓을 자리를 정하는 습관이 고득점의 지름길입니다.",
+      "en": "Park your biggest body in one corner and line the smaller ones up beside it in size order, so one merge rolls into the next and the chain keeps climbing. Drop before the yellow ring fills up, because auto-drops land wherever the UFO happens to be and they speed up the longer you stay idle. Check the NEXT bubble in the top left before every drop and decide where the current one should go with the following one in mind."
+    },
+    "tags": [
+      "merge",
+      "physics",
+      "space",
+      "casual",
+      "puzzle",
+      "cute"
+    ]
+  },
+  {
+    "slug": "quick-math",
+    "date": "2026-10-03",
+    "emoji": "🦉",
+    "title": {
+      "ko": "번개 암산 OX",
+      "en": "Quick Math O/X"
+    },
+    "tagline": {
+      "ko": "두뇌 · 스피드 OX 퀴즈",
+      "en": "Brain · Speed true-or-false"
+    },
+    "desc": {
+      "ko": "부엉이 선생님이 칠판에 식을 하나씩 적습니다. 식이 맞으면 O, 틀리면 X를 시간 막대가 다 줄기 전에 골라 주세요. 덧셈으로 시작해 뺄셈, 곱셈, 두 번 계산하는 혼합 수업까지 교시가 올라가고, 열 번째 문제마다 점수가 세 배인 황금 보너스 문제가 나옵니다.",
+      "en": "The owl teacher chalks one equation at a time on the board. Decide whether it is right (O) or wrong (X) before the time bar runs out. Class moves from addition to subtraction, multiplication and finally mixed two-step sums, and every tenth question is a golden bonus worth triple points."
+    },
+    "controls": {
+      "ko": "모바일: 아래의 초록 O(맞다) 또는 빨강 X(틀리다) 버튼을 누르거나, 화면을 오른쪽(맞다)·왼쪽(틀리다)으로 밀기. PC: 오른쪽 방향키는 O, 왼쪽 방향키는 X이며 마우스로 버튼을 눌러도 됩니다.",
+      "en": "Mobile: tap the green O (true) or red X (false) button, or swipe right for true and left for false. Desktop: Right Arrow is O and Left Arrow is X, or click the buttons with the mouse."
+    },
+    "tips": {
+      "ko": "틀린 식은 정답과 1, 2, 10 차이이거나 자릿수가 뒤바뀐 숫자라서 일의 자리만 먼저 확인해도 꽤 걸러집니다. 연속 정답 3개마다 점수 배수가 올라가지만 제한 시간도 조금씩 짧아지니 리듬을 유지하세요. 황금 문제를 1초 안에 맞히면 잃었던 하트 하나가 돌아옵니다.",
+      "en": "Wrong equations are off by 1, 2 or 10, or have swapped digits, so checking the last digit first catches many of them. Every three correct answers in a row raises the score multiplier, but the timer also gets a little shorter. Answer a golden question correctly within one second to win back a lost heart."
+    },
+    "tags": [
+      "math",
+      "brain-training",
+      "educational",
+      "arcade",
+      "fast-paced",
+      "true-or-false"
+    ]
+  },
+  {
+    "slug": "roof-runner",
+    "date": "2026-10-03",
+    "emoji": "🌙",
+    "title": {
+      "ko": "지붕 위의 고양이",
+      "en": "Roof Runner"
+    },
+    "tagline": {
+      "ko": "러너 · 모서리 착지 콤보",
+      "en": "Runner · Edge-landing combos"
+    },
+    "desc": {
+      "ko": "달이 뜬 밤, 고양이가 도시 지붕 위를 쉬지 않고 달립니다. 건물 사이의 틈을 뛰어넘고 굴뚝과 안테나를 피하면서 떠 있는 별을 모으세요. 지붕 왼쪽 끝의 초록 구역에 딱 맞춰 착지하면 콤보 배율이 올라가고, 달릴수록 속도가 점점 빨라집니다.",
+      "en": "Under a big moon, a cat sprints across the city rooftops without ever stopping. Leap the gaps between buildings, clear chimneys and antennas, and scoop up the floating stars. Touch down on the glowing green strip at the start of a roof to raise your combo multiplier, while the run keeps getting faster."
+    },
+    "controls": {
+      "ko": "모바일: 화면 아무 곳이나 탭하면 점프합니다. PC: 스페이스바나 위쪽 방향키로 점프합니다. 공중에서 한 번 더 누르면 2단 점프가 나갑니다.",
+      "en": "Mobile: tap anywhere on the screen to jump. Desktop: press Space or the Up arrow. Press again while airborne for a double jump."
+    },
+    "tips": {
+      "ko": "별은 3점에 콤보 배율이 곱해지므로 콤보를 쌓은 뒤에 먹는 별이 훨씬 값집니다. 초록 구역을 벗어나 착지하면 콤보가 0으로 돌아가니, 2단 점프는 아껴 두었다가 착지 지점을 맞추는 데 쓰세요. 틈이 좁을 때는 지붕 끝까지 달린 뒤 늦게 뛰어야 모서리에 떨어집니다.",
+      "en": "A star is worth 3 points times your multiplier, so stars grabbed during a long combo pay far more. Landing outside the green strip resets the combo to zero, so save the double jump for adjusting where you come down. On narrow gaps, run to the very end of the roof and jump late to drop onto the edge."
+    },
+    "tags": [
+      "runner",
+      "endless",
+      "cat",
+      "arcade",
+      "one-button",
+      "mobile"
+    ]
+  },
+  {
+    "slug": "snack-snake",
+    "date": "2026-10-03",
+    "emoji": "🐍",
+    "title": {
+      "ko": "냠냠 스네이크",
+      "en": "Snack Snake"
+    },
+    "tagline": {
+      "ko": "스네이크 · 배고프면 끝",
+      "en": "Snake · Eat or starve"
+    },
+    "desc": {
+      "ko": "쉬지 않고 기어가는 뱀을 조종해 잔디밭에 놓인 간식을 먹이세요. 간식을 먹을 때마다 몸이 길어지고 속도도 조금씩 빨라집니다. 화면 위 배고픔 게이지는 계속 줄어들어서, 12초쯤 아무것도 못 먹으면 벽에 부딪히지 않아도 게임이 끝납니다.",
+      "en": "Steer a snake that never stops moving and feed it the snacks scattered across the lawn. Every bite makes the body longer and the pace a little quicker. The hunger bar at the top keeps draining, so about twelve seconds without food ends the run even if you never touch a wall."
+    },
+    "controls": {
+      "ko": "모바일: 가고 싶은 방향으로 화면을 밀면 뱀이 꺾습니다. 손을 떼지 않고 연달아 밀어도 됩니다. PC: 방향키 또는 W/A/S/D. 방향은 두 번까지 미리 입력되고, 정반대 방향으로는 돌 수 없습니다.",
+      "en": "Mobile: swipe in the direction you want to turn, and you can chain swipes without lifting your finger. Desktop: arrow keys or W/A/S/D. Up to two turns are queued ahead, and the snake cannot reverse straight back onto itself."
+    },
+    "tips": {
+      "ko": "사과는 1점, 몇 초 뒤 사라지는 도넛은 3점이고 배고픔도 가장 많이 채워 줍니다. 고추를 먹으면 4초 동안 빨라지는 대신 점수가 두 배가 됩니다. 3초 안에 연달아 먹으면 콤보가 쌓여 한 입마다 보너스 점수가 붙으니, 고추를 먹기 전에 다음 간식까지의 길을 먼저 봐 두세요.",
+      "en": "Apples are worth 1 point, while donuts are worth 3, refill the most hunger, and vanish after a few seconds. A chili pepper speeds you up for 4 seconds but doubles every point you score. Eating again within about 3 seconds builds a combo that adds a bonus to each bite, so plan your route to the next snack before you grab the chili."
+    },
+    "tags": [
+      "snake",
+      "arcade",
+      "casual",
+      "retro",
+      "high-score",
+      "mobile"
+    ]
   }
 ]

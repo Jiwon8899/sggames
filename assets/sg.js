@@ -54,7 +54,7 @@
     var cv=stage.querySelector('canvas'),g=cv.getContext('2d'),ov=stage.querySelector('#sg-ov'),
         btn=stage.querySelector('#sg-btn'),elS=stage.querySelector('#sg-score'),elB=stage.querySelector('#sg-best'),mb=stage.querySelector('#sg-mute');
     var key='sg-best-'+game.id,best=store.get(key),score=0,playing=false,last=0,shake=0,parts=[],pops=[];
-    var inp={x:null,y:null,down:false,left:false,right:false,up:false,tap:false};
+    var inp={x:null,y:null,down:false,left:false,right:false,up:false,dn:false,tap:false,swipe:null};
     function hud(){elS.textContent=T.score+' '+score;elB.textContent=T.best+' '+best}
     function show(title,msg,label){stage.querySelector('#sg-title').textContent=title;
       stage.querySelector('#sg-msg').textContent=msg;btn.textContent=label;ov.hidden=false}
@@ -71,17 +71,18 @@
       over:function(){if(!playing)return;playing=false;var rec=score>best&&score>0;if(score>best){best=score;store.set(key,best)}hud();
         sfx(rec?'win':'hit');shake=14;show(rec?T.rec:T.over,T.score+' '+score+' · '+T.best+' '+best,T.retry)}};
     function pos(e){var r=cv.getBoundingClientRect();inp.x=(e.clientX-r.left)/r.width*W;inp.y=(e.clientY-r.top)/r.height*H}
-    cv.addEventListener('pointerdown',function(e){pos(e);inp.down=true;inp.tap=true;e.preventDefault()});
+    var sx0=0,sy0=0;cv.addEventListener('pointerdown',function(e){pos(e);sx0=inp.x;sy0=inp.y;inp.down=true;inp.tap=true;e.preventDefault()});
     cv.addEventListener('pointermove',function(e){if(inp.down||e.pointerType==='mouse')pos(e)});
-    window.addEventListener('pointerup',function(){inp.down=false});
+    window.addEventListener('pointerup',function(){if(inp.down&&inp.x!=null){var dx=inp.x-sx0,dy=inp.y-sy0;if(Math.max(Math.abs(dx),Math.abs(dy))>24)inp.swipe=Math.abs(dx)>Math.abs(dy)?(dx>0?'right':'left'):(dy>0?'down':'up')}inp.down=false});
     function k(e,v){var c=e.key;if(c==='ArrowLeft'||c==='a')inp.left=v;else if(c==='ArrowRight'||c==='d')inp.right=v;
-      else if(c===' '||c==='ArrowUp'||c==='w'){inp.up=v;if(v)inp.tap=true}else return;
+      else if(c==='ArrowDown'||c==='s')inp.dn=v;else if(c===' '||c==='ArrowUp'||c==='w'){inp.up=v;if(v)inp.tap=true}else return;
+      if(v&&!e.repeat&&c!==' ')inp.swipe=c==='ArrowLeft'||c==='a'?'left':c==='ArrowRight'||c==='d'?'right':c==='ArrowDown'||c==='s'?'down':'up';
       if(playing)e.preventDefault();if(v&&c!==' ')inp.x=null}
     window.addEventListener('keydown',function(e){if(!playing&&(e.key==='Enter'||e.key===' ')){e.preventDefault();start();return}k(e,true)});
     window.addEventListener('keyup',function(e){k(e,false)});
     btn.addEventListener('click',start);
     function loop(t){var dt=Math.min(.05,(t-last)/1000);last=t;
-      if(playing){game.update(dt,inp,api);inp.tap=false}
+      if(playing){game.update(dt,inp,api);inp.tap=false;inp.swipe=null}
       g.save();if(shake>.3){g.translate((Math.random()-.5)*shake,(Math.random()-.5)*shake);shake*=Math.pow(.002,dt)}else shake=0;
       game.draw(g,api,dt);
       for(var i=parts.length-1;i>=0;i--){var p=parts[i];p.t+=dt;if(p.t>p.l){parts.splice(i,1);continue}

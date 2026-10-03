@@ -1,0 +1,26 @@
+{
+  "slug": "quick-math",
+  "date": "2026-10-03",
+  "emoji": "🦉",
+  "title": {
+    "ko": "번개 암산 OX",
+    "en": "Quick Math O/X"
+  },
+  "tagline": {
+    "ko": "두뇌 · 스피드 OX 퀴즈",
+    "en": "Brain · Speed true-or-false"
+  },
+  "desc": {
+    "ko": "부엉이 선생님이 칠판에 식을 하나씩 적습니다. 식이 맞으면 O, 틀리면 X를 시간 막대가 다 줄기 전에 골라 주세요. 덧셈으로 시작해 뺄셈, 곱셈, 두 번 계산하는 혼합 수업까지 교시가 올라가고, 열 번째 문제마다 점수가 세 배인 황금 보너스 문제가 나옵니다.",
+    "en": "The owl teacher chalks one equation at a time on the board. Decide whether it is right (O) or wrong (X) before the time bar runs out. Class moves from addition to subtraction, multiplication and finally mixed two-step sums, and every tenth question is a golden bonus worth triple points."
+  },
+  "controls": {
+    "ko": "모바일: 아래의 초록 O(맞다) 또는 빨강 X(틀리다) 버튼을 누르거나, 화면을 오른쪽(맞다)·왼쪽(틀리다)으로 밀기. PC: 오른쪽 방향키는 O, 왼쪽 방향키는 X이며 마우스로 버튼을 눌러도 됩니다.",
+    "en": "Mobile: tap the green O (true) or red X (false) button, or swipe right for true and left for false. Desktop: Right Arrow is O and Left Arrow is X, or click the buttons with the mouse."
+  },
+  "tips": {
+    "ko": "틀린 식은 정답과 1, 2, 10 차이이거나 자릿수가 뒤바뀐 숫자라서 일의 자리만 먼저 확인해도 꽤 걸러집니다. 연속 정답 3개마다 점수 배수가 올라가지만 제한 시간도 조금씩 짧아지니 리듬을 유지하세요. 황금 문제를 1초 안에 맞히면 잃었던 하트 하나가 돌아옵니다.",
+    "en": "Wrong equations are off by 1, 2 or 10, or have swapped digits, so checking the last digit first catches many of them. Every three correct answers in a row raises the score multiplier, but the timer also gets a little shorter. Answer a golden question correctly within one second to win back a lost heart."
+  },
+  "tags": ["math", "brain-training", "educational", "arcade", "fast-paced", "true-or-false"]
+}

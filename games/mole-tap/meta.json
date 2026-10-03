@@ -1,0 +1,26 @@
+{
+  "slug": "mole-tap",
+  "date": "2026-10-03",
+  "emoji": "🔨",
+  "title": {
+    "ko": "두더지 톡톡",
+    "en": "Mole Tap"
+  },
+  "tagline": {
+    "ko": "순발력 · 45초 한 판",
+    "en": "Reflex · 45-second runs"
+  },
+  "desc": {
+    "ko": "텃밭 구멍 아홉 개에서 두더지가 쏙쏙 올라옵니다. 45초 안에 뿅망치로 최대한 많이 톡 쳐서 점수를 모으세요. 연속으로 맞히면 콤보 배수가 5배까지 올라가고, 시간이 갈수록 두더지가 더 빨리 숨습니다.",
+    "en": "Moles keep popping out of nine holes in a little garden. You have 45 seconds to bonk as many as you can with a squeaky toy hammer. Consecutive hits build a combo multiplier up to x5, and the moles duck away faster as the clock runs down."
+  },
+  "controls": {
+    "ko": "모바일: 올라온 두더지를 바로 터치하세요. PC: 방향키나 WASD로 흰 점선 커서를 옮기고 스페이스바로 내려칩니다. 마우스 클릭으로도 칠 수 있어요.",
+    "en": "Mobile: tap a mole the moment it pops up. Desktop: move the dashed white cursor with the arrow keys or WASD and press Space to swing. Mouse clicks work too."
+  },
+  "tips": {
+    "ko": "귀가 긴 흰 토끼를 치면 시간이 3초 줄고 콤보가 끊기니 귀부터 확인하세요. 반짝이는 황금 두더지는 금방 숨지만 맞히면 시간이 5초 늘고 점수도 세 배입니다. 빈 구멍을 쳐도 콤보가 끊기므로 마구 누르기보다 정확하게 치는 쪽이 점수가 높습니다.",
+    "en": "Tapping the long-eared white bunny costs 3 seconds and resets your combo, so check the ears first. The sparkling golden mole hides quickly, but hitting it adds 5 seconds and pays triple points. Swinging at an empty hole also breaks the combo, so accurate taps beat frantic mashing."
+  },
+  "tags": ["arcade", "reflex", "whack-a-mole", "casual", "cute", "mobile"]
+}

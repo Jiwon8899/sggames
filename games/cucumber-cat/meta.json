@@ -1,0 +1,25 @@
+{
+  "slug": "cucumber-cat",
+  "date": "2026-10-03",
+  "emoji": "🥒",
+  "title": {
+    "ko": "오이 피하는 고양이",
+    "en": "Cucumber Cat"
+  },
+  "tagline": {
+    "ko": "피하기 · 30초 한 판",
+    "en": "Dodge · 30-second runs"
+  },
+  "desc": {
+    "ko": "하늘에서 오이가 쏟아집니다. 고양이를 좌우로 움직여 오이를 피하고, 파란 생선을 먹어 점수를 올리세요. 시간이 지날수록 오이가 더 빠르고 많이 떨어집니다.",
+    "en": "Cucumbers are raining from the sky. Slide your cat left and right to dodge them and grab the blue fish for bonus points. The longer you last, the faster and thicker they fall."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 누른 채 좌우로 끌기. PC: 방향키 또는 A/D, 마우스를 따라 움직이기.",
+    "en": "Mobile: hold and drag left or right. Desktop: arrow keys or A/D, or follow the mouse."
+  },
+  "tips": {
+    "ko": "피한 오이는 1점, 생선은 5점입니다. 생선을 쫓다가 오이에 맞기 쉬우니 가운데 근처에서 짧게 움직이는 편이 오래 버팁니다.",
+    "en": "Each dodged cucumber is 1 point and each fish is 5. Chasing fish is how most runs end, so stay near the middle and make small moves."
+  }
+}
