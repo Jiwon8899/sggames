@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04",
+  "emoji": "⛄",
+  "title": {"ko": "그늘 건너기", "en": "Shade Walk"},
+  "tagline": {"ko": "해가 움직이면 그림자도 움직인다", "en": "The sun moves, and so do the shadows"},
+  "desc": {
+    "ko": "눈꼬마 뭉이는 햇빛에 닿으면 녹아 버립니다. 기둥, 나무, 전차, 구름이 드리우는 그늘만 밟아 뜨거운 광장을 건너 냉동 트럭까지 가야 합니다. 하늘의 해가 실제로 움직여서 그림자가 해시계처럼 돌고, 길어지고, 짧아집니다. 지금은 끊긴 그늘이 몇 초 뒤에 이어질지 읽고, 딱 맞는 순간에 틈을 뛰어 건너는 게임입니다.",
+    "en": "Flurry the snow kid melts the moment sunlight touches it. Cross each hot plaza to the freezer truck using only the shade cast by pillars, trees, trams and clouds. The sun really travels across the sky, so every shadow turns, stretches and shrinks like a sundial. Read where the shade will be a few seconds from now, then dash across the gap at exactly the right moment."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 누른 채 끌면 그 방향으로 걷습니다. 수레나 파라솔 옆에서는 왼쪽 아래 버튼을 눌러 밀거나 폅니다. PC: 방향키 또는 WASD로 이동하고, 스페이스로 밀거나 폅니다.",
+    "en": "Mobile: press anywhere and drag to walk in that direction. Next to a cart or a parasol stand, tap the button in the bottom-left corner to push or open it. Desktop: move with the arrow keys or WASD, and press Space to push or open."
+  },
+  "tips": {
+    "ko": "머리 위 게이지가 가득 차면 녹아서 광장을 다시 시작하고 3초를 잃습니다. 그늘에서 잠깐 쉬면 게이지가 내려가니, 긴 틈을 건너기 전에 먼저 식히세요. 하늘의 노란 호는 이 광장에서 해가 오가는 범위입니다. 게이지를 절반 아래로 지키면 보너스 5점, 햇빛 속 아이스크림은 3점입니다.",
+    "en": "If the meter above your head fills up you melt, restart the plaza and lose 3 seconds. Resting in shade lowers the meter, so cool down before a long gap. The yellow arc in the sky shows how far the sun swings in this plaza. Keeping the meter under half earns 5 bonus points, and each ice cream out in the sun is worth 3."
+  },
+  "tags": ["puzzle", "action", "shadows", "top-down", "cute", "mobile"]
+}

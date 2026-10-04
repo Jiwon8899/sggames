@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04",
+  "emoji": "🐜",
+  "title": {"ko": "개미 냄새길", "en": "Ant Trail"},
+  "tagline": {"ko": "길만 그리면 개미 떼가 알아서", "en": "Paint the scent, the colony does the rest"},
+  "desc": {
+    "ko": "소풍 돗자리 위에 빵 부스러기와 각설탕, 딸기가 떨어져 있습니다. 개미는 한 마리도 직접 조종할 수 없고, 손가락으로 냄새 길을 그려 주면 둥지에서 쏟아져 나온 개미들이 그 길을 따라가 먹이를 날라 옵니다. 냄새는 8초쯤 지나면 날아가지만, 먹이를 든 개미가 지나가면 다시 진해집니다. 각설탕은 4마리, 딸기는 8마리가 동시에 붙어야 움직이기 때문에 개미 행렬을 한곳으로 모으는 것이 핵심입니다.",
+    "en": "Crumbs, sugar cubes and a strawberry are scattered across a picnic blanket. You cannot steer a single ant; instead you paint a scent trail, and the ants pouring out of the nest follow it and haul the food home. Scent fades after about eight seconds, but ants carrying food freshen the trail they walk on. A sugar cube only moves with 4 ants on it and the strawberry needs 8, so gathering the column in one place is the real skill."
+  },
+  "controls": {
+    "ko": "모바일: 화면을 끌어서 냄새 길을 그립니다. 같은 자리를 두 번 탭하면 그 주변의 냄새가 지워집니다. PC: 마우스로 끌어서 그리거나, 방향키(WASD)로 붓을 움직이며 스페이스를 누르고 있으면 칠해지고 Shift를 누르고 있으면 지워집니다.",
+    "en": "Mobile: drag to paint a scent trail. Double-tap a spot to wipe the scent around it. Desktop: drag with the mouse, or move the brush with the arrow keys (WASD), hold Space to paint and hold Shift to erase."
+  },
+  "tips": {
+    "ko": "길은 꼭 둥지에서 시작하세요. 개미는 냄새가 없으면 둥지 근처만 맴돕니다. 향수 게이지는 천천히 차오르니 낙서하지 말고 짧은 길 하나를 정확히 그리는 편이 좋습니다. 물웅덩이에서는 냄새가 금방 씻겨 나가고, 거미줄을 지나는 길은 개미를 묶어 버리며, 빨간 개미 영역을 스치면 먹이와 시간을 빼앗깁니다. 빗자루 구역은 노란 예고가 뜨기 전에 미리 돌아가는 길을 그리세요.",
+    "en": "Always start the trail at the nest, because ants without scent never leave its doorstep. The scent meter refills slowly, so draw one short, exact route instead of scribbling. Puddles wash scent away quickly, a trail through a web tangles your ants, and brushing the red colony's territory costs you food and time. Route around the broom zone before the yellow warning appears."
+  },
+  "tags": ["ants", "simulation", "drawing", "puzzle", "swarm", "arcade"]
+}

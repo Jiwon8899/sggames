@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04",
+  "emoji": "🐘",
+  "title": { "ko": "시소 동물원", "en": "Seesaw Zoo" },
+  "tagline": { "ko": "무게 × 거리 · 수평 맞추기 퍼즐", "en": "Weight × distance · balance puzzle" },
+  "desc": {
+    "ko": "생쥐부터 코끼리까지, 무게가 제각각인 동물을 전부 시소에 앉혀 수평을 맞추는 퍼즐입니다. 무거운 동물은 받침대 가까이, 가벼운 동물은 멀리 앉혀야 양쪽의 '무게 × 거리'가 같아집니다. 고양이와 강아지는 옆자리를 싫어하고, 생쥐는 고양이 반대편만 고집하며, 곰은 끝자리, 쌍둥이 토끼는 마주 보는 자리만 앉습니다. 뒤로 갈수록 부서진 좌석, 모래주머니, 순서를 틀리면 와르르 무너지는 라이브 시소, 막대에 막대가 매달린 모빌까지 등장합니다.",
+    "en": "Seat every animal, from a one-unit mouse to a thirteen-unit elephant, so the seesaw ends up perfectly level. Heavy animals belong near the pivot and light ones far out, because what must match is weight times distance. The cat refuses to sit beside the dog, the mouse only sits across from the cat, the bear demands an end seat, and the twin bunnies insist on mirrored seats. Later levels add broken seats, fixed sandbags, live seesaws that dump everyone if you seat them in the wrong order, and a mobile where one beam hangs from another."
+  },
+  "controls": {
+    "ko": "모바일: 동물을 끌어 좌석에 놓거나, 동물을 누른 다음 좌석을 누르세요. 앉은 동물도 다시 끌어 옮길 수 있습니다. PC: ←→로 동물 선택, ↑↓ 또는 Tab으로 좌석 선택, Space로 앉히기, Z 되돌리기, R 처음부터, X 토크 막대 엿보기.",
+    "en": "Mobile: drag an animal onto a seat, or tap an animal and then tap a seat. Seated animals can be dragged again to move them. Desktop: ←→ picks an animal, ↑↓ or Tab picks a seat, Space seats it, Z undoes, R restarts the level, and X peeks at the torque bars."
+  },
+  "tips": {
+    "ko": "가장 무거운 동물부터 자리를 정하면 나머지가 쉽게 풀립니다. 수평을 1.5초 유지해야 통과이고, 한 레벨을 깰 때마다 시간이 13초 늘어납니다. 7레벨부터는 토크 막대가 가려지는데, 엿보지 않고 풀면 보너스 5점을 받습니다. 빨간 구역이 있는 라이브 레벨에서는 가벼운 동물을 먼저 앉혀 균형추로 쓰세요.",
+    "en": "Place the heaviest animal first and the rest falls into place. The beam must stay level for 1.5 seconds, and each cleared level adds 13 seconds to the clock. From level 7 the torque bars are hidden, and solving without peeking earns 5 bonus points. On live levels with red zones, seat a light animal first and use it as a counterweight."
+  },
+  "tags": ["puzzle", "physics", "balance", "animals", "logic", "casual"]
+}
