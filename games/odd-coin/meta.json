@@ -1,6 +1,6 @@
 {
   "slug": "odd-coin",
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "emoji": "⚖️",
   "title": {
     "ko": "수상한 저울",
@@ -29,6 +29,5 @@
     "brain-teaser",
     "casual",
     "singleplayer"
-  ],
-  "draft": true
+  ]
 }

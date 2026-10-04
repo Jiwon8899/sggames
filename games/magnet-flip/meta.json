@@ -1,6 +1,6 @@
 {
   "slug": "magnet-flip",
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "emoji": "🧲",
   "title": {
     "ko": "자석 뒤집기",
@@ -29,6 +29,5 @@
     "arcade",
     "puzzle-platformer",
     "robots"
-  ],
-  "draft": true
+  ]
 }

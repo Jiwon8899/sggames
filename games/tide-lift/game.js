@@ -2,7 +2,7 @@
    시뮬레이션(지형·배·통나무·수문·소용돌이)은 DOM 없이 돌도록 분리되어 있다(node 검증용 module.exports). */
 (function(){
   'use strict';
-  var W=360,H=640,WT=250,WB=540,BASE=604,D=6,M=30,HW=16,LT=14,SPD=56,RATE=240,WL0=470,LEAD=56;
+  var W=360,H=640,WT=250,WB=540,BASE=604,D=6,M=30,HW=16,LT=14,SPD=64,RATE=240,WL0=470,LEAD=56;
   function clamp(v,a,b){return v<a?a:v>b?b:v}
   function hash(n){var x=Math.sin(n*127.1+311.7)*43758.5453;return x-Math.floor(x)}
   function rng(seed){var s=seed>>>0;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
@@ -39,7 +39,7 @@
     [['log',380,470],['shell'],['reef',400,40],['arch',440,80],['log',400,480],['reef',360,46]],
     [['reef',420,36],['gate',430],['arch',430,80],['shell'],['gate',400],['shell']],
     [['nest',296],['reef',340,56],['shell'],['arch',420,90],['shell'],['reef',332,44],['arch',450,60]],
-    [['reef',400,40],['whirl',120,450],['shell'],['arch',430,70],['reef',380,40],['whirl',96,430],['reef',410,36]],
+    [['reef',400,40],['whirl',120,450],['shell'],['arch',430,70],['reef',380,40],['whirl',96,430]],
     [['jelly',430],['shell'],['tunnel',370,432,80],['shell'],['jelly',400],['arch',440,70],['reef',350,44]],
     [['nest',318],['log',420,480],['gate',410],['shell'],['whirl',104,440],['tunnel',380,442,70],['shell'],['reef',356,40]],
     [['reef',380,40],['arch',400,60],['shell'],['jelly',410],['whirl',100,460],['log',390,460],['shell'],['gate',420]],
@@ -66,7 +66,7 @@
     while(list.length<m){t=types[ri(0,types.length-1)];
       if(t==='reef')o=['reef',ri(300,430),ri(30,62)];
       else if(t==='arch')o=['arch',ri(380,490),ri(50,96)];
-      else if(t==='tunnel'){cy=ri(330,420);o=['tunnel',cy,cy+ri(52,64),ri(50,78)]}
+      else if(t==='tunnel'){cy=ri(330,420);o=['tunnel',cy,cy+ri(60,72),ri(50,78)]}
       else if(t==='log'){ty=ri(350,410);o=['log',ty,Math.min(496,ty+ri(70,96))]}
       else if(t==='gate')o=['gate',ri(380,450)];
       else if(t==='whirl')o=['whirl',ri(80,118),ri(400,470)];
@@ -130,7 +130,7 @@
     if(s.x>=c.dock){s.done=true;s.ev.push({k:'dock'})}}
 
   /* ---------- 봇: 앞을 조금 내다보는 조종기 ---------- */
-  function botTgt(s){var c=s.c,x=s.x,b=s.bot,i,g,la,k,lo,hi,x1,x2,a,l,hO,lU,okO,okU,dO,dU,n,ok=false,las=[30,12,0];
+  function botTgt(s){var c=s.c,x=s.x,b=s.bot,i,g,la,k,lo,hi,x1,x2,a,l,hO,lU,okO,okU,dO,dU,n,ok=false,las=[48,30,12,0];
     for(i=0;i<c.gates.length;i++){g=c.gates[i];
       if(x-HW<g.x+g.w&&g.x-(x+HW)<70&&x+HW<=g.x){
         if(b.g!==i){if(s.gy[i]<=g.yo+.5)b.g=i;else return Math.min(WB,g.S+10)}
@@ -147,7 +147,7 @@
         if(okO&&(!okU||dO<=dU))hi=hO;else if(okU)lo=lU;else ok=false}}}
     if(!ok)return s.wl;
     for(i=0;i<c.nests.length;i++){n=c.nests[i];if(Math.abs(n.x-x)<236&&Math.max(lo,n.y+5)<=hi)lo=Math.max(lo,n.y+5)}
-    return clamp(s.wl,lo,hi)}
+    i=Math.min(6,(hi-lo)/2);return clamp(s.wl,lo+i,hi-i)}
   function runBot(c,maxT){var s=newSim(c),pen=0,i;
     while(!s.done&&s.t<maxT){step(s,1/60,botTgt(s));for(i=0;i<s.ev.length;i++){if(s.ev[i].k==='scold')pen+=3;else if(s.ev[i].k==='sting')pen+=2}s.ev.length=0}
     return {ok:s.done,t:s.t+pen,pen:pen}}
@@ -158,7 +158,9 @@
   var cache={};
   function getCove(n){var k,c,r;if(cache[n])return cache[n];
     if(n<HAND.length)c=build(HAND[n],n+1,TIPS[n]);
-    else for(k=0;k<60;k++){c=build(genOps(n,k),n*31+k,null);r=runBot(c,30);if(r.ok&&r.t<=17.5&&r.pen===0&&needsMoves(c))break}
+    else{var best=null,bt=1e9,q;for(k=0;k<80;k++){q=build(genOps(n,k),n*31+k,null);r=runBot(q,30);
+      if(r.ok&&r.pen===0&&needsMoves(q)){if(r.t<bt){bt=r.t;best=q}if(r.t<=14.5)break}}
+      c=best||build(HAND[3+n%7],n+1,null)}
     cache[n]=c;return c}
 
   if(typeof module!=='undefined'&&module.exports)
@@ -241,9 +243,12 @@
       g.fillStyle='rgba(255,255,255,.5)';g.fillRect(x-4,211,126,1.5)}
     for(i=0;i<16;i++){var tw=Math.sin(tG*2.2+i*1.9);if(tw<.2)continue;x=(i*53+tG*6)%W;
       g.fillStyle='rgba(255,255,240,'+(tw*.8)+')';g.fillRect(x,214+(i*7)%34,5+tw*7,1.4)}}
-  function backWall(g){var x,gr=g.createLinearGradient(0,236,0,H),i;gr.addColorStop(0,'#6f6a9c');gr.addColorStop(.5,'#4a4778');gr.addColorStop(1,'#2c2b52');
+  function backWall(g){var x,gr=g.createLinearGradient(0,236,0,H),i;gr.addColorStop(0,'#9a95c8');gr.addColorStop(.3,'#6f6ba6');gr.addColorStop(.65,'#4c4a80');gr.addColorStop(1,'#2c2b52');
     g.fillStyle=gr;g.beginPath();g.moveTo(0,H);
     for(x=0;x<=W;x+=12){var xw=x+cam;g.lineTo(x,240+9*Math.sin(xw*.011)+6*Math.sin(xw*.037+2))}g.lineTo(W,H);g.fill();
+    g.strokeStyle='rgba(255,236,210,.55)';g.lineWidth=2.5;g.beginPath();for(x=0;x<=W;x+=12){xw=x+cam;g.lineTo(x,241+9*Math.sin(xw*.011)+6*Math.sin(xw*.037+2))}g.stroke();
+    for(i=0;i<7;i++){x=((i*97+30-cam*.6)%560+560)%560-60;var vl=26+hash(i+21)*46,sw=Math.sin(tG*1.1+i)*4;g.strokeStyle='rgba(110,200,130,.55)';g.lineWidth=2;g.beginPath();g.moveTo(x,244);g.quadraticCurveTo(x+sw*.4,244+vl*.5,x+sw,244+vl);g.stroke();
+      g.fillStyle='rgba(150,225,150,.7)';g.beginPath();g.ellipse(x+sw*.5,244+vl*.55,3.2,1.8,.6,0,7);g.ellipse(x+sw,244+vl,3.2,1.8,-.5,0,7);g.fill()}
     g.strokeStyle='rgba(20,18,50,.16)';g.lineWidth=2;
     for(i=0;i<6;i++){g.beginPath();for(x=0;x<=W;x+=24){xw=x+cam;var yy=296+i*52+8*Math.sin(xw*.013+i*1.7)+4*Math.sin(xw*.05+i);x?g.lineTo(x,yy):g.moveTo(x,yy)}g.stroke()}
     g.fillStyle='rgba(120,200,120,.5)';for(x=-(cam%22);x<W;x+=22){xw=x+cam;if(hash(Math.round(xw/22))<.5)g.fillRect(x,239+9*Math.sin(xw*.011)+6*Math.sin(xw*.037+2),10,3)}
@@ -452,7 +457,7 @@
     if(wipe>0){g.fillStyle='rgba(235,252,255,'+clamp(wipe,0,1)+')';g.fillRect(0,0,W,H)}
   }
 
-  window.__tideLift=function(){return {n:n,x:s.x,wl:s.wl,time:time,dock:c.dock,blk:s.blk,mode:mode,gy:s.gy,y:s.y}};
+  window.__tideLift=function(){return {tgt:tgt,want:botTgt(s),n:n,x:s.x,wl:s.wl,time:time,dock:c.dock,blk:s.blk,mode:mode,gy:s.gy,y:s.y}};
   SG.run({id:'tide-lift',title:{ko:'밀물 썰물',en:'Tide Lift'},
     how:{ko:'위아래로 끌어(또는 ↑↓) 바다 높이를 바꿔요. 종이배는 물에 뜨면 스스로 흘러가요. 등대까지!',
          en:'Drag up/down (or ↑↓) to move the sea level. The paper boat drifts whenever it floats. Reach the lighthouse!'},

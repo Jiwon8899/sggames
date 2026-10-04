@@ -143,7 +143,7 @@
     for(q=0;q<L.bolts.length;q++){if(s.bolts>>q&1)continue;m=L.bolts[q];if((s.x-m.x)*(s.x-m.x)+(s.y-m.y)*(s.y-m.y)<24*24)s.bolts|=1<<q}
     if(s.x>=L.len){s.status=1;s.endGr=gr}}
   var CORE={DT:DT,WALK:WALK,FY:FY,HAND:HAND,build:build,genSpec:genSpec,init:init,clone:clone,step:step};
-  var HPAR=[1,1,2,1,3,1,2,2,2,4],SEEDS=[[1,2]];
+  var HPAR=[1,1,2,1,3,1,2,2,2,4],SEEDS=[[1,2],[2,3],[3,1],[5,2],[7,4],[8,5],[9,2],[10,4],[11,2],[12,1],[14,4],[15,1],[16,1],[17,1],[18,4],[19,1],[20,3],[21,3],[22,3],[25,3],[26,2],[27,1],[29,1],[30,1],[31,2],[32,4],[33,3],[34,2],[35,1],[36,1],[37,4],[38,3],[39,3],[40,2],[41,1],[43,2],[44,3],[45,3],[46,2],[48,1],[50,3],[51,3],[52,1],[53,1],[55,3],[56,1],[57,3],[59,3],[60,1],[62,2],[63,3],[65,3],[66,2],[67,2],[68,2],[69,4],[70,2],[71,3],[72,2],[74,2],[75,2],[76,3],[77,1],[78,2],[79,3],[80,2],[82,3],[83,2],[84,1],[85,6],[86,1],[87,2],[89,1],[90,3],[91,1],[92,4],[94,3],[95,1],[96,2],[97,2],[98,2],[99,5],[100,1],[101,2],[102,4],[103,1],[104,3],[106,1],[107,3],[108,4],[109,2],[110,4],[115,3],[117,3],[118,6],[119,3],[120,1],[121,3],[122,3],[123,1],[124,2],[126,2],[127,3],[128,3],[129,3],[130,2],[133,1],[134,1],[135,6],[137,1],[138,5],[139,1],[140,1],[141,2],[142,3],[143,2],[144,3],[145,1],[146,2],[147,1]];
   /* ================= 화면 · 진행 ================= */
   var W=360,H=640,Z=1.2,FSY=508,CXW=64,NC='#ff5b4d',SC='#3f8cff',ND='#a82a26',SD='#1f4fa8',FONT='px Jua, system-ui, sans-serif';
   function pc(p){return p>0?NC:SC}function pd(p){return p>0?ND:SD}function pl(p){return p>0?'N':'S'}
@@ -178,7 +178,7 @@
         if(s.gr&&!st.wasGr){st.land=1;a.beep(s.gr===2?980:150,.04,s.gr===2?'square':'sine')}st.wasGr=s.gr;
         if(s.status===1){clear(a);s=st.s;L=st.L}
         else if(s.status===2){a.sfx('hit');a.shake(9);a.burst(tx(st.ox+s.x),Math.min(H-40,ty(s.y)),pc(s.pole),14);
-          a.pop(Math.max(60,tx(st.ox+s.x)),Math.min(H-110,ty(s.y))-24,WHY[a.lang][s.why],'#fff');
+          a.pop(Math.max(60,tx(st.ox+s.x)),Math.min(H-110,ty(s.y))-24,WHY[a.lang][s.why]+(a.lang==='ko'?' -3초':' -3s'),'#fff');st.T=Math.max(.05,st.T-3);
           st.mode=1;st.rw=0;st.rx=s.x;st.ry=Math.min(s.y,WB);break}}
       if(n>=8)st.acc=0}
     if(s.gr)st.legs+=dt*13;
@@ -189,7 +189,8 @@
   function clear(a){var s=st.s,L=st.L,par=parOf(st.i),ex=s.flips-par,bonus=ex<=0?5:ex===1?3:ex===2?1:0;
     a.add(10+bonus);a.sfx('win');st.clearT=0;
     st.clearMsg=(a.lang==='ko'?(bonus===5?'완벽한 뒤집기! +':bonus?'알뜰 보너스 +':'통과! +'):(bonus===5?'Perfect flips! +':bonus?'Thrifty bonus +':'Cleared! +'))+(10+bonus);
-    var gain=st.i<10?12:Math.max(6,12-Math.floor((st.i-9)/3));st.T=Math.min(70,st.T+gain);
+    var base=st.i<10?12:Math.max(6,12-Math.floor((st.i-9)/3)),gain=ex<=1?base:ex<=3?base/2:2;st.T=Math.min(70,st.T+gain);
+    a.pop(W-52,74,'+'+gain+(a.lang==='ko'?'초':'s'),'#ffe27a');
     a.burst(tx(st.ox+s.x),ty(s.y)-10,'#ffe27a',16);
     st.ps={L:L,s:s,ox:st.ox,got:st.got};st.ox+=L.len;st.i++;a.tempo(1+Math.min(.5,st.i*.035));
     var NL=lev(st.i),ns=init(NL);ns.x=s.x-L.len;ns.y=s.y;ns.vx=s.vx;ns.vy=s.vy;ns.gr=s.gr;
@@ -288,7 +289,9 @@
       if(!a.rep){g.strokeStyle='rgba(200,255,244,'+al+')';g.lineWidth=1.8;g.setLineDash([7,6]);g.lineDashOffset=-t*70;
         for(k=-1;k<=1;k++){g.beginPath();g.moveTo(sx+nx*k*9,sy+ny*k*9);g.quadraticCurveTo((sx+bx)/2+nx*k*(10+d*.12),(sy+by)/2+ny*k*(10+d*.12),bx+nx*k*3,by+ny*k*3);g.stroke()}
         g.setLineDash([])}
-      else{var ang=Math.atan2(-dy,-dx);g.lineWidth=2.2;
+      else{var ang=Math.atan2(-dy,-dx);g.strokeStyle='rgba(255,226,150,'+(al*.8)+')';g.lineWidth=1.8;g.setLineDash([3,7]);g.lineDashOffset=t*90;
+        for(k=-1;k<=1;k+=2){g.beginPath();g.moveTo(bx+nx*k*5,by+ny*k*5);g.quadraticCurveTo((sx+bx)/2+nx*k*(20+d*.3),(sy+by)/2+ny*k*(20+d*.3),sx+nx*k*16-ux*4,sy+ny*k*16-uy*4);g.stroke()}
+        g.setLineDash([]);g.lineWidth=2.4;
         for(k=0;k<3;k++){var u=(t*1.6+k/3)%1,r=6+Math.max(0,d-14)*u;g.strokeStyle='rgba(255,214,130,'+(al*(1-u*.75))+')';g.beginPath();g.arc(bx,by,r,ang-.55+u*.3,ang+.55-u*.3);g.stroke();
           g.strokeStyle='rgba(255,214,130,'+(al*.6*u)+')';g.beginPath();g.arc(sx,sy,15+4*Math.sin(u*3.14),ang+3.14-.7,ang+3.14+.7);g.stroke()}}}}
   function predict(g,L,s,ox,flip){var c=clone(s),col=pc(flip?-s.pole:s.pole),k=0;

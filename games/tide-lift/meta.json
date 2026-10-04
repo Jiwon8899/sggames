@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "emoji": "🌊",
   "title": {
     "ko": "밀물 썰물",
@@ -28,6 +28,5 @@
     "one-button",
     "casual",
     "arcade"
-  ],
-  "draft": true
+  ]
 }
