@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-04",
+  "emoji": "🔭",
+  "title": {
+    "ko": "별자리 맞추기",
+    "en": "Star Align"
+  },
+  "tagline": {
+    "ko": "시점 퍼즐 · 딱 한 각도에서만 그림",
+    "en": "Perspective puzzle · one angle makes the picture"
+  },
+  "desc": {
+    "ko": "밤하늘에 떠 있는 빛 조각들은 서로 다른 깊이에 걸려 있어서, 대부분의 방향에서는 그저 흩어진 부스러기로 보입니다. 하지만 딱 한 시점에서 보면 조각들이 겹쳐지며 고양이, 고래, 열쇠 같은 그림이 됩니다. 시점을 돌려 그 각도를 찾아내고, 완성된 그림이 무엇인지 세 가지 이름 중에서 골라 보세요. 뒤로 갈수록 그림이 두 개 숨어 있거나, 가짜 조각이 섞이거나, 하늘이 천천히 돌아 정답 각도가 움직입니다.",
+    "en": "Glowing shards hang at different depths in the night sky, so from most directions they look like scattered debris. From exactly one viewpoint they overlap into a picture such as a cat, a whale or a key. Turn the view to find that angle, then pick the right name for the picture out of three. Later skies hide two pictures at once, mix in decoy shards, or drift slowly so the right angle keeps moving."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 끌면 시점이 돌아가고, 손을 떼면 살짝 미끄러집니다. PC: 방향키 또는 WASD로 돌리고, Shift를 누른 채로는 미세하게 움직입니다. 그림 이름은 버튼을 누르거나 숫자 1, 2, 3 키로 고릅니다.",
+    "en": "Mobile: drag anywhere to turn the view, and it glides a little after you let go. Desktop: turn with the arrow keys or WASD, and hold Shift for fine steps. Choose the picture's name by tapping a button or pressing 1, 2 or 3."
+  },
+  "tips": {
+    "ko": "조각이 따뜻한 주황빛으로 변하고 소리가 높아질수록 정답 각도에 가까워진 것입니다. 가까이 가면 자석처럼 끌려 들어가니, 거기서 0.4초만 멈춰 있으면 됩니다. 이중 잠금 문제는 좌우로 절반을 먼저 맞춘 다음 위아래로 나머지를 맞추세요. 빨리 풀수록, 이름을 연달아 맞힐수록 점수가 커지고 그림 하나마다 시간이 13초 늘어납니다.",
+    "en": "The shards turn warm orange and the hum rises in pitch as you get closer to the right angle. Once you are near, the view is pulled in like a magnet, so just hold still there for 0.4 seconds. In double-lock skies, line up one half by turning sideways first, then the other half by tilting up and down. Faster solves and consecutive correct names score more, and every picture adds 13 seconds to the clock."
+  },
+  "tags": ["puzzle", "perspective", "relaxing", "space", "cats", "casual"]
+}

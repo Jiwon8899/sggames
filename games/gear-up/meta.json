@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-04",
+  "emoji": "⚙️",
+  "title": {"ko": "톱니 공방", "en": "Gear Up"},
+  "tagline": {"ko": "톱니 퍼즐 · 오르골을 울려라", "en": "Gear puzzle · make the music box sing"},
+  "desc": {
+    "ko": "모터와 장난감 사이의 못에 톱니바퀴를 끼워 넣어 동력을 전하는 기계 퍼즐입니다. 톱니는 두 바퀴의 반지름 합이 못 사이 간격과 딱 맞을 때만 맞물리고, 맞물릴 때마다 도는 방향이 뒤집히며, 속도는 톱니 수의 비로 정해집니다. 장난감마다 화살표 방향과 속도계의 초록 칸을 맞춰야 하고, 제대로 돌면 오르골이 그 속도 그대로 멜로디를 연주합니다. 세 바퀴가 서로 물리면 통째로 끼어 버리고, 잠자는 고양이가 앉은 바퀴는 돌리면 안 됩니다. 손으로 만든 보드 14개가 끝나면 풀이가 있는 것이 확인된 새 보드가 계속 만들어집니다.",
+    "en": "A mechanical puzzle about carrying power from a motor to a toy by dropping gears onto pegs. Two gears mesh only when their radii add up to the gap between their pegs, every mesh flips the direction, and the speed follows the ratio of the tooth counts. Each toy wants the direction shown by its arrow and sometimes a speed inside the green zone of its gauge, and when you get it right the music box plays its melody at exactly that speed. Three gears that all touch each other lock the whole train, and the wheel with the sleeping cat on it must never turn. After 14 handcrafted boards the game keeps building new ones that are checked to be solvable."
+  },
+  "controls": {
+    "ko": "모바일: 아래 트레이의 톱니를 끌어서 못 위에 놓으면 찰칵 끼워집니다. 끼운 톱니를 톡 누르면 트레이로 돌아오고, 끌어서 다른 못으로 옮길 수도 있습니다. PC: 마우스로 똑같이 끌거나, 좌우 방향키로 트레이의 톱니를 고르고 스페이스로 집은 뒤 방향키나 탭으로 못을 골라 스페이스로 끼웁니다. 톱니가 끼워진 못에서 스페이스를 누르면 다시 빠집니다.",
+    "en": "Mobile: drag a gear from the tray at the bottom onto a peg and it snaps in. Tap a placed gear to send it back to the tray, or drag it to another peg. Desktop: drag with the mouse the same way, or pick a tray gear with Left/Right, press Space to pick it up, move the peg cursor with the arrow keys or Tab, and press Space to place it. Pressing Space on a peg that already holds your gear removes it."
+  },
+  "tips": {
+    "ko": "모터에서 장난감까지 맞물리는 횟수가 짝수면 모터와 같은 방향, 홀수면 반대 방향으로 돕니다. 중간에 끼운 톱니의 크기는 속도를 바꾸지 못하니, 속도를 바꾸려면 장난감 축에 올리는 톱니 크기를 바꾸거나 겹톱니를 써야 합니다. 벨트는 방향을 뒤집지 않고 그대로 전합니다. 톱니를 남기고, 한 번도 끼이거나 고양이를 깨우지 않고 풀면 보너스 점수가 붙고, 보드를 풀 때마다 시간이 13초 늘어납니다.",
+    "en": "An even number of meshes between the motor and the toy turns it the same way as the motor, and an odd number turns it the other way. The size of a gear in the middle of a train never changes the speed, so to change speed you must change the gear on the toy's own axle or use a double gear. A belt passes rotation along without flipping it. Leftover gears and a solve with no jam and no woken cat both earn bonus points, and every solved board adds 13 seconds to the clock."
+  },
+  "tags": ["puzzle", "gears", "physics", "logic", "mechanical", "casual"]
+}

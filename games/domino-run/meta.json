@@ -1,0 +1,20 @@
+{
+  "slug": "domino-run",
+  "date": "2026-10-04",
+  "emoji": "🁫",
+  "title": { "ko": "냥발 도미노", "en": "Paw Dominoes" },
+  "tagline": { "ko": "그려서 잇는 연쇄 반응 퍼즐", "en": "Draw the gap, watch the chain" },
+  "desc": {
+    "ko": "책상 위 도미노 길이 군데군데 끊겨 있습니다. 손가락으로 빈 곳을 쓱 그으면 도미노가 알맞은 간격으로 줄지어 서고, Go!를 누르면 고양이 발이 첫 도미노를 톡 쳐서 연쇄 반응이 시작됩니다. 간격이 멀면 끊기고 너무 급하게 꺾으면 빗나가니, 종과 폭죽과 로켓까지 부드럽게 이어 주세요. 구슬 레일, 두 갈래로 갈라지는 넓은 도미노, 연필을 건너는 다리, 선풍기와 종이 도미노, 책 계단 내리막이 차례로 등장합니다.",
+    "en": "The domino run on the desk has holes in it. Swipe a finger across a gap and dominoes line up at the right spacing along your stroke, then press Go! and a cat paw flicks the first one to start the chain reaction. Leave too much room and the chain stops; bend it too sharply and a domino falls sideways and misses, so keep the line flowing all the way to the bell, the party popper or the toy rocket. Marble rails, a wide splitter domino, a bridge over a pencil, a fan with paper dominoes and downhill book steps show up one by one."
+  },
+  "controls": {
+    "ko": "모바일: 책상 위를 끌어 도미노를 그리고, 아래 칸을 눌러 특수 조각을 고른 뒤 끌거나 눌러 놓습니다. Go! 버튼으로 출발, 되돌리기는 마지막 획을 지웁니다. PC: 방향키로 커서를 움직이고 스페이스를 누른 채 움직이면 도미노가 놓입니다. 숫자키로 조각 선택, G 출발, Z 되돌리기, C 전부 지우기.",
+    "en": "Mobile: drag on the desk to draw dominoes, tap a tray slot to pick a special piece, then drag or tap to place it. Go! starts the chain and Undo removes your last stroke. Desktop: move the cursor with the arrow keys and hold Space while moving to lay dominoes. Number keys pick pieces, G is Go, Z is undo and C clears everything."
+  },
+  "tips": {
+    "ko": "기존 도미노 바로 위에서 긋기 시작하면 간격이 자동으로 딱 맞습니다. 도미노 한 개가 꺾을 수 있는 각도는 약 35도라서, 직각으로 꺾지 말고 큰 곡선으로 돌아가세요. 실패해도 놓은 조각은 그대로 남으니 끊긴 자리만 고치면 되지만 3초를 잃습니다. 한 번에 성공하면 보너스와 연속 점수가 붙고, 남긴 조각도 점수가 됩니다. 자는 고양이 쪽으로 도미노가 쓰러지면 실패입니다.",
+    "en": "Start your stroke right on an existing domino and the spacing snaps perfectly. One domino can only turn the chain by about 35 degrees, so sweep wide curves instead of right angles. A failed run keeps your pieces in place so you only fix the broken spot, but it costs three seconds. Clearing a table on the first try earns a bonus and builds a streak, and leftover pieces score too. If a domino topples onto the sleeping cat, the run fails."
+  },
+  "tags": ["puzzle", "physics", "drawing", "cats", "chain-reaction", "casual"]
+}
