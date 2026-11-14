@@ -144,7 +144,7 @@
     {tip:{ko:'합류 벨트는 한 줄로 차례차례',en:'A merge belt lets them take turns'},
      map:['.v.v..','.v.v..','.v.v..','.v.v..','.v.v..','.>.<..','<<....','..v...'],fix:[[6,2,'sr',3]],ch:[['T',1,'rrr'],['T',3,'bbb']],tr:[['L',6,'r',3],['B',2,'b',3]],bud:{m:1,b:1}},
     {tip:{ko:'버퍼는 다음 상자가 올 때까지 붙잡아요',en:'A buffer holds a box until the next arrives'},
-     map:['#v####','#.####','#.####','>v>>>>','#v####','#v####','#v####','#v####'],fix:[[3,1,'sr',2]],ch:[['T',1,'rr'],['L',3,'bb']],tr:[['R',3,'b',2],['B',1,'r',2]],bud:{u:1,b:1}},
+     map:['.v....','...#..','......','>v>>>>','.v....','.v..#.','.v....','.v..##'],fix:[[3,1,'sr',2]],ch:[['T',1,'rr'],['L',3,'bb']],tr:[['R',3,'b',2],['B',1,'r',2]],bud:{u:1,b:1}},
     {tip:{ko:'스위치 순서가 중요해요',en:'Switch order matters'},
      map:['..v...','..v...','.<....','..v...','..v...','<....>','......','......'],ch:[['T',2,'brbbrb']],tr:[['L',2,'r',2],['L',5,'b',2],['R',5,'b',2]],bud:{sr:1,t:1,b:4}},
     {tip:{ko:'스위치는 다리도 돼요',en:'A switch can be a crossing'},
@@ -247,7 +247,7 @@
   if(typeof SG==='undefined')return;
 
   /* =================== 게임 =================== */
-  var W=360,H=640,GX=42,GY=150,S=46,TY=566;
+  var W=360,H=640,GX=48,GY=144,S=44,TY=566;
   var PCOL={r:'#ff6b6b',b:'#4f9fe8',g:'#5ccb7c',y:'#ffc94a'},PDK={r:'#c84646',b:'#2f6db0',g:'#379157',y:'#d4951a'};
   var FONT=function(n){return n+'px Jua, system-ui, sans-serif'};
   var TXT={
@@ -301,6 +301,7 @@
     return truckIdx(nr,nc)>=0}
   function guess(idx,key){var r=Math.floor(idx/COLS),c=idx%COLS,ins=feeds(r,c),din=ins.length?ins[0]:(lastRot[key]!=null?lastRot[key]:2),i,d,list;
     if(key==='t')return din;
+    if(!ins.length)return din;
     if(key.charAt(0)==='s'||key==='k')list=[(din+1)%4,(din+3)%4];else list=[din,(din+1)%4,(din+3)%4];
     for(i=0;i<list.length;i++){d=list[i];if(accepts(r,c,d))return d}
     return list[0]}
@@ -327,7 +328,7 @@
   function startRun(a){runs++;sim=makeSim(L,lay,false);acc=0;mode='run';modeT=0;cat='watch';say(TXT.watch,0);
     a.beep(660,.08,'square');a.beep(990,.12,'square');handleEv(sim.ev,a)}
   function stopRun(){mode='edit';sim=null;modeT=0;cat='idle';say(L.tip,0);truckV.forEach(function(v){if(v.off!==0)v.off=70})}
-  function stepDur(){return speed===3?.1:.3}
+  function stepDur(){return speed===3?.09:.27}
   function handleEv(evs,a){
     evs.forEach(function(e){var x,y;
       if(e.t==='spawn')a.beep(420,.04,'triangle');
@@ -357,7 +358,7 @@
     else if(why==='loop'){a.beep(300,.2,'sine');a.beep(250,.3,'sine')}
     else{a.beep(220,.25,'sawtooth');a.beep(233,.25,'sawtooth');a.shake(6);a.burst(x,y,'#ff9a9a',10);a.pop(x,y-26,a.lang==='ko'?'빵-!':'HONK!','#ffb0b0');
       var ti=truckIdx(j.r,j.c);if(ti>=0)truckV[ti].honk=1}
-    a.pop(W/2+4,24+18,'-2s','#ff8080')}
+    a.pop(W/2+30,52,'-2s','#ff6a5a')}
 
   function hitTray(x,y){var keys=trayKeys();
     if(y>=TY&&y<=TY+68)for(var i=0;i<keys.length;i++){var bx=6+i*51;if(x>=bx&&x<=bx+48)return {k:'slot',i:i}}
@@ -367,6 +368,7 @@
   function cellAt(x,y){var c=Math.floor((x-GX)/S),r=Math.floor((y-GY)/S);if(r>=0&&r<ROWS&&c>=0&&c<COLS)return {r:r,c:c};return null}
 
   function update(dt,inp,a){
+    if(!a.__pc){var op=a.pop;a.pop=function(x,y,tx,c){op(Math.max(36,Math.min(W-36,x)),y,tx,c)};a.__pc=1}
     var fresh=inp.down&&!prevDown&&inp.x!=null,rel=!inp.down&&prevDown,i,k;
     if(mode==='edit'){time-=dt;
       if(time<=0){time=0;a.over();prevDown=inp.down;return}
@@ -456,8 +458,12 @@
 
   function lampSway(i,t){return Math.sin(t*(.9+i*.17)+i*2)*.12}
   function drawLampsTop(g,t){
-    for(var i=0;i<3;i++){var ax=70+i*110,sw=lampSway(i,t);g.save();g.translate(ax,32);g.rotate(sw);
-      g.strokeStyle='#4a3a30';g.lineWidth=1.5;g.beginPath();g.moveTo(0,0);g.lineTo(0,-4);g.stroke();
+    for(var i=0;i<3;i++){var ax=70+i*110,sw=lampSway(i,t);g.save();g.translate(ax,34);g.rotate(sw);
+      g.strokeStyle='#4a3a30';g.lineWidth=1.5;g.beginPath();g.moveTo(0,0);g.lineTo(0,88);g.stroke();
+      g.fillStyle='#3f6d6a';g.beginPath();g.moveTo(-11,100);g.lineTo(11,100);g.lineTo(5,88);g.lineTo(-5,88);g.closePath();g.fill();
+      g.fillStyle='#5f9a95';g.fillRect(-5,86,10,3);
+      g.fillStyle='rgba(255,236,170,.95)';g.beginPath();g.ellipse(0,100,9,3,0,0,7);g.fill();
+      var rg=g.createRadialGradient(0,102,2,0,102,22);rg.addColorStop(0,'rgba(255,240,180,.55)');rg.addColorStop(1,'rgba(255,240,180,0)');g.fillStyle=rg;g.beginPath();g.arc(0,102,22,0,7);g.fill();
       g.restore()}}
   function drawLampLight(g,t){
     g.save();g.globalCompositeOperation='lighter';
@@ -558,7 +564,7 @@
   function drawManifest(g,a,t){
     var n=L.chutes.length,rowH=n>1?16:22,y0=n>1?70:72,i,j;
     g.fillStyle='rgba(255,252,240,.82)';rr(g,68,66,286,34,8);g.fill();g.strokeStyle='rgba(120,90,60,.4)';g.lineWidth=1.5;g.stroke();
-    for(i=0;i<n;i++){var ch=L.chutes[i],y=y0+i*rowH+rowH/2-1,q=ch.q,taken=sim?sim.qi[i]:0,bs=n>1?12:16,gap=bs+3;
+    for(i=0;i<n;i++){var ch=L.chutes[i],y=y0+i*rowH+rowH/2-1,q=ch.q,taken=sim?sim.qi[i]:0,bs=n>1?13:19,gap=bs+3;
       var x=78;
       if(n>1){g.fillStyle=i?'#7a5cff':'#ff7a3d';g.beginPath();g.arc(x,y,6,0,7);g.fill();g.fillStyle='#fff';g.font=FONT(9);g.textAlign='center';g.fillText(i?'B':'A',x,y+3.2);x+=12}
       else{g.fillStyle='#7a6a5a';g.font=FONT(11);g.textAlign='left';g.fillText(a.lang==='ko'?'순서':'Queue',x-4,y+4);x+=30}
@@ -566,7 +572,7 @@
       for(j=0;j<q.length&&j<maxN;j++){var bx=x+j*gap,used=j<taken;
         g.globalAlpha=used?.25:1;
         g.fillStyle=PDK[q[j]];rr(g,bx,y-bs/2+2,bs,bs,3);g.fill();g.fillStyle=PCOL[q[j]];rr(g,bx,y-bs/2,bs,bs-1,3);g.fill();
-        g.fillStyle='rgba(255,255,255,.55)';g.fillRect(bx+bs/2-1,y-bs/2,2,bs-1);
+        g.fillStyle='rgba(255,245,215,.8)';g.fillRect(bx+bs/2-1,y-bs/2,2,bs*.45);
         g.fillStyle='rgba(0,0,0,.35)';sym(g,q[j],bx+bs/2,y+.5,bs*.18);
         if(j===taken&&mode!=='edit'){g.strokeStyle='#ff7a3d';g.lineWidth=1.5;rr(g,bx-1.5,y-bs/2-1.5,bs+3,bs+3,4);g.stroke()}
         g.globalAlpha=1}
@@ -621,7 +627,7 @@
     for(i=0;i<sim.parcels.length;i++){p=sim.parcels[i];
       if(p.st==='done'&&!(mode==='run'&&p.dStep===sim.step))continue;
       var e=ease,stt=0,sc=1;
-      if(mode==='jam'&&jamInfo&&jamInfo.ids.indexOf(p.id)>=0){e=jamInfo.half?Math.min(.5,modeT*3):Math.min(1,modeT*5);stt=2}
+      if(mode==='jam'&&jamInfo&&jamInfo.ids.indexOf(p.id)>=0){var cap=jamInfo.why==='crash'?(jamInfo.half?.38:.62):1,mt=modeT*6;e=Math.min(cap,mt)-(jamInfo.why==='crash'&&mt>cap?Math.max(0,Math.sin(Math.min(1,(mt-cap)/2)*Math.PI))*.12:0);stt=2}
       else if(mode==='jam'||mode==='clear')e=1;
       var x=cxp(p.pc)+(cxp(p.c)-cxp(p.pc))*e,y=cyp(p.pr)+(cyp(p.r)-cyp(p.pr))*e;
       if(p.st==='done'){stt=1;sc=1-Math.max(0,e-.55)*2}
@@ -714,8 +720,8 @@
       if(f.k==='flash'){g.globalAlpha=Math.max(0,1-k*3);g.strokeStyle=f.c;g.lineWidth=3;g.beginPath();g.arc(f.x,f.y-3,17+k*40,0,7);g.stroke();g.globalAlpha=1}
       else if(f.k==='poof'){g.globalAlpha=Math.max(0,1-k*2);g.fillStyle='#efe6d8';for(var i=0;i<5;i++){var an=i*1.26;g.beginPath();g.arc(f.x+Math.cos(an)*k*40,f.y+Math.sin(an)*k*40,7*(1-k),0,7);g.fill()}g.globalAlpha=1}
       else if(f.k==='nope'){g.globalAlpha=Math.max(0,1-k*2);g.strokeStyle='#e04a3a';g.lineWidth=3;g.beginPath();g.arc(f.x,f.y,14,0,7);g.moveTo(f.x-9,f.y+9);g.lineTo(f.x+9,f.y-9);g.stroke();g.globalAlpha=1}
-      else if(f.k==='stars'){for(var j=0;j<4;j++){var an2=t*5+j*1.57,sx=f.x+Math.cos(an2)*15,sy=f.y-18+Math.sin(an2)*5;
-        g.fillStyle=j%2?'#ffe066':'#fff';sym(g,'y',sx,sy,3.6)}}})}
+      else if(f.k==='stars'){for(var j=0;j<5;j++){var an2=t*5+j*1.257,sx=f.x+Math.cos(an2)*20,sy=f.y-22+Math.sin(an2)*6;
+        g.fillStyle='rgba(90,60,20,.5)';sym(g,'y',sx+1,sy+1,5);g.fillStyle=j%2?'#ffe066':'#fff';sym(g,'y',sx,sy,5)}}})}
 
   function draw(g,a,dt){
     dt=dt||0;tG+=dt;var t=tG,i,ko=a.lang==='ko';
@@ -759,4 +765,6 @@
     how:{ko:'벨트와 스위치를 미리 깔고 ▶실행! 상자들이 같은 색 트럭에 들어가게 하세요. 부딪히거나 떨어지면 다시 고쳐요.',
          en:'Lay belts and switches, then press ▶ Run. Get every box into the truck of its colour. Crash or spill? Tweak and run again.'},
     init:init,update:update,draw:draw});
+  window.__psState=function(){return {lv:lvN,mode:mode,time:time,lay:Object.keys(lay).length}};
+  window.__psJump=function(n){load(n)};
 })();

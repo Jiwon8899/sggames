@@ -8,9 +8,9 @@
   /* ---------- 날 데이터 ----------
      plots:[x, kind('c' 작물 | 'g' 온실)]  clouds:[x,y,m]  spawn/mist/wind/birds: 주기(초, 0=없음) */
   var DAYS=[
-    {plots:[[205]],clouds:[[305,150,2]],quota:1,season:0,
+    {plots:[[205]],clouds:[[305,150,1.8]],quota:1,season:0,mist:9,m0:0,
       hint:{ko:'구름을 끌어 밭에 비를 내려요',en:'Drag clouds to water the field'}},
-    {plots:[[205]],clouds:[[80,150,1],[310,196,1]],quota:1,season:0,
+    {plots:[[205]],clouds:[[80,150,1],[310,196,1]],quota:1,season:0,mist:9,m0:.1,
       hint:{ko:'구름 둘을 맞붙이면 비구름이 돼요',en:'Push two clouds together to make rain'}},
     {plots:[[150],[270]],clouds:[[210,130,4]],quota:2,season:0,
       hint:{ko:'비가 넘치면 밭이 잠겨요! 제때 옮겨요',en:'Too much rain floods a field! Move on in time'}},
@@ -36,16 +36,16 @@
   function getDay(n){
     if(n<DAYS.length){var d=DAYS[n];return {n:n,plots:d.plots.map(function(p){return {x:p[0],kind:p[1]||'c'}}),
       clouds:d.clouds.map(function(c){return c.slice()}),quota:d.quota,season:d.season,spawn:d.spawn||0,mist:d.mist||0,
-      wind:d.wind||0,birds:d.birds||0,dry:d.dry||1,hint:d.hint,seed:n*7+1}}
+      wind:d.wind||0,birds:d.birds||0,dry:d.dry||1,hint:d.hint,m0:d.m0!=null?d.m0:.16,seed:n*7+1}}
     var r=mkRng(n*977+13),k=n-DAYS.length,season=Math.floor(r()*3),np=r()<.45?3:4,xs=PX[np],gh=r()<.4?Math.floor(r()*np):-1,
         plots=xs.map(function(x,i){return {x:x,kind:i===gh?'g':'c'}}),crops=np-(gh>=0?1:0),
         clouds=[[r()<.5?40:346,120+r()*80,2]];
     for(var i=0;i<1+Math.floor(r()*3);i++)clouds.push([30+r()*300,110+r()*150,1]);
     return {n:n,plots:plots,clouds:clouds,quota:crops+(k>=8?1:0),season:season,
       spawn:[3.4,5,9][season],mist:4+r()*3,wind:r()<.55?6+r()*4:0,birds:r()<.5?8+r()*4:0,
-      dry:1+Math.min(.45,k*.015),hint:null,seed:n*7+1}}
+      dry:1+Math.min(.45,k*.015),hint:null,m0:.16,seed:n*7+1}}
 
-  function rainRate(m){return Math.max(.07,.1+.1*(m-RAIN_M))}
+  function rainRate(m){return Math.max(.12,.14+.1*(m-RAIN_M))}
   function cloudR(m){return 22*Math.sqrt(Math.max(.3,m))}
   var RW=.56;
   function newCloud(s,x,y,m){var c={id:s.nid++,x:x,y:y,vx:0,vy:0,m:m,rain:m>=RAIN_M,imm:0,tx:null,ty:null,
@@ -55,7 +55,7 @@
     var cfg=getDay(n),s={n:n,cfg:cfg,rng:rng||mkRng(cfg.seed),t:0,clouds:[],nid:1,harvests:0,floods:0,quota:cfg.quota,
       cleared:false,ev:[],bolts:[],birds:null,birdT:cfg.birds?cfg.birds*.8:0,
       wind:{st:'calm',t:cfg.wind?cfg.wind*.7:0,dir:1,f:0},spawnT:cfg.spawn?cfg.spawn*.6:0,mistT:cfg.mist?cfg.mist*.5:0};
-    s.plots=cfg.plots.map(function(p,i){return {i:i,x:p.x,w:PW,kind:p.kind,M:p.kind==='g'?0:.16,p:0,flooded:false,
+    s.plots=cfg.plots.map(function(p,i){return {i:i,x:p.x,w:PW,kind:p.kind,M:p.kind==='g'?0:cfg.m0,p:0,flooded:false,
       wilt:0,wetT:0,rain:0,shade:false,stage:0,popT:0,veg:i%3}});
     cfg.clouds.forEach(function(c){newCloud(s,c[0],c[1],c[2])});
     return s}
@@ -74,7 +74,7 @@
   function dash(s,id,dx,dy){var c=cloudById(s,id);if(!c)return null;var best=null,bd=1e9;
     s.clouds.forEach(function(o){if(o===c)return;var ox=o.x-c.x,oy=o.y-c.y,d=Math.hypot(ox,oy);
       if(d<1||(ox*dx+oy*dy)/d<.25)return;if(d<bd){bd=d;best=o}});
-    if(!best)return null;var ux=(best.x-c.x)/bd,uy=(best.y-c.y)/bd,v=Math.min(520,bd*4+120);c.vx=ux*v;c.vy=uy*v;c.tx=c.ty=null;
+    if(!best)return null;var ux=(best.x-c.x)/bd,uy=(best.y-c.y)/bd,v=Math.min(520,bd*4+120);c.vx=ux*v;c.vy=uy*v;c.tx=c.ty=null;c.dashId=best.id;c.dashT=1.4;
     s.ev.push({t:'dash',id:id});return best.id}
 
   /* ---------- 한 틱 ---------- */
@@ -94,7 +94,9 @@
       if(s.clouds.length<MAXC){var mc=newCloud(s,34,SKY_BOT+30,1);mc.vy=-70;mc.born=1;mc.mist=1;s.ev.push({t:'mist',x:34,y:SKY_BOT})}}}
     /* 구름 움직임 */
     for(i=0;i<s.clouds.length;i++){c=s.clouds[i];var w=.7+.3*c.m,ax=c.ax,ay=c.ay,r=cloudR(c.m);c.ax=c.ay=0;
-      if(c.tx!=null){ax+=(c.tx-c.x)*34/w-c.vx*9/Math.sqrt(w);ay+=(c.ty-c.y)*34/w-c.vy*9/Math.sqrt(w)}
+      if(c.dashId){var dt2=cloudById(s,c.dashId);c.dashT-=dt;if(!dt2||c.dashT<=0||c.tx!=null)c.dashId=0;
+        else{ax+=(dt2.x-c.x)*40/w-c.vx*6/Math.sqrt(w);ay+=(dt2.y-c.y)*40/w-c.vy*6/Math.sqrt(w)}}
+      if(c.dashId){}else if(c.tx!=null){ax+=(c.tx-c.x)*34/w-c.vx*9/Math.sqrt(w);ay+=(c.ty-c.y)*34/w-c.vy*9/Math.sqrt(w)}
       else{ax-=c.vx*2.2;ay-=c.vy*(c.mist?.4:2)}
       ax+=wd.f*170/w;
       c.vx+=ax*dt;c.vy+=ay*dt;c.x+=c.vx*dt;c.y+=c.vy*dt;
@@ -107,7 +109,7 @@
     for(i=0;i<s.clouds.length;i++)for(j=i+1;j<s.clouds.length;j++){c=s.clouds[i];o=s.clouds[j];
       if(c.imm>0||o.imm>0)continue;var d=Math.hypot(c.x-o.x,c.y-o.y);
       if(d<(cloudR(c.m)+cloudR(o.m))*.55){var big=c.m>=o.m?c:o,sm=big===c?o:c,M=c.m+o.m;
-        big.x=(c.x*c.m+o.x*o.m)/M;big.y=(c.y*c.m+o.y*o.m)/M;big.vx=(c.vx*c.m+o.vx*o.m)/M;big.vy=(c.vy*c.m+o.vy*o.m)/M;
+        big.x=(c.x*c.m+o.x*o.m)/M;big.y=(c.y*c.m+o.y*o.m)/M;big.vx=(c.vx*c.m+o.vx*o.m)/M*.35;big.vy=(c.vy*c.m+o.vy*o.m)/M*.35;big.dashId=0;
         if(big.tx==null&&sm.tx!=null){big.tx=sm.tx;big.ty=sm.ty}
         var was=big.m>=RAIN_M||big.rain;big.m=M;big.rain=big.rain||sm.rain||M>=RAIN_M;big.pulse=1;big.mist=0;
         s.clouds.splice(s.clouds.indexOf(sm),1);
@@ -122,7 +124,7 @@
       for(j=0;j<s.plots.length;j++){p=s.plots[j];var ov=Math.min(c.x+rw,p.x+p.w/2)-Math.max(c.x-rw,p.x-p.w/2);
         if(ov>p.w*.25)p.shade=true;
         if(c.rain&&ov>0)p.rain+=rainRate(c.m)*Math.min(1,ov/(2*rw))}
-      if(c.rain){c.m-=rainRate(c.m)*.6*dt}
+      if(c.rain){c.m-=rainRate(c.m)*.4*dt}
       else{c.m-=.008*(.3+nn)*dt;if(c.m<.35){s.clouds.splice(i,1);s.ev.push({t:'fade',x:c.x,y:c.y,id:c.id});continue}}
       if(c.m>=THUNDER_M&&c.thT<=0){c.thT=1.3+s.rng()*.5;var bx=c.x+(s.rng()-.5)*cr*.6;s.bolts.push(bx);
         s.ev.push({t:'bolt',x:bx,y:c.y+cr*.4,id:c.id})}}
@@ -271,6 +273,7 @@
       else if(q.t==='dash'&&sel!=null){if(dash(sim,sel,q.dx,q.dy))a.beep(420,.08,'triangle')}}
     if(sel!=null&&(keys.l||keys.r||keys.u||keys.d)&&held==null){c=cloudById(sim,sel);
       if(c){var w=.7+.3*c.m,mx=(keys.r?1:0)-(keys.l?1:0),my=(keys.d?1:0)-(keys.u?1:0);push(sim,sel,mx*560/w,my*560/w)}}
+    else if(kb&&sel!=null&&held==null){c=cloudById(sim,sel);if(c&&!c.dashId)push(sim,sel,-c.vx*5,-c.vy*5)}
     advance(sim,dt);
     handleEvents(a);
     /* 마스코트 */
@@ -291,10 +294,10 @@
     for(var i=0;i<pf.length;i++){var p=pf[i],wob=Math.sin(tG*1.3+c.seed+i)*.03;g.moveTo(c.x+ox+p[0]*r*1.15+(p[2]+wob)*r*sc,c.y+oy+p[1]*r);
       g.arc(c.x+ox+p[0]*r*1.15,c.y+oy+p[1]*r,(p[2]+wob)*r*sc,0,7)}g.fill()}
   function drawCloud(g,c,isSel){
-    var r=cloudR(c.m),k=Math.max(0,Math.min(1,(c.m-1)/4.5)),pul=c.pulse>0?1+.14*Math.sin(c.pulse*12)*c.pulse:1,born=c.born>0?1-c.born:1;
+    var r=cloudR(c.m),k=Math.max(0,Math.min(1,(c.m-1.35)/3.8)),pul=c.pulse>0?1+.14*Math.sin(c.pulse*12)*c.pulse:1,born=c.born>0?1-c.born:1;
     if(c.mist)born=Math.min(born,.5+.5*Math.max(0,(C.SKY_BOT+30-c.y)/60));
     g.save();g.globalAlpha=Math.max(.2,born);g.translate(c.x,c.y);g.scale(pul*(.6+.4*born),pul*(.6+.4*born));g.translate(-c.x,-c.y);
-    var top=c.rain?mix('#f4f7ff','#9aa6c4',k):'#ffffff',mid=c.rain?mix('#d7deef','#6f7b9e',k):mix('#ffffff','#dfe6f4',.5),bot=c.rain?mix('#aab6d4','#4d5878',k):'#c9d4ea';
+    var top=c.rain?mix('#dfe5f2','#8d98b8',k):'#ffffff',mid=c.rain?mix('#b9c3db','#626e92',k):'#f3f6fc',bot=c.rain?mix('#8e9abb','#434d6c',k):'#cfd9ee';
     if(isSel){g.fillStyle='rgba(255,236,120,.35)';blob(g,c,r,0,0,1.25)}
     g.fillStyle=bot;blob(g,c,r,0,r*.16,1);
     g.fillStyle=mid;blob(g,c,r,0,0,.96);
@@ -482,12 +485,12 @@
 
   function drawUI(g,a){var ko=a.lang==='ko';
     /* 시간 */
-    var tf=Math.max(0,Math.min(1,T/70));g.fillStyle='rgba(30,40,70,.35)';rr(g,12,34,W-24,10,5);g.fill();
-    g.fillStyle=T<10?(Math.sin(tG*12)>0?'#ff5a4e':'#ff9a5a'):'#ffd84d';rr(g,14,36,Math.max(6,(W-28)*tf),6,3);g.fill();
-    g.fillStyle='#fff';g.font='13px Jua, system-ui, sans-serif';g.textAlign='right';g.fillText(Math.ceil(T)+'s',W-14,60);
+    var tf=Math.max(0,Math.min(1,T/70));g.fillStyle='rgba(30,40,70,.38)';rr(g,12,32,W-24,15,7.5);g.fill();
+    g.fillStyle=T<10?(Math.sin(tG*12)>0?'#ff5a4e':'#ff9a5a'):'#ffd84d';rr(g,14,34,Math.max(11,(W-28)*tf),11,5.5);g.fill();
+    g.fillStyle='#5a4a20';g.font='11px Jua, system-ui, sans-serif';g.textAlign='left';g.fillText('⏱ '+Math.ceil(T)+'s',20,43.5);
     /* 힌트 */
     if(sim.cfg.hint&&mode==='play'){var ht=sim.cfg.hint[a.lang];g.font='15px Jua, system-ui, sans-serif';g.textAlign='center';
-      var tw=g.measureText(ht).width+22;g.fillStyle='rgba(255,255,255,.82)';rr(g,W/2-tw/2,50,tw,24,12);g.fill();g.fillStyle='#4a5478';g.fillText(ht,W/2,67)}
+      var tw=g.measureText(ht).width+22;if(tw>W-16){g.font='13px Jua, system-ui, sans-serif';tw=g.measureText(ht).width+18}g.fillStyle='rgba(255,255,255,.82)';rr(g,W/2-tw/2,53,tw,24,12);g.fill();g.fillStyle='#4a5478';g.fillText(ht,W/2,70)}
     /* 팻말 */
     var sx=205,sy=584;g.fillStyle='#6b4630';g.fillRect(sx-3,sy+12,6,30);
     g.fillStyle='#c99a62';rr(g,sx-70,sy-20,140,36,8);g.fill();g.strokeStyle='#8a6038';g.lineWidth=2;g.stroke();
@@ -552,5 +555,5 @@
     how:{ko:'구름을 끌어 밭 위에 비를 내리세요. 구름끼리 합치면 비구름, 아래로 쓸면 둘로 나뉘어요. 계기를 초록 칸에 맞추면 쑥쑥 자라고, 넘치면 밭이 잠겨요!',
          en:'Drag clouds over the fields to make it rain. Merge clouds into rain clouds, swipe down to split them. Keep each gauge in the green to grow crops, but too much rain floods the field!'},
     init:init,update:update,draw:draw});
-  window.__rainMaker={sim:function(){return sim},day:function(){return dayN},time:function(){return T}};
+  window.__rainMaker={api:API,load:function(n){load(n)},sim:function(){return sim},sel:function(){return sel},day:function(){return dayN},time:function(){return T}};
 })();
