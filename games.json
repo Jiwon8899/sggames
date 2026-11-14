@@ -1049,6 +1049,39 @@
     "slug": "paper-fold"
   },
   {
+    "slug": "parcel-sort",
+    "date": "2026-10-03",
+    "emoji": "📦",
+    "title": {
+      "ko": "택배 분류소",
+      "en": "Parcel Sort"
+    },
+    "tagline": {
+      "ko": "컨베이어를 프로그래밍하는 퍼즐 · 미리 깔고 실행!",
+      "en": "Program the conveyor belts · plan, then run"
+    },
+    "desc": {
+      "ko": "작은 택배 분류소의 바닥에 벨트와 스위치를 미리 깔아 두고 실행 버튼을 누르면, 상자들이 정해진 규칙대로 한 칸씩 흘러갑니다. 색 스위치는 자기 색 상자만 꺾고, 토글은 왼쪽과 오른쪽을 번갈아 보내고, 카운터는 세 번째 상자마다 옆으로 빼냅니다. 투입구 위에 적힌 상자 순서를 보고 작은 프로그램을 짜듯 계획해야 합니다. 상자가 다른 색 트럭에 들어가거나, 벨트 밖으로 떨어지거나, 서로 부딪히면 그 자리에서 멈추니 고쳐서 다시 돌려 보세요. 손으로 만든 14개 시설 다음에는 정답이 보장된 시설이 끝없이 이어집니다.",
+      "en": "Lay belts and switches on the floor of a tiny sorting facility, press Run, and watch the boxes flow one step at a time by fixed rules. A colour switch turns only boxes of its own colour, a toggle sends boxes left and right in turn, and a counter pulls every third box aside. Read the box order shown above the chute and plan it like a tiny program. If a box reaches the wrong truck, falls off a belt or bumps into another box, the run stops right there so you can fix it and run again. After 14 handcrafted facilities, endless generated facilities follow, each one checked to have a solution."
+    },
+    "controls": {
+      "ko": "모바일: 아래 서랍에서 타일을 고르고 빈칸을 누르면 놓이고, 놓은 타일을 다시 누르면 방향이 돌아갑니다. 타일을 길게 누르거나 칸 밖으로 끌어내면 빠집니다. ▶실행으로 돌려 보고, 실행 중에는 1x/3x 버튼으로 속도를 바꾸거나 ■멈춤으로 멈출 수 있습니다. PC: 방향키로 커서를 옮기고 숫자 키로 타일을 고르고, 스페이스로 놓기/돌리기, X로 빼기, R로 실행, Z로 되돌리기를 합니다.",
+      "en": "Mobile: pick a tile in the tray, tap an empty cell to place it, and tap a placed tile again to rotate it. Long-press a tile or drag it off its cell to remove it. Press ▶ Run to test, and during a run use the 1x/3x button to change speed or ■ Stop to halt. Desktop: arrow keys move the cursor, number keys pick a tile, Space places or rotates, X removes, R runs and Z undoes."
+    },
+    "tips": {
+      "ko": "상자는 두 칸 간격으로 나오기 때문에 두 줄기가 같은 칸에서 같은 순간에 만나면 부딪힙니다. 길을 조금 돌아가게 하거나 합류 벨트, 버퍼로 박자를 맞춰 보세요. 남긴 타일 하나마다 3점, 한 번에 성공하면 5점과 연속 보너스가 붙습니다. 실패한 실행은 2초를 깎지만 실행 중에는 시간이 멈추니 과감하게 시험해 보세요.",
+      "en": "Boxes leave the chute two steps apart, so two streams that reach the same cell at the same moment will crash. Take a slightly longer route, or use a merge belt or a buffer to fix the timing. Every unused tile is worth 3 points, and a first-run clear adds 5 points plus a streak bonus. A failed run costs 2 seconds, but the clock stops while boxes are moving, so test boldly."
+    },
+    "tags": [
+      "puzzle",
+      "programming",
+      "logic",
+      "conveyor",
+      "sorting",
+      "casual"
+    ]
+  },
+  {
     "slug": "planet-merge",
     "date": "2026-10-03",
     "emoji": "🪐",
