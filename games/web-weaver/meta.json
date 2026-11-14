@@ -2,8 +2,14 @@
   "slug": "web-weaver",
   "date": "2026-11-14",
   "emoji": "🕸️",
-  "title": {"ko": "이슬 거미줄", "en": "Web Weaver"},
-  "tagline": {"ko": "출렁이는 실 물리 · 노래하는 거미줄", "en": "Springy silk physics · a web that sings"},
+  "title": {
+    "ko": "이슬 거미줄",
+    "en": "Web Weaver"
+  },
+  "tagline": {
+    "ko": "출렁이는 실 물리 · 노래하는 거미줄",
+    "en": "Springy silk physics · a web that sings"
+  },
   "desc": {
     "ko": "눈이 커다란 꼬마 거미가 되어 나뭇가지 사이에 거미줄을 거는 물리 퍼즐입니다. 실은 진짜 용수철처럼 처지고 늘어나고 떨리며, 이슬이 맺힐 때마다 줄의 길이와 팽팽함에 따라 다른 음이 울려 거미줄 전체가 작은 멜로디를 연주합니다. 도토리는 길고 가는 줄을 끊고, 돌풍은 팽팽한 줄을 날려 버리며, 배고픈 새는 오래 걸려 있는 반딧불이를 채 갑니다. 짧고 단단한 세모 거미줄을 지어 장면마다 정해진 만큼 받아 내세요.",
     "en": "A physics puzzle where you play a big-eyed little spider spinning silk between twigs. Every strand is a real spring that sags, stretches and wobbles, and each dew drop that lands plucks a note set by the strand's length and tension, so a busy web plays its own little tune. Acorns snap long thin strands, gusts tear taut ones, and a hungry bird snatches fireflies left hanging too long. Build short, well-anchored triangles and catch your quota in every scene."
@@ -13,8 +19,15 @@
     "en": "Mobile: drag from a knot on a branch (or from a strand you already spun) to another knot to spin silk. Tap a caught dew drop or firefly and the spider climbs along the strands to collect it, and double-tap a strand to cut it. Desktop: move the cursor between knots and strands with the arrow keys and press Space once to start and again to finish a strand. X cuts the strand under the cursor, C collects the nearest catch, and mouse dragging works too."
   },
   "tips": {
-    "ko": "실은 길게 뽑을수록 가늘어져 약해지니 미리보기 줄이 주황색으로 변하면 중간 매듭을 거쳐 짧게 나눠 거세요. 걸린 것이 많아 줄이 붉게 물들면 거미를 보내 이슬을 거두면 무게도 덜고 실도 조금 돌아옵니다. 새가 오는 장면에서는 반딧불이에 빨간 테두리가 깜빡이기 전에 거둬야 하고, 반딧불이를 거두면 실이 많이 채워집니다. 잎이 붙은 줄은 아무것도 받지 못하니 두 번 톡 쳐서 끊고 다시 거세요.",
-    "en": "Silk gets thinner the longer you pull it, so when the preview line turns orange, split the span through a middle knot instead. When a loaded strand starts glowing red, send the spider to collect drops: it lightens the web and gives back a little silk. In scenes with the bird, collect a firefly before its red ring starts blinking, and each firefly refills a lot of silk. A strand with a leaf on it catches nothing, so double-tap it to cut it and spin a fresh one."
+    "ko": "실은 길게 뽑을수록 가늘어져 약해지니 미리보기 줄이 주황색으로 변하면 중간 매듭을 거쳐 짧게 나눠 거세요. 걸린 것이 많아 줄이 붉게 물들면 거미를 보내 이슬을 거두면 무게도 덜고 실도 조금 돌아옵니다. 반딧불이는 거미가 거둬 와야 개수에 들어가고 실도 많이 채워 주니, 새가 오는 장면에서는 빨간 테두리가 깜빡이기 전에 거두세요. 잎이 붙은 줄은 아무것도 받지 못하니 두 번 톡 쳐서 끊고 다시 거세요.",
+    "en": "Silk gets thinner the longer you pull it, so when the preview line turns orange, split the span through a middle knot instead. When a loaded strand starts glowing red, send the spider to collect drops: it lightens the web and gives back a little silk. Fireflies only count once the spider reels them in and each one refills a lot of silk, so in bird scenes collect them before their red ring starts blinking. A strand with a leaf on it catches nothing, so double-tap it to cut it and spin a fresh one."
   },
-  "tags": ["physics", "puzzle", "spider", "music", "casual", "cute"]
+  "tags": [
+    "physics",
+    "puzzle",
+    "spider",
+    "music",
+    "casual",
+    "cute"
+  ]
 }

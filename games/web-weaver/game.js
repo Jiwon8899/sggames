@@ -3,7 +3,7 @@
    물리·장면·거미 길찾기는 DOM 없이 돌도록 분리되어 있다(node 검증용 module.exports). */
 (function(){
   'use strict';
-  var WF=22,W=360,H=640,G=600,HS=1/480,CS=2e-5,NM=.05,MAXLEN=290,MINLEN=26,TOPY=66,SPD=150,REST=1;
+  var WF=26,W=360,H=640,G=600,HS=1/480,CS=2e-5,NM=.05,MAXLEN=290,MINLEN=26,TOPY=66,SPD=150,REST=1;
   /* 떨어지는 것들: r 반지름, m 질량, vy 종단 속도, sw 흔들림, wa 바람 면적 */
   var IT={d:{r:5,m:1,vy:78,sw:0,wa:.12},f:{r:5,m:.4,vy:34,sw:26,wa:.25},l:{r:9,m:.45,vy:44,sw:34,wa:1},a:{r:8,m:3.2,vy:300,sw:0,wa:.05}};
   function lim(L){return .12+.21*Math.pow(140/L,4)}  /* 실을 길게 뽑을수록 가늘어져 약하다: 끊어지는 변형률 한계 */
@@ -140,10 +140,10 @@
       var a=it.s.n[it.k2],b=it.s.n[it.k2+1],T=IT[it.k];a.m+=T.m*(1-it.t);b.m+=T.m*it.t;a.wa+=T.wa*(1-it.t);b.wa+=T.wa*it.t}}
 
   function substep(w,h){
-    var P=w.P,i,k,p,s,vx,vy,dm=1-1.3*h,h2=h*h,wd=w.wind;
+    var P=w.P,i,k,p,s,vx,vy,dm=1-1.3*h,h2=h*h,wd=w.wind,wu=-.6*Math.abs(w.gust);
     for(i=0;i<P.length;i++){p=P[i];if(p.pin||p.dead)continue;
       vx=(p.x-p.px)*dm;vy=(p.y-p.py)*dm;p.px=p.x;p.py=p.y;
-      p.x+=vx+wd*(NM*WF+p.wa)/p.m*h2;p.y+=vy+G*h2}
+      var wf=(NM*WF+p.wa)/p.m;p.x+=vx+wd*wf*h2;p.y+=vy+(G+wu*wf)*h2}
     for(i=0;i<w.S.length;i++){s=w.S[i];if(!s.on)continue;
       var al=s.c*s.rest/h2;
       for(k=0;k<s.n.length-1;k++){if(k===s.cut)continue;
