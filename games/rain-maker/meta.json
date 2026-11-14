@@ -1,0 +1,20 @@
+{
+  "slug": "rain-maker",
+  "date": "2026-11-14",
+  "emoji": "🌧️",
+  "title": {"ko": "비구름 목장", "en": "Rain Maker"},
+  "tagline": {"ko": "날씨 퍼즐 · 구름을 몰아 밭에 비 내리기", "en": "Weather puzzle · herd clouds to water a tiny farm"},
+  "desc": {
+    "ko": "작은 농장의 날씨가 되어 하늘의 구름을 직접 몰아 주는 게임입니다. 작은 구름끼리 맞붙이면 더 크고 어두운 비구름이 되고, 큰 구름일수록 비가 세차게 내립니다. 밭마다 수분 계기가 있어서 초록 칸에 머무는 동안 새싹이 꽃봉오리, 꽃을 거쳐 수확까지 자라지만, 비를 너무 오래 맞으면 진흙탕이 되어 애써 키운 단계를 잃습니다. 정오의 햇볕, 바람, 비를 싫어하는 유리 온실, 작물을 쪼아 먹는 새 떼까지, 하루하루 다른 날씨를 다뤄 보세요.",
+    "en": "You are the weather for a tiny farm, and you herd the clouds yourself. Push small clouds together and they merge into a bigger, darker rain cloud; the bigger the cloud, the harder it pours. Every field has a moisture gauge: while it sits in the green, a sprout grows into a bud, a flower and finally a harvest, but leave a cloud parked too long and the field floods into mud and loses a stage. Noon sun, wind gusts, a greenhouse that hates rain and a flock of hungry birds make each farm day a different weather puzzle."
+  },
+  "controls": {
+    "ko": "모바일: 구름을 손가락으로 끌어 옮기고, 놓으면 살짝 미끄러지며 멈춥니다. 구름 위에서 아래로 빠르게 쓸어내리면 구름이 둘로 나뉩니다. PC: 마우스로 똑같이 끌거나, Tab(또는 Q/E)으로 구름을 고르고 방향키로 움직이며 Space로 나누고 Shift+방향키로 그쪽에 있는 가장 가까운 구름에게 돌진해 합칠 수 있습니다.",
+    "en": "Mobile: drag a cloud with your finger; let go and it drifts to a stop. Swipe quickly downward through a cloud to split it in two. Desktop: drag with the mouse the same way, or pick a cloud with Tab (or Q/E), move it with the arrow keys, split it with Space, and press Shift+arrow to dash into the nearest cloud in that direction and merge."
+  },
+  "tips": {
+    "ko": "흰 구름은 비를 내리지 못하니 먼저 두 개를 합쳐 회색 비구름을 만드세요. 계기가 분홍 칸에 닿기 전에 구름을 목마른 다음 밭으로 옮기면 범람 없이 하루를 마쳐 보너스 15점을 받고, 계기 한가운데에서 수확하면 '딱 좋아' 보너스가 붙습니다. 비구름은 비를 내릴수록 작아지니 가을처럼 구름이 귀한 날엔 왼쪽 호수에서 피어오르는 안개 구름을 모으고, 새 떼가 내려앉으면 구름을 여럿 합쳐 번개 치는 먹구름으로 쫓아내세요.",
+    "en": "White clouds cannot rain, so merge two of them into a grey rain cloud first. Move a cloud on to the next thirsty field before the gauge touches the pink zone: finishing a day with no floods is worth 15 bonus points, and harvesting with the gauge right in the middle earns a Perfect bonus. Rain clouds shrink as they pour, so on dry autumn days collect the mist clouds rising from the lake on the left, and when birds land, merge several clouds into a thundering storm cloud to shoo them away."
+  },
+  "tags": ["puzzle", "weather", "farming", "casual", "clouds", "relaxing"]
+}

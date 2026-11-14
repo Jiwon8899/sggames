@@ -1,0 +1,20 @@
+{
+  "slug": "hourglass-puzzle",
+  "date": "2026-10-03",
+  "emoji": "⏳",
+  "title": {"ko": "모래시계 요리사", "en": "Hourglass Chef"},
+  "tagline": {"ko": "논리 퍼즐 · 시계 없이 정확히 N분", "en": "Logic puzzle · exactly N minutes, no clock"},
+  "desc": {
+    "ko": "고양이 셰프가 마법 달걀을 정확히 N분 동안 삶아야 하는데, 부엌에는 시계가 없고 크기가 다른 모래시계 몇 개뿐입니다. 시간은 모래시계 하나가 다 떨어지는 '딩!' 순간까지만 흐르고, 달걀을 넣거나 담는 것도 그 순간에만 할 수 있습니다. 반쯤 흐른 모래시계를 뒤집으면 아래로 내려간 모래가 그대로 위로 올라가니, 이 성질을 이용해 4분과 7분 모래시계로 9분을 재는 같은 고전 수수께끼를 손으로 직접 풀어 보세요. 14개의 손수 만든 퍼즐 뒤에는 탐색기로 풀 수 있음을 확인한 퍼즐이 끝없이 이어집니다.",
+    "en": "A cat chef has to boil a magic egg for exactly N minutes, but the kitchen has no clock, only a few hourglasses of different sizes. Time only runs until the next ding, the moment one glass runs empty, and the egg can only go in or come out at such a moment. Flipping a half-run glass sends the sand that already fell back to the top, and that trick is how you solve classics like measuring 9 minutes with a 4 and a 7. After 14 handcrafted puzzles, a solver-checked generator keeps new ones coming."
+  },
+  "controls": {
+    "ko": "모바일: 모래시계를 눌러 뒤집고, 아래 버튼으로 '다음 딩!까지', '달걀 넣기', '담기', '처음부터'를 누르세요. PC: 숫자 1·2·3으로 모래시계를 뒤집고, 스페이스로 다음 딩까지 넘기고, E로 달걀을 넣고, S로 담고, R로 처음부터 다시 합니다. 모래가 흐르는 도중에는 정확한 시각을 알 수 없어서 아무 행동도 받지 않습니다.",
+    "en": "Mobile: tap an hourglass to flip it, then use the buttons for Skip to next, Put egg in, Serve and Reset. Desktop: keys 1, 2 and 3 flip the glasses, Space skips to the next ding, E puts the egg in, S serves and R resets. While sand is falling you cannot know the exact time, so the kitchen ignores those actions until the next ding."
+  },
+  "tips": {
+    "ko": "달걀을 꼭 처음에 넣을 필요는 없습니다. 두 모래시계가 끝나는 시각의 차이로 짧은 시간을 잴 수 있어요. 모래시계 옆의 눈금으로 남은 모래가 몇 분어치인지 세어 보고, 반쯤 흐른 것을 뒤집으면 그만큼만 다시 흐른다는 걸 기억하세요. 최소 횟수에 가깝게 뒤집을수록 보너스가 크고, 한 번에 맞히면 연속 보너스가 쌓이며, 틀리게 담으면 5초가 줄어듭니다.",
+    "en": "The egg does not have to go in at the start: the gap between two glasses running out measures a short time. Count the tick marks to see how many minutes of sand are left, and remember that flipping a half-run glass replays exactly the part that already fell. Flipping close to the minimum earns a bigger bonus, first-try clears build a streak, and a wrong serve costs 5 seconds."
+  },
+  "tags": ["puzzle", "logic", "hourglass", "cooking", "brain-teaser", "cat"]
+}
