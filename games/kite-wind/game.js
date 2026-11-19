@@ -3,35 +3,38 @@
    시뮬레이션은 DOM 없이 고정 스텝으로 돌도록 분리되어 있다(node 검증용 module.exports). */
 (function(){
   'use strict';
-  var W=360,H=640,GY=574,HAND=34,KIDV=40,LMIN=56,LMAX=452,REEL=25,PAY=30,PAYF=80,G=150,
-      STEP=1/120,KQ=.02,CLA=1.6,CD0=.2,CDA=1.3,AH=.42,AR=.13,ARATE=6,TSPIN=2400,ALT_TOP=500,LEAD=110,TB=30,KO=70,PAY0=18,SLACK=30,BOTN=24,BOTSUB=36,DV=0;
+  var W=360,H=640,GY=574,HAND=34,KIDV=40,LMIN=56,LMAX=300,REEL=25,PAY=30,PAYF=80,G=150,
+      STEP=1/120,KQ=.02,CLA=1.6,CD0=.2,CDA=1.3,AH=.42,AR=.07,ARATE=10,TSPIN=1450,ALT_TOP=500,LEAD=110,TB=30,KO=70,PAY0=40,SLACK=20,RING_R=27,BOTN=24,BOTSUB=36,DV=2.5;
 
   /* ---------- 스테이지 ----------
      좌표는 스테이지 시작 기준. 아이는 x=0에서 len까지 오른쪽으로 걷고, 바람은 대개 맞바람(음수=왼쪽으로 부는 바람)이라 연은 아이 뒤에서 난다.
      len: 걷는 거리, layers:[[아래,위,바람,돌풍세기]], rings:[[x,높이]], q: 필요한 고리 수,
      seeds/stars:[[x,높이]], trees:[[x,수관 중심 높이,반지름]], birds:[[x,높이,속도,출발시각]], wires:[[x1,x2,높이]] */
   var STAGES=[
-    {len:540,layers:[[0,999,-110,0]],rings:[[150,150],[240,190],[320,215],[410,185]],q:3,stars:[[360,240]],
+    {len:590,layers:[[0,999,-105,0]],rings:[[40,130],[130,225],[220,135],[310,235]],q:3,stars:[[175,185]],
       hint:{ko:'꾹 누르면 감고, 떼면 풀어요',en:'Hold to reel in, release to let out'}},
-    {len:540,layers:[[0,150,-68,0],[150,999,-135,0]],rings:[[140,170],[230,230],[320,260],[410,240]],q:3,seeds:[[270,280],[380,200]],
+    {len:440,layers:[[0,150,-68,0],[150,999,-135,0]],rings:[[-120,170],[-30,265],[60,180],[150,275]],q:4,seeds:[[10,230],[110,240]],
       hint:{ko:'아래 바람은 약해요 — 톡톡 당겨 위층으로!',en:'Weak wind below — tug it up into the strong layer!'}},
-    {len:560,layers:[[0,160,-70,0],[160,999,-130,0]],trees:[[260,130,42]],rings:[[140,200],[250,235],[350,230],[440,200]],q:3,stars:[[300,280]],
+    {len:460,layers:[[0,160,-70,0],[160,999,-130,0]],trees:[[0,130,42]],rings:[[-120,200],[-10,235],[90,230],[180,200]],q:3,stars:[[40,280]],
       hint:{ko:'나무보다 높이 날아요',en:'Fly higher than the tree'}},
-    {len:560,layers:[[0,150,-70,0],[150,260,-170,.3],[260,999,-120,0]],rings:[[130,130],[230,290],[330,310],[430,280]],q:3,seeds:[[290,200]],
+    {len:460,layers:[[0,150,-70,0],[150,260,-170,.3],[260,999,-120,0]],rings:[[-130,130],[-30,290],[70,310],[170,280]],q:3,seeds:[[30,200]],
       hint:{ko:'돌풍 띠에선 감지 말고 풀어요!',en:'In the gust band, let out — don\'t reel!'}},
-    {len:560,layers:[[0,160,-70,0],[160,999,-130,0]],birds:[[560,235,-60,1.5],[600,300,-55,5]],rings:[[130,220],[220,270],[320,250],[420,230]],q:3,
-      stars:[[370,320]],hint:{ko:'새와 부딪히면 빙글빙글!',en:'Bump a bird and you\'ll tumble!'}},
-    {len:580,layers:[[0,170,-70,0],[170,999,-130,0]],trees:[[190,130,42],[380,150,46]],rings:[[160,200],[270,240],[340,260],[460,230]],q:3,
-      seeds:[[230,290],[420,280]],hint:{ko:'씨앗은 바람 따라 흔들려요',en:'Seeds sway in the wind'}},
-    {len:580,layers:[[0,999,-115,0]],wires:[[220,380,215]],rings:[[150,230],[270,140],[340,135],[470,250]],q:3,stars:[[300,110]],
+    {len:460,layers:[[0,160,-70,0],[160,999,-130,0]],birds:[[300,235,-60,1.5],[340,300,-55,5]],rings:[[-130,220],[-40,270],[60,250],[160,230]],q:3,
+      stars:[[110,320]],hint:{ko:'새와 부딪히면 빙글빙글!',en:'Bump a bird and you\'ll tumble!'}},
+    {len:480,layers:[[0,170,-70,0],[170,999,-130,0]],trees:[[-70,130,42],[120,150,46]],rings:[[-100,200],[10,240],[80,260],[200,230]],q:3,
+      seeds:[[-30,290],[160,280]],hint:{ko:'씨앗은 바람 따라 흔들려요',en:'Seeds sway in the wind'}},
+    {len:480,layers:[[0,999,-122,0]],wires:[[-40,120,215]],rings:[[-110,230],[10,145],[80,140],[180,235],[260,265]],q:4,stars:[[40,110]],
       hint:{ko:'전깃줄 밑에선 연을 낮게!',en:'Keep low under the power line!'}},
-    {len:580,layers:[[0,130,60,0],[130,999,-130,0]],trees:[[300,120,40]],rings:[[140,220],[250,260],[360,280],[460,240]],q:3,seeds:[[320,240]],
+    {len:480,layers:[[0,130,60,0],[130,999,-130,0]],trees:[[40,120,40]],rings:[[-120,220],[-10,260],[100,280],[200,240]],q:3,seeds:[[60,240]],
       hint:{ko:'아래 바람은 거꾸로 불어요 — 내려가지 마요',en:'The low wind blows backwards — stay up!'}},
-    {len:600,layers:[[0,140,-70,0],[140,240,-165,.3],[240,999,-120,0]],birds:[[640,320,-60,3]],wires:[[390,500,250]],
-      rings:[[150,190],[260,260],[430,170],[530,270]],q:3,stars:[[330,330]],hint:{ko:'바람층을 골라 타요',en:'Pick the right layer'}},
-    {len:620,layers:[[0,150,-70,0],[150,270,-150,.3],[270,999,70,0]],trees:[[170,130,42]],birds:[[700,230,-70,4]],wires:[[410,520,245]],
-      rings:[[150,190],[250,230],[340,245],[455,175],[545,230]],q:4,seeds:[[300,200]],stars:[[480,140]],hint:{ko:'전부 다 써 봐요!',en:'Use everything!'}}
+    {len:500,layers:[[0,140,-70,0],[140,240,-165,.3],[240,999,-120,0]],birds:[[380,320,-60,3]],wires:[[130,240,250]],
+      rings:[[-110,190],[0,260],[170,170],[270,270]],q:3,stars:[[70,330]],hint:{ko:'바람층을 골라 타요',en:'Pick the right layer'}},
+    {len:520,layers:[[0,150,-70,0],[150,270,-150,.3],[270,999,70,0]],trees:[[-90,130,42]],birds:[[440,230,-70,4]],wires:[[150,260,245]],
+      rings:[[-110,190],[-10,230],[80,245],[195,175],[285,230]],q:4,seeds:[[40,200]],stars:[[220,140]],hint:{ko:'전부 다 써 봐요!',en:'Use everything!'}}
   ];
+
+  /* 연은 아이보다 최대 줄 길이만큼 뒤에서 나므로, 마지막 고리 뒤로 충분히 걸어야 스테이지가 끝난다 */
+  STAGES.forEach(function(st){st.len=Math.max(st.len,st.rings[st.rings.length-1][0]+290)});STAGES[0].first=true;
 
   /* ---------- 결정적 난수 ---------- */
   function rng(seed){var s=seed>>>0||1;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
@@ -46,17 +49,17 @@
     else{var b2=low[1]+ri(95,120);gust=[low[1],b2,-ri(160,172),.25+r()*.1];layers=[low,gust,[b2,999,top,0]]}
     if(n>15&&r()<.3){var tc=ri(330,370);layers[layers.length-1][1]=tc;layers.push([tc,999,ri(50,70),0]);topCap=tc-20}
     var st={len:len,layers:layers,rings:[],q:3,trees:[],birds:[],wires:[],seeds:[],stars:[],gen:n};
-    var nR=r()<.3+hard*.4?5:4,x=ri(150,175),prev=ri(170,230),minA=low[2]>0?low[1]+45:120,wireAt=n>11&&r()<.35+hard*.3?ri(1,nR-2):-1;
+    var nR=r()<.3+hard*.4?5:4,x=ri(-110,-85),prev=ri(170,230),minA=low[2]>0?low[1]+45:120,wireAt=n>11&&r()<.35+hard*.3?ri(1,nR-2):-1;
     for(i=0;i<nR;i++){var alt;
       if(i===wireAt)alt=ri(130,155);
       else{alt=prev+ri(-80,80);alt=Math.max(minA,Math.min(topCap-30,Math.min(330,alt)))}
       if(i===wireAt){st.wires.push([x-ri(110,130),x+ri(60,80),alt+ri(75,90)])}
-      st.rings.push([x,alt]);prev=alt;x+=ri(92,118)}
-    st.q=nR===5?4:3;
+      st.rings.push([x,alt]);prev=alt;x+=nR===5?ri(84,98):ri(92,112)}
+    st.q=nR===5?4:3;st.len=st.rings[nR-1][0]+ri(285,305);
     /* 나무: 고리 사이 낮은 자리, 고리보다 충분히 아래 */
     if(r()<.55+hard*.3){var k=ri(0,nR-2),tx=(st.rings[k][0]+st.rings[k+1][0])/2,lim=Math.min(st.rings[k][1],st.rings[k+1][1])-50,cr=ri(38,46),cy=Math.min(150,lim-cr);
       var clash=st.wires.some(function(w){return tx>w[0]-70&&tx<w[1]+70});if(cy>cr+50&&!clash)st.trees.push([tx,cy,cr])}
-    if(n>11&&r()<.4+hard*.4){var br=st.rings[ri(1,nR-1)];st.birds.push([len+ri(60,160),br[1]+ri(-40,40),-ri(55,75),r()*5])}
+    if(n>11&&r()<.4+hard*.4){var br=st.rings[ri(1,nR-1)];st.birds.push([st.len+ri(-40,60),br[1]+ri(-40,40),-ri(55,75),r()*5])}
     st.seeds.push([st.rings[1][0]+ri(30,50),Math.max(minA,st.rings[1][1]+ri(-40,40))]);
     st.stars.push([st.rings[nR-2][0]+ri(30,50),Math.max(minA,Math.min(topCap-20,st.rings[nR-2][1]+ri(-50,50)))]);
     st.hint=null;return st}
@@ -86,14 +89,14 @@
       stars:(st.stars||[]).map(function(p){return {x:p[0],y:p[1],got:false}}),
       birds:(st.birds||[]).map(function(b){return {x:b[0],y:b[1],v:b[2],t0:b[3],flee:0,hit:false}}),reel:false,taut:false};
     if(carry){S.kx=carry.kx;S.ky=carry.ky;S.vx=carry.vx;S.vy=carry.vy;S.th=carry.th;S.w=carry.w;S.L=carry.L;S.side=carry.side;S.T=carry.T}
-    else{S.side=wind(st,160,0)-KIDV*.6<0?-1:1;var sa=startAlt||170;S.kx=5+S.side*110;S.ky=sa;S.L=Math.hypot(110,sa-HAND);S.vx=KIDV;S.th=S.side<0?.7:2.44}
+    else{S.side=wind(st,160,0)-KIDV*.6<0?-1:1;var sa=startAlt||170,bk=st.first?110:Math.min(250,Math.sqrt(Math.max(0,280*280-(sa-HAND)*(sa-HAND))));S.kx=5+S.side*bk;S.ky=sa;S.L=Math.hypot(bk,sa-HAND);S.vx=KIDV;S.th=S.side<0?.7:2.44}
     return S}
   function carryOf(S){var o=S.st.len;return {kx:S.kx-o,ky:S.ky,vx:S.vx,vy:S.vy,th:S.th,w:S.w,L:S.L,side:S.side,T:S.T}}
 
   /* 처진 연줄: 손 → 연까지 2차 베지어. 느슨할수록·장력이 약할수록 많이 처진다 */
   function stringPts(S,n){
     var hx=S.kid+5,hy=HAND,dx=S.kx-hx,dy=S.ky-hy,d=Math.hypot(dx,dy)||1,slack=Math.max(0,S.L-d),
-        sag=Math.min(95,2+slack*1.35+d*.09*Math.max(0,1-S.T/(2.6*G))),
+        sag=Math.min(95,2+slack*1.35+d*.13*Math.max(0,1-S.T/(2.6*G))),
         cx=hx+dx*.5-S.side*sag*.18,cy=hy+dy*.5-sag,pts=[],i;
     n=n||10;
     for(i=0;i<=n;i++){var t=i/n,a=(1-t)*(1-t),b=2*t*(1-t),c=t*t;pts.push([a*hx+b*cx+c*S.kx,a*hy+b*cy+c*S.ky])}
@@ -136,7 +139,7 @@
     var ux=dx/dist,uy=dy/dist,load=fx*ux+(fy-G)*uy;
     /* 풀 때: 연이 당기는 힘이 브레이크를 넘으면 줄이 풀려 나간다 */
     if(!reel){if(dist>S.L&&load>TB)S.L=Math.min(LMAX,S.L+Math.min(dist-S.L,(fast?PAYF:PAY)*dt));
-      if(dist>=S.L-1)S.L=Math.min(LMAX,S.L+PAY0*dt)}
+      S.L=Math.min(LMAX,Math.max(S.L,Math.min(S.L+PAY0*dt,dist+SLACK)))}
     var corr=0;if(dist>S.L){corr=dist-S.L;S.kx=hx+ux*S.L;S.ky=hy+uy*S.L;dist=S.L}
     S.taut=dist>=S.L-.5;
     S.vx=(S.kx-px)/dt;S.vy=(S.ky-py)/dt;
@@ -168,7 +171,7 @@
     for(i=0;i<S.birds.length;i++){var bd=S.birds[i],bp=birdPos(S,bd);if(!bp||bd.hit)continue;
       if(Math.hypot(bp[0]-S.kx,bp[1]-S.ky)<20){bd.hit=true;startSpin(S,bp[0]>S.kx?-1:1,'bird');S.ev.push({t:'bird',x:bp[0],y:bp[1]})}}
     /* 줍기 */
-    for(i=0;i<st.rings.length;i++)if(!S.got[i]&&Math.hypot(st.rings[i][0]-S.kx,st.rings[i][1]-S.ky)<23){S.got[i]=true;S.nGot++;
+    for(i=0;i<st.rings.length;i++)if(!S.got[i]&&Math.hypot(st.rings[i][0]-S.kx,st.rings[i][1]-S.ky)<RING_R){S.got[i]=true;S.nGot++;
       S.ev.push({t:'ring',x:st.rings[i][0],y:st.rings[i][1],glide:S.glide})}
     for(i=0;i<S.seeds.length;i++){var sd=S.seeds[i];if(sd.got)continue;
       sd.x=sd.ox+Math.sin(S.t*.9+sd.ph)*14+wind(st,sd.y,S.t)*.18*Math.sin(S.t*.35+sd.ph);sd.y=sd.oy+Math.sin(S.t*1.3+sd.ph)*10;
@@ -249,7 +252,7 @@
     return G.done}
 
   /* ---------- 한 판(헤드리스 규칙): 전체 카운트다운, 스테이지 이어 날기 ---------- */
-  var T0=50,TADD=13,TCAP=70;
+  var T0=46,TADD=13,TCAP=70;
   function newRun(){var st=getStage(0);return {n:0,st:st,S:newSim(st),time:T0,off:0,clears:0,fails:0,over:false,ev:[],next:null,t:0}}
   function runTick(R,reel,fast){
     if(R.over)return;R.t+=STEP;
@@ -277,7 +280,7 @@
 
   /* ====================================================================== 게임 화면 */
   var R,cam=0,acc=0,tG=0,kb={reel:false,fast:false},prevReel=false,gen=null,tail=[],streaks=[],clouds=[],hintT=0,
-      cheer=0,happy=0,ratchet=0,warnT=0,lastSec=0,flagPop=0,bandFade=1,prevLayers=null,stageT=0,birdsGone=[],retryT=0,mult=1,lastMult=1;
+      cheer=0,happy=0,ratchet=0,shortT=0,ghost=null,lastSt=null,lastOff=0,lastS=null,warnT=0,lastSec=0,flagPop=0,bandFade=1,prevLayers=null,stageT=0,birdsGone=[],retryT=0,mult=1,lastMult=1;
   if(!window.__kiteWindKeys){window.__kiteWindKeys=true;
     var kf=function(e,v){var c=e.code;
       if(c==='Space'||c==='ArrowUp'||c==='KeyW')kb.reel=v;else if(c==='ArrowDown'||c==='KeyS')kb.fast=v;else return};
@@ -289,7 +292,7 @@
 
   function init(a){
     R=newRun();cam=R.S.kid-250;acc=0;tG=0;prevReel=false;gen=null;cheer=0;happy=0;ratchet=0;warnT=0;lastSec=0;flagPop=0;
-    stageT=0;retryT=0;hintT=0;mult=1;lastMult=1;bandFade=1;prevLayers=null;
+    stageT=0;retryT=0;hintT=0;mult=1;lastMult=1;bandFade=1;prevLayers=null;shortT=0;
     tail=[];var kx=R.S.kx,ky=R.S.ky;for(var i=0;i<12;i++)tail.push({x:kx,y:ky-20-i*6,px:kx,py:ky-20-i*6});
     if(!streaks.length)for(i=0;i<70;i++)streaks.push({x:hash(i+3)*W,y:20+hash(i+7)*500,l:hash(i+11),v:.5+hash(i+13)*.5});
     clouds=[];for(i=0;i<7;i++)clouds.push({x:hash(i+21)*520-80,alt:110+hash(i+31)*380,s:.6+hash(i+41)*.7});
@@ -318,13 +321,13 @@
       a.tempo(1+Math.min(.45,R.n*.035))}
     else if(e.t==='fail'){a.beep(247,.18,'triangle');a.beep(185,.3,'triangle');retryT=2.2;
       a.pop(SX(R.off+S.kid),SY(110),ko?'고리가 모자라요 — 다시!':'Not enough rings — again!','#ffd0c0')}
-    else if(e.t==='stage'){stageT=0;hintT=0;prevLayers=null;bandFade=0}}
+    else if(e.t==='stage'){stageT=0;hintT=0;prevLayers=null;bandFade=0;if(lastSt)ghost={st:lastSt,off:lastOff,S:lastS,t:.7}}}
 
   function update(dt,inp,a){
     tG+=dt;stageT+=dt;hintT+=dt;
     var reel=!!(inp.down||kb.reel),fast=!!kb.fast&&!reel;
     acc+=Math.min(dt,.05);
-    while(acc>=STEP){acc-=STEP;runTick(R,reel,fast);
+    while(acc>=STEP){acc-=STEP;lastSt=R.st;lastOff=R.off;lastS=R.S;runTick(R,reel,fast);
       for(var i=0;i<R.ev.length;i++){var e=R.ev[i];if(e.t==='over'){R.ev.length=0;a.over();return}onEvent(e,a)}R.ev.length=0}
     var S=R.S;
     /* 다음 생성 스테이지는 미리 조금씩 검증해 둔다 */
@@ -333,7 +336,8 @@
     if(reel&&S.snag<=0){ratchet-=dt;if(ratchet<=0){ratchet=.13;a.beep(2100+Math.random()*300,.012,'square')}}else ratchet=0;
     if(S.T>TSPIN*.78&&S.spin<=0){warnT-=dt;if(warnT<=0){warnT=.22;a.beep(1250,.04,'sawtooth')}}
     var sec=Math.ceil(R.time);if(R.time<10&&sec!==lastSec){lastSec=sec;a.beep(880,.05,'square')}
-    cheer=Math.max(0,cheer-dt);happy=Math.max(0,happy-dt);retryT=Math.max(0,retryT-dt);bandFade=Math.min(1,bandFade+dt*2);
+    if(reel&&S.L<=LMIN+3&&S.snag<=0)shortT+=dt;else shortT=Math.max(0,shortT-dt*.5);
+    cheer=Math.max(0,cheer-dt);happy=Math.max(0,happy-dt);if(ghost){ghost.t-=dt;if(ghost.t<=0)ghost=null}retryT=Math.max(0,retryT-dt);bandFade=Math.min(1,bandFade+dt*2);
     prevReel=reel}
 
   /* ---------------------------------------------------------------- 그리기 */
@@ -350,28 +354,35 @@
     g.fillStyle='rgba(150,180,230,.25)';g.beginPath();g.ellipse(x+2*s,y+5*s,28*s,5*s,0,0,7);g.fill();g.globalAlpha=1}
   function windCol(w){return w>0?'255,150,140':Math.abs(w)>=145?'255,214,120':Math.abs(w)>=100?'255,255,255':'200,230,255'}
 
+  function windName(L,ko){var w=L[2];if(w>0)return ko?'뒷바람':'Tailwind';if(L[3])return ko?'돌풍!':'Gusty!';
+    return Math.abs(w)>=100?(ko?'센 바람':'Strong'):(ko?'약한 바람':'Gentle')}
   function drawBands(g){
-    var ls=R.st.layers,i,S=R.S,t=R.S.t;
-    for(i=0;i<ls.length;i++){var L=ls[i],lo=L[0],hi=Math.min(L[1],560),y1=SY(hi),y2=SY(lo),w=L[2],col=windCol(w),gst=L[3];
-      g.fillStyle='rgba('+col+','+(gst?.10:Math.abs(w)>=100?.05:.03)*bandFade+')';g.fillRect(0,y1,W,y2-y1);
-      if(i>0){g.strokeStyle='rgba(255,255,255,'+.35*bandFade+')';g.lineWidth=1;g.setLineDash([6,8]);g.beginPath();g.moveTo(0,y2);g.lineTo(W,y2);g.stroke();g.setLineDash([])}
-      /* 가장자리 화살표: 바람이 오는 쪽에 방향과 세기 */
-      var mid=Math.max(60,Math.min(y2-14,(y1+y2)/2)),n=Math.abs(w)>=145?3:Math.abs(w)>=100?2:1,dir=w<0?-1:1,ex=dir<0?W-14:14,j;
-      if(mid>y2-6||mid<44)continue;
-      g.globalAlpha=bandFade;g.strokeStyle='rgba('+col+',.9)';g.lineWidth=3;g.lineCap='round';g.lineJoin='round';
-      for(j=0;j<n;j++){var ax=ex+(dir<0?-j*9:j*9)+Math.sin(tG*4+j)*1.5;g.beginPath();g.moveTo(ax-dir*-5,mid-7);g.lineTo(ax+dir*3,mid);g.lineTo(ax-dir*-5,mid+7);g.stroke()}
-      if(gst){g.font='12px Jua, system-ui, sans-serif';g.fillStyle='rgba(255,214,120,.95)';g.textAlign=dir<0?'right':'left';
-        g.fillText(SG.lang==='ko'?'돌풍':'gust',dir<0?W-8:8,mid-12)}
-      if(w>0){g.font='12px Jua, system-ui, sans-serif';g.fillStyle='rgba(255,170,160,.95)';g.textAlign='left';g.fillText(SG.lang==='ko'?'뒷바람':'tailwind',8,mid-12)}
-      g.globalAlpha=1}}
+    var ls=R.st.layers,i,ko=SG.lang==='ko';
+    for(i=0;i<ls.length;i++){var L=ls[i],lo=L[0],hi=Math.min(L[1],600),y1=Math.max(30,SY(hi)),y2=SY(lo),w=L[2],col=windCol(w),gst=L[3];
+      var gr=g.createLinearGradient(0,y1,0,y2),al=(gst?.16:w>0?.13:Math.abs(w)>=100?.09:.05)*bandFade;
+      gr.addColorStop(0,'rgba('+col+','+al*.4+')');gr.addColorStop(.5,'rgba('+col+','+al+')');gr.addColorStop(1,'rgba('+col+','+al*.4+')');
+      g.fillStyle=gr;g.fillRect(0,y1,W,y2-y1);
+      if(i>0){g.strokeStyle='rgba(255,255,255,'+.55*bandFade+')';g.lineWidth=1.2;g.setLineDash([5,7]);g.beginPath();g.moveTo(0,y2);g.lineTo(W,y2);g.stroke();g.setLineDash([])}}
+    /* 바람 이름표: 경계선 근처, 바람이 불어오는 쪽 가장자리 */
+    for(i=0;i<ls.length;i++){L=ls[i];w=L[2];col=windCol(w);
+      var py=ls.length===1?170:i===0?SY(Math.min(L[1],600))+18:SY(L[0])-16;py=Math.max(92,Math.min(470,py));
+      var n=L[3]?3:Math.abs(w)>=100?2:1,dir=w<0?-1:1,txt=windName(L,ko);g.font='12px Jua, system-ui, sans-serif';
+      var tw=g.measureText(txt).width,pw=tw+16+n*8,px=dir<0?W-6-pw:6;g.globalAlpha=bandFade;
+      g.fillStyle=L[3]?'rgba(120,70,0,.42)':w>0?'rgba(120,30,30,.38)':'rgba(30,60,110,.32)';g.beginPath();
+      if(g.roundRect)g.roundRect(px,py-10,pw,20,10);else g.rect(px,py-10,pw,20);g.fill();
+      g.strokeStyle='rgba('+col+',1)';g.lineWidth=2.4;g.lineCap='round';g.lineJoin='round';
+      for(var j=0;j<n;j++){var ax=dir<0?px+9+j*8+Math.sin(tG*5+j)*1.2:px+pw-9-j*8-Math.sin(tG*5+j)*1.2;
+        g.beginPath();g.moveTo(ax-dir*4,py-5);g.lineTo(ax+dir*1,py);g.lineTo(ax-dir*4,py+5);g.stroke()}
+      g.fillStyle='rgba('+col+',1)';g.textAlign='left';g.fillText(txt,dir<0?px+12+n*8:px+8,py+4);g.globalAlpha=1}}
+  function gst0(st,alt){for(var k=0;k<st.layers.length;k++)if(st.layers[k][3]&&alt>st.layers[k][0]&&alt<st.layers[k][1])return true;return false}
   function drawStreaks(g,dt){
     var i,p,st=R.st;g.lineCap='round';
     for(i=0;i<streaks.length;i++){p=streaks[i];var alt=GY-p.y,w=wind(st,alt,R.S.t);
       p.x+=(w*(.85+p.v*.3)*dt)-((cam-(p.cam==null?cam:p.cam)));p.cam=cam;p.l+=dt*(.45+p.v*.3);
       if(p.l>1||p.x<-40||p.x>W+40){p.l=0;p.x=w<0?W*.15+hash(i+tG)*W*1.0:hash(i+tG)*W*.85;p.y=34+hash(i*3.1+tG)*(GY-60)}
-      var al=Math.sin(p.l*Math.PI)*(Math.abs(w)>=145?.55:Math.abs(w)>=100?.42:.28),len=Math.abs(w)*.16*(.7+p.v*.6),dir=w<0?-1:1,
+      var al=Math.sin(p.l*Math.PI)*(gst0(st,alt)?.75:w>0?.55:Math.abs(w)>=100?.6:.38),len=Math.abs(w)*.2*(.7+p.v*.6),dir=w<0?-1:1,
           gust=false;for(var k=0;k<st.layers.length;k++)if(st.layers[k][3]&&alt>st.layers[k][0]&&alt<st.layers[k][1])gust=true;
-      g.strokeStyle='rgba('+windCol(w)+','+al+')';g.lineWidth=gust?2.2:1.6;g.beginPath();g.moveTo(p.x,p.y);
+      g.strokeStyle='rgba('+windCol(w)+','+al+')';g.lineWidth=gust?2.4:Math.abs(w)>=100?2:1.5;g.beginPath();g.moveTo(p.x,p.y);
       if(gust)g.quadraticCurveTo(p.x-dir*len*.5,p.y+Math.sin(tG*9+i)*4,p.x-dir*len,p.y);else g.lineTo(p.x-dir*len,p.y);g.stroke()}}
 
   function drawTree(g,tr,shake){
@@ -435,7 +446,7 @@
     for(var i=0;i<tail.length;i++){var tx=SX(tail[i].x),ty=SY(tail[i].y);if(i)g.lineTo(tx,ty);else g.moveTo(tx,ty)}g.stroke();
     for(i=2;i<tail.length;i+=3){tx=SX(tail[i].x);ty=SY(tail[i].y);g.fillStyle=i%2?'#ffd166':'#6ad1c8';
       g.beginPath();g.moveTo(tx,ty);g.lineTo(tx-6,ty-4);g.lineTo(tx-6,ty+4);g.closePath();g.moveTo(tx,ty);g.lineTo(tx+6,ty-4);g.lineTo(tx+6,ty+4);g.closePath();g.fill()}
-    g.save();g.translate(x,y);g.rotate(-(a-Math.PI/2));
+    g.save();g.translate(x,y);g.rotate(-(a-Math.PI/2));g.scale(1.25,1.25);
     /* 그림자 */
     g.fillStyle='rgba(20,30,60,.16)';g.beginPath();g.moveTo(3,-15);g.lineTo(15,0);g.lineTo(3,21);g.lineTo(-9,0);g.fill();
     var T=[0,-18],Rt=[13,-3],B=[0,20],Lt=[-13,-3],C=[0,-1];
@@ -525,7 +536,8 @@
     /* 구름: 자기 층의 바람 속도로 흐른다 */
     for(i=0;i<clouds.length;i++){var c=clouds[i],w=wind(R.st,c.alt,S.t);c.x+=w*.9*dt;var cx=((c.x-cam*.9)%520+520)%520-80;cloud(g,cx,SY(c.alt),c.s,.85)}
     hillPath(g,.3,500,26,.009,4.1,'#8fcf8a','#79b974');
-    for(i=0;i<9;i++){var tx=((i*97-cam*.3)%880+880)%880-60;g.fillStyle='rgba(60,120,70,.55)';g.beginPath();g.arc(tx,486+Math.sin((tx+cam*.3)*.009+4.1)*20,9,0,7);g.fill()}
+    for(i=0;i<9;i++){var tx=((i*97-cam*.3)%880+880)%880-60,hw=tx+cam*.3,hy0=500+Math.sin(hw*.009+4.1)*26+Math.sin(hw*.009*2.3+8.2)*26*.4;
+      g.fillStyle='rgba(70,130,75,.75)';g.beginPath();g.arc(tx,hy0-5,8,0,7);g.arc(tx+7,hy0-2,6,0,7);g.arc(tx-7,hy0-1,5,0,7);g.fill()}
     drawBands(g);drawStreaks(g,dt);
     /* 앞 언덕(아이가 걷는 길) */
     var hg=g.createLinearGradient(0,GY-30,0,H);hg.addColorStop(0,'#7fd06a');hg.addColorStop(.3,'#5fb653');hg.addColorStop(1,'#3f8f45');g.fillStyle=hg;
@@ -534,18 +546,23 @@
     var lw=wind(R.st,20,S.t);g.strokeStyle='rgba(60,140,60,.85)';g.lineWidth=2;g.lineCap='round';
     for(i=0;i<44;i++){var bx=((i*9.3-cam)%410+410)%410-25,bh=7+hash(i+5)*8,sw=(lw/90)*5+Math.sin(tG*3+i)*1.6;
       g.beginPath();g.moveTo(bx,GY);g.quadraticCurveTo(bx+sw*.3,GY-bh*.6,bx+sw,GY-bh);g.stroke()}
-    var st=R.st;
+    var st=R.st,fin=Math.min(1,stageT*2.5);
+    if(ghost){var gR=R.off,gst=R;R.off=ghost.off;g.globalAlpha=ghost.t/.7;
+      for(i=0;i<(ghost.st.trees||[]).length;i++)drawTree(g,ghost.st.trees[i],false);for(i=0;i<(ghost.st.wires||[]).length;i++)drawWire(g,ghost.st.wires[i],false);
+      for(i=0;i<ghost.st.rings.length;i++)if(!ghost.S.got[i]){ringHalf(g,SX(R.off+ghost.st.rings[i][0]),SY(ghost.st.rings[i][1]),false,ghost.t/.7,false);ringHalf(g,SX(R.off+ghost.st.rings[i][0]),SY(ghost.st.rings[i][1]),true,ghost.t/.7,false)}
+      R.off=gR;g.globalAlpha=1}
+    g.globalAlpha=fin;
     for(i=0;i<(st.trees||[]).length;i++)drawTree(g,st.trees[i],S.snag>0&&S.snagKind==='tree');
     for(i=0;i<(st.wires||[]).length;i++)drawWire(g,st.wires[i],S.snag>0&&S.snagKind==='wire');
     drawFlag(g);
     var nextRing=-1;for(i=0;i<st.rings.length;i++)if(!S.got[i]){nextRing=i;break}
-    for(i=0;i<st.rings.length;i++)if(!S.got[i])ringHalf(g,SX(R.off+st.rings[i][0]),SY(st.rings[i][1]),false,1,false);
+    for(i=0;i<st.rings.length;i++)if(!S.got[i])ringHalf(g,SX(R.off+st.rings[i][0]),SY(st.rings[i][1]),false,fin,false);
     for(i=0;i<S.stars.length;i++){var sr=S.stars[i];if(sr.got)continue;var sx=SX(R.off+sr.x),sy=SY(sr.y);
       g.fillStyle='rgba(255,230,120,.35)';g.beginPath();g.arc(sx,sy,13,0,7);g.fill();g.fillStyle='#ffd23f';drawStar(g,sx,sy,9,tG);g.fill();g.strokeStyle='#d99a00';g.lineWidth=1.2;g.stroke()}
     for(i=0;i<S.seeds.length;i++){var sd=S.seeds[i];if(!sd.got)drawSeed(g,SX(R.off+sd.x),SY(sd.y),sd.ph)}
     for(i=0;i<S.birds.length;i++)drawBird(g,S.birds[i],S);
-    drawString(g);drawKite(g);
-    for(i=0;i<st.rings.length;i++)if(!S.got[i])ringHalf(g,SX(R.off+st.rings[i][0]),SY(st.rings[i][1]),true,1,i===nextRing);
+    g.globalAlpha=1;drawString(g);drawKite(g);
+    for(i=0;i<st.rings.length;i++)if(!S.got[i])ringHalf(g,SX(R.off+st.rings[i][0]),SY(st.rings[i][1]),true,fin,i===nextRing);
     drawKid(g);
     /* ---- HUD ---- */
     var tf=Math.max(0,R.time)/TCAP;g.fillStyle='rgba(20,40,80,.25)';g.fillRect(12,34,W-24,6);
@@ -562,6 +579,9 @@
     var gm=1+Math.min(3,Math.floor(S.glide/2.5));if(S.glide>1){g.textAlign='left';g.font='12px Jua, system-ui, sans-serif';
       var gt=(ko?'활공 ×':'Glide ×')+gm;g.strokeText(gt,12,76);g.fillStyle=gm>1?'#bdf3ff':'rgba(255,255,255,.8)';g.fillText(gt,12,76);
       g.fillStyle='rgba(255,255,255,.3)';g.fillRect(64,70,40,4);g.fillStyle='#bdf3ff';g.fillRect(64,70,40*Math.min(1,(S.glide%2.5)/2.5)*(gm<4?1:0)+(gm>=4?40:0),4)}
+    if(shortT>.8){var kx2=SX(R.off+S.kid);g.font='13px Jua, system-ui, sans-serif';g.textAlign='center';var tt=ko?'줄이 다 감겼어요 — 떼서 풀어 주세요':'Line is all in — let go to pay it out';
+      var tw2=g.measureText(tt).width+18,tx2=Math.max(tw2/2+6,Math.min(W-tw2/2-6,kx2-60));g.fillStyle='rgba(40,60,100,.6)';g.beginPath();
+      if(g.roundRect)g.roundRect(tx2-tw2/2,SY(118)-15,tw2,22,11);else g.rect(tx2-tw2/2,SY(118)-15,tw2,22);g.fill();g.fillStyle='#fff';g.fillText(tt,tx2,SY(118))}
     /* 힌트 */
     if(st.hint&&(R.n===0?hintT<14:hintT<6)){var ht=st.hint[ko?'ko':'en'];g.font='16px Jua, system-ui, sans-serif';g.textAlign='center';
       var wd=g.measureText(ht).width+26,hy=104,al=Math.min(1,(R.n===0?14:6)-hintT);g.globalAlpha=Math.max(0,al);
