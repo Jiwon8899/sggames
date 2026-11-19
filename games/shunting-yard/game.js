@@ -328,7 +328,7 @@
     var li=o.gv.indexOf(0),fv=restFace(o.chain[li]),q=interp(F,li),r2=interp(F,li+.5),dv={x:r2.x-q.x,y:r2.y-q.y},
         fwd=fv.x*dv.x+fv.y*dv.y>=0;
     var k=o.path.length+(tti>=0?1:0);
-    anim={o:o,F:F,t:0,dur:.25+k*.16,k:k,tti:tti,fwd:fwd,li:li,puff:0,chuff:0};mode='anim';sel=true;
+    anim={o:o,F:F,t:0,dur:.25+Math.min(k,8)*.15+Math.max(0,k-8)*.07,k:k,tti:tti,fwd:fwd,li:li,puff:0,chuff:0};mode='anim';sel=true;
     a.beep(330,.05,'triangle')}
   function finishDrive(a){var o=anim.o;
     st.occ=o.fin;st.rev=o.rev;st.pts=o.pts;st.n++;
@@ -419,8 +419,9 @@
   function d2(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}
   function handleTap(x,y,a){var p={x:x,y:y},i,best=-1,bd=1e9;
     if(y>H-60&&x<120){if(x<60)undo(a);else{restart();prevChecks=checks;a.beep(300,.08,'triangle')}return}
+    var js0=junctions();for(i=0;i<js0.length;i++)if(!L.slots[js0[i]].tt&&d2(p,leverPos(js0[i]))<10){pSel=js0[i];toggleJ(js0[i],a);return}
     if(sel)for(i=0;i<opts.length;i++){var dd=d2(p,P(opts[i].head));if(dd<bd){bd=dd;best=i}}
-    if(best>=0&&bd<19){drive(opts[best],a);return}
+    if(best>=0&&bd<17){drive(opts[best],a);return}
     var cs=couplings();for(i=0;i<cs.length;i++)if(d2(p,cs[i])<12){toggleCpl(cs[i],a);return}
     var js=junctions();for(i=0;i<js.length;i++)if(d2(p,leverPos(js[i]))<16||d2(p,P(js[i]))<17){pSel=js[i];toggleJ(js[i],a);return}
     var ls=st.occ.indexOf(1);if(d2(p,P(ls))<15){sel=!sel;a.beep(sel?760:420,.05,'triangle');face=sel?2:0;faceT=.5;return}
@@ -696,7 +697,7 @@
     /* 열차 칩 */
     var n=L.order.length,cw=30,sx=x0+16,cy=y0+50;
     miniLoco(g,sx+10,cy,st.rev);
-    for(var i=0;i<n;i++){var v=L.order[i],V=L.veh[v],cx=sx+34+i*cw,col=WCOL[V.id];
+    for(var i=0;i<n;i++){var v=L.order[i],V=L.veh[v],cx=sx+42+i*cw,col=WCOL[V.id];
       g.fillStyle='#555';g.fillRect(cx-16,cy-1,4,2);
       var top=V.type==='tank'?'#cfd5dc':V.type==='reefer'?'#f4f9ff':V.type==='power'?'#ffd23f':col;
       g.fillStyle=shade(V.type==='n'?col:'#999999',-.3);rr(g,cx-12,cy-8,24,17,3);g.fill();g.fillStyle=top;rr(g,cx-12,cy-10,24,16,3);g.fill();
@@ -750,7 +751,7 @@
     drawCat(g,42,96,t);
     drawUI(g,a,t)}
 
-  window.__sy={state:function(){return {lvN:lvN,mode:mode,n:st&&st.n,par:par,time:time,checks:checks,
+  window.__sy={state:function(){return {lvN:lvN,mode:mode,kSel:kSel,pSel:pSel,n:st&&st.n,par:par,time:time,checks:checks,
       opts:(opts||[]).map(function(o){var p=P(o.head);return {x:p.x,y:p.y,d:o.d,steps:o.path.length,type:o.type,fin:o.fin.join(',')}}),
       cpl:couplings().map(function(c){return {x:c.x,y:c.y,a:c.a,b:c.b,off:st.cpl[ckey(c.a,c.b)]===false}}),
       js:junctions().map(function(s){var p=leverPos(s);return {s:s,x:p.x,y:p.y,set:st.pts[s]}}),

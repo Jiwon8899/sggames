@@ -1,0 +1,20 @@
+{
+  "slug": "kite-wind",
+  "date": "2026-10-03",
+  "emoji": "🪁",
+  "title": {"ko": "바람결 연날리기", "en": "Kite Wind"},
+  "tagline": {"ko": "연줄 하나로 바람층을 타는 감각 게임", "en": "One string, layered winds, all by feel"},
+  "desc": {
+    "ko": "언덕길을 걷는 아이가 고양이 얼굴 연을 날립니다. 조작은 연줄 하나뿐이라, 누르고 있으면 줄이 감기며 연이 고개를 들고 솟아오르고, 손을 떼면 줄이 풀리면서 연이 바람에 실려 흘러갑니다. 하늘에는 높이마다 세기와 방향이 다른 바람층이 흐르고 있어서, 약한 바람에서는 톡톡 당겨 띄우고 센 돌풍 속에서는 줄을 풀어 버텨야 합니다. 고리를 정해진 개수만큼 통과한 채 깃발에 도착하면 다음 단계로 넘어가고, 열 개의 준비된 단계 뒤에는 봇이 직접 풀어 본 새 단계가 끝없이 이어집니다.",
+    "en": "A kid strolls along a hillside flying a cat-faced kite. The only control is the string: hold to reel in and the kite pitches up and climbs, let go and the line pays out while the kite drifts with the wind. The sky is stacked with wind layers of different strength and direction, so you tug it up through weak air and let it ride out strong gusts. Reach the flag with enough rings to clear a stage; after ten handmade stages, fresh stages keep coming, each one checked solvable by a bot before you see it."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 누르고 있으면 줄을 감고, 떼면 풀립니다. PC: 스페이스나 ↑를 누르고 있으면 감기, 떼면 풀리고, ↓를 누르면 줄이 더 빨리 풀립니다. 조작은 이것뿐이니 연이 바람을 받는 느낌에 집중해 보세요.",
+    "en": "Mobile: press and hold anywhere to reel in, lift your finger to let the line out. Desktop: hold Space or the Up arrow to reel in, release to let out, and press Down to let line out faster. That is the whole control scheme, so focus on how the kite feels the wind."
+  },
+  "tips": {
+    "ko": "계속 누르고만 있으면 줄이 짧아지고, 센 바람에서는 장력이 너무 세져 연이 빙글 돌며 떨어집니다. 연줄 색이 하얀색에서 주황색으로 변하면 손을 떼라는 신호입니다. 나무를 지날 때는 연이 수관보다 높아야 하고, 전깃줄 밑을 지날 때는 반대로 연을 낮춰야 줄이 엉키지 않습니다. 흔들림 없이 부드럽게 날면 활공 배수가 쌓여 고리 점수가 최대 4배가 됩니다.",
+    "en": "Holding forever shortens the line, and in strong wind the tension builds until the kite spins out and drops. When the string turns from white to amber, let go. Pass trees with the kite above the canopy, but duck it low under power lines so the string does not tangle. Fly smoothly without wobbling to build a glide multiplier of up to x4 on ring points."
+  },
+  "tags": ["kite", "physics", "one-button", "casual", "wind"]
+}
