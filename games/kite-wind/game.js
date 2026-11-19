@@ -11,7 +11,7 @@
      len: 걷는 거리, layers:[[아래,위,바람,돌풍세기]], rings:[[x,높이]], q: 필요한 고리 수,
      seeds/stars:[[x,높이]], trees:[[x,수관 중심 높이,반지름]], birds:[[x,높이,속도,출발시각]], wires:[[x1,x2,높이]] */
   var STAGES=[
-    {len:540,layers:[[0,999,-110,0]],rings:[[130,150],[220,190],[310,215],[400,185]],q:3,stars:[[360,240]],
+    {len:540,layers:[[0,999,-110,0]],rings:[[150,150],[240,190],[320,215],[410,185]],q:3,stars:[[360,240]],
       hint:{ko:'꾹 누르면 감고, 떼면 풀어요',en:'Hold to reel in, release to let out'}},
     {len:540,layers:[[0,150,-68,0],[150,999,-135,0]],rings:[[140,170],[230,230],[320,260],[410,240]],q:3,seeds:[[270,280],[380,200]],
       hint:{ko:'아래 바람은 약해요 — 톡톡 당겨 위층으로!',en:'Weak wind below — tug it up into the strong layer!'}},
@@ -21,44 +21,50 @@
       hint:{ko:'돌풍 띠에선 감지 말고 풀어요!',en:'In the gust band, let out — don\'t reel!'}},
     {len:560,layers:[[0,160,-70,0],[160,999,-130,0]],birds:[[560,235,-60,1.5],[600,300,-55,5]],rings:[[130,220],[220,270],[320,250],[420,230]],q:3,
       stars:[[370,320]],hint:{ko:'새와 부딪히면 빙글빙글!',en:'Bump a bird and you\'ll tumble!'}},
-    {len:580,layers:[[0,170,-70,0],[170,999,-130,0]],trees:[[190,130,42],[380,150,46]],rings:[[120,190],[270,240],[340,260],[460,230]],q:3,
+    {len:580,layers:[[0,170,-70,0],[170,999,-130,0]],trees:[[190,130,42],[380,150,46]],rings:[[160,200],[270,240],[340,260],[460,230]],q:3,
       seeds:[[230,290],[420,280]],hint:{ko:'씨앗은 바람 따라 흔들려요',en:'Seeds sway in the wind'}},
-    {len:580,layers:[[0,999,-115,0]],wires:[[220,380,215]],rings:[[120,230],[270,140],[340,135],[460,240]],q:3,stars:[[300,110]],
+    {len:580,layers:[[0,999,-115,0]],wires:[[220,380,215]],rings:[[150,230],[270,140],[340,135],[470,250]],q:3,stars:[[300,110]],
       hint:{ko:'전깃줄 밑에선 연을 낮게!',en:'Keep low under the power line!'}},
-    {len:580,layers:[[0,150,60,0],[150,999,-130,0]],trees:[[300,140,44]],rings:[[140,220],[250,260],[360,280],[460,240]],q:3,seeds:[[320,240]],
+    {len:580,layers:[[0,130,60,0],[130,999,-130,0]],trees:[[300,120,40]],rings:[[140,220],[250,260],[360,280],[460,240]],q:3,seeds:[[320,240]],
       hint:{ko:'아래 바람은 거꾸로 불어요 — 내려가지 마요',en:'The low wind blows backwards — stay up!'}},
     {len:600,layers:[[0,140,-70,0],[140,240,-165,.3],[240,999,-120,0]],birds:[[640,320,-60,3]],wires:[[360,480,240]],
-      rings:[[150,190],[260,300],[400,150],[510,280]],q:3,stars:[[330,330]],hint:{ko:'바람층을 골라 타요',en:'Pick the right layer'}},
+      rings:[[150,190],[270,280],[400,150],[510,280]],q:3,stars:[[330,330]],hint:{ko:'바람층을 골라 타요',en:'Pick the right layer'}},
     {len:620,layers:[[0,150,-70,0],[150,270,-150,.3],[270,999,70,0]],trees:[[170,130,42]],birds:[[700,230,-70,4]],wires:[[400,520,230]],
-      rings:[[120,190],[260,240],[340,250],[440,160],[530,240]],q:4,seeds:[[300,200]],stars:[[480,140]],hint:{ko:'전부 다 써 봐요!',en:'Use everything!'}}
+      rings:[[150,190],[260,240],[340,250],[440,160],[530,240]],q:4,seeds:[[300,200]],stars:[[480,140]],hint:{ko:'전부 다 써 봐요!',en:'Use everything!'}}
   ];
 
   /* ---------- 결정적 난수 ---------- */
   function rng(seed){var s=seed>>>0||1;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
 
-  /* 절차 생성 스테이지(11번째부터). 봇이 통과하는 것만 채택한다. */
+  /* 절차 생성 스테이지(11번째부터). 빔 탐색 풀이기가 통과시킨 것만 채택한다. */
   function genStage(n,trySeed){
-    var r=rng(n*7919+(trySeed||0)*104729+13),i;
-    var len=580+Math.floor(r()*80),layers=[],b1=150+Math.floor(r()*50),b2=b1+100+Math.floor(r()*40);
-    var lowW=(r()<.25?-1:1)*(62+Math.floor(r()*16)),midKind=r(),highW=(r()<.25?-1:1)*(104+Math.floor(r()*18));
-    if(midKind<.4){layers=[[0,b1,lowW,0],[b1,999,highW,0]];b2=null}
-    else layers=[[0,b1,lowW,0],[b1,b2,(midKind<.7?-1:1)*(130+Math.floor(r()*24)),.3],[b2,999,highW,0]];
-    var st={len:len,layers:layers,rings:[],q:3,trees:[],birds:[],wires:[],seeds:[],stars:[],gen:true};
-    var nR=4+(n>16&&r()<.5?1:0),x=LEAD+120+Math.floor(r()*40),wireAt=n>12&&r()<.45?1+Math.floor(r()*(nR-2)):-1;
-    for(i=0;i<nR;i++){
-      var alt=i===wireAt?120+Math.floor(r()*40):140+Math.floor(r()*(b2?260:220));
-      st.rings.push([x,alt]);
-      if(i===wireAt)st.wires.push([x-120,x+90,alt+80+Math.floor(r()*20)]);
-      x+=110+Math.floor(r()*40)}
-    st.q=nR-1;
-    if(r()<.7){var tx=st.rings[1][0]+50+Math.floor(r()*60);if(!st.wires.length||tx<st.wires[0][0]-80||tx>st.wires[0][1]+80)st.trees.push([tx,130+Math.floor(r()*40),42+Math.floor(r()*10)])}
-    if(n>11&&r()<.6)st.birds.push([len+250+Math.floor(r()*100),220+Math.floor(r()*150),-(60+Math.floor(r()*30)),1+r()*5]);
-    st.seeds.push([st.rings[1][0]+40,200+Math.floor(r()*150)]);
-    st.stars.push([st.rings[2][0]+50,160+Math.floor(r()*200)]);
-    return st}
+    var r=rng(n*7919+(trySeed||0)*104729+13),i,ri=function(a,b){return a+Math.floor(r()*(b-a+1))};
+    var hard=Math.min(1,(n-10)/12),len=560+ri(0,60),b1=ri(130,165),layers,kind=r();
+    var low=(n>13&&r()<.2)?[0,b1-15,ri(45,60),0]:[0,b1,-ri(62,74),0];
+    var top=-ri(115,135),gust=null,topCap=470;
+    if(kind<.45){layers=[low,[low[1],999,top,0]]}
+    else{var b2=low[1]+ri(95,120);gust=[low[1],b2,-ri(160,172),.25+r()*.1];layers=[low,gust,[b2,999,top,0]]}
+    if(n>15&&r()<.3){var tc=ri(330,370);layers[layers.length-1][1]=tc;layers.push([tc,999,ri(50,70),0]);topCap=tc-20}
+    var st={len:len,layers:layers,rings:[],q:3,trees:[],birds:[],wires:[],seeds:[],stars:[],gen:n};
+    var nR=r()<.3+hard*.4?5:4,x=ri(150,175),prev=ri(170,230),minA=low[2]>0?low[1]+45:120,wireAt=n>11&&r()<.35+hard*.3?ri(1,nR-2):-1;
+    for(i=0;i<nR;i++){var alt;
+      if(i===wireAt)alt=ri(130,155);
+      else{alt=prev+ri(-80,80);alt=Math.max(minA,Math.min(topCap-30,Math.min(330,alt)))}
+      if(i===wireAt){st.wires.push([x-ri(110,130),x+ri(60,80),alt+ri(75,90)])}
+      st.rings.push([x,alt]);prev=alt;x+=ri(92,118)}
+    st.q=nR===5?4:3;
+    /* 나무: 고리 사이 낮은 자리, 고리보다 충분히 아래 */
+    if(r()<.55+hard*.3){var k=ri(0,nR-2),tx=(st.rings[k][0]+st.rings[k+1][0])/2,lim=Math.min(st.rings[k][1],st.rings[k+1][1])-50,cr=ri(38,46),cy=Math.min(150,lim-cr);
+      var clash=st.wires.some(function(w){return tx>w[0]-70&&tx<w[1]+70});if(cy>cr+50&&!clash)st.trees.push([tx,cy,cr])}
+    if(n>11&&r()<.4+hard*.4){var br=st.rings[ri(1,nR-1)];st.birds.push([len+ri(60,160),br[1]+ri(-40,40),-ri(55,75),r()*5])}
+    st.seeds.push([st.rings[1][0]+ri(30,50),Math.max(minA,st.rings[1][1]+ri(-40,40))]);
+    st.stars.push([st.rings[nR-2][0]+ri(30,50),Math.max(minA,Math.min(topCap-20,st.rings[nR-2][1]+ri(-50,50)))]);
+    st.hint=null;return st}
 
+  /* 생성 스테이지 검증: 두 가지 시작 높이에서 모두 풀려야 채택 */
+  function validStage(st){return solveStage(st,null,175,{beam:32}).ok&&solveStage(st,null,235,{beam:32}).ok}
   function getStage(n){if(n<STAGES.length)return STAGES[n];
-    for(var k=0;k<40;k++){var s=genStage(n,k);if(botRun(s,null).clear){s.tries=k;return s}}
+    for(var k=0;k<30;k++){var s=genStage(n,k);if(validStage(s)){s.tries=k;return s}}
     return STAGES[1+(n%(STAGES.length-1))]}
 
   /* ---------- 바람 ---------- */
@@ -206,6 +212,25 @@
     if(S.snag>0){mem.cur={reel:false,fast:false};mem.n=BOTN-1;return mem.cur}
     for(var i=0;i<PLANS.length;i++){var c=planCost(S,PLANS[i]);if(c<best){best=c;bi=i}}
     mem.cur={reel:!!PLANS[bi][0],fast:false};mem.n=BOTN-1;return mem.cur}
+  /* ---------- 빔 탐색 풀이기: 0.25초마다 감기/풀기 두 갈래로 펼쳐 상위 상태만 남긴다(풀이 존재 증명용) ---------- */
+  function solveStage(st,carry,startAlt,opt){
+    opt=opt||{};var BW=opt.beam||24,DEC=opt.dec||30,lim=(opt.maxT||30)/STEP;
+    var root=newSim(st,carry,startAlt);root.plan=[];root.pen=0;var beam=[root],steps=0,best=null;
+    for(var n=0;n<lim;n+=DEC){
+      var next=[];
+      for(var b=0;b<beam.length;b++)for(var a=0;a<2;a++){var C=cloneSim(beam[b]);C.plan=beam[b].plan.concat(a);C.pen=beam[b].pen;
+        for(var j=0;j<DEC&&!C.res;j++){step(C,!!a,false);steps++;
+          for(var e=0;e<C.ev.length;e++){var ev=C.ev[e];if(ev.t==='snag')C.pen+=ev.k==='ground'?2500:3000;else if(ev.t==='spin')C.pen+=1500}C.ev.length=0}
+        if(C.res==='clear'){C.steps=steps;return {ok:true,plan:C.plan,S:C,steps:steps}}
+        if(C.res==='fail')continue;
+        var tg=botTarget(C);C.score=C.nGot*10000-C.pen-Math.abs(C.ky-tg)*4-Math.max(0,C.T-TSPIN*.7)*.5-(C.snag>0?500:0);next.push(C)}
+      if(!next.length)break;
+      next.sort(function(x,y){return y.score-x.score});
+      /* 비슷한 상태(높이·줄 길이·장력)는 하나만 남겨 다양성 유지 */
+      var seen={},nb=[];for(var i=0;i<next.length&&nb.length<BW;i++){var c=next[i],key=(c.ky/16|0)+','+(c.L/40|0)+','+c.nGot+','+(c.vy>0?1:0);if(seen[key])continue;seen[key]=1;nb.push(c)}
+      beam=nb}
+    return {ok:false,steps:steps,best:beam[0]&&beam[0].nGot}}
+
   /* 한 스테이지를 봇으로 끝까지. policy가 null이면 봇, 함수면 그 정책. */
   function botRun(st,policy,carry,maxT,startAlt){
     var S=newSim(st,carry,startAlt),mem={n:0},n=0,lim=(maxT||40)/STEP,stats={spins:0,snags:0,ground:0};
@@ -214,7 +239,7 @@
       S.ev.length=0}
     return {clear:S.res==='clear',got:S.nGot,q:st.q,time:S.t,S:S,stats:stats}}
 
-  var API={planCost:planCost,PLANS:PLANS,cloneSim:cloneSim,botTarget:botTarget,STAGES:STAGES,getStage:getStage,genStage:genStage,newSim:newSim,step:step,carryOf:carryOf,botRun:botRun,botInput:botInput,
+  var API={solveStage:solveStage,planCost:planCost,PLANS:PLANS,cloneSim:cloneSim,botTarget:botTarget,STAGES:STAGES,getStage:getStage,genStage:genStage,newSim:newSim,step:step,carryOf:carryOf,botRun:botRun,botInput:botInput,
     wind:wind,stringPts:stringPts,STEP:STEP,G:G,TSPIN:TSPIN,KIDV:KIDV,LMAX:LMAX,LMIN:LMIN};
   if(typeof module!=='undefined'&&module.exports)module.exports=API;
   if(typeof SG==='undefined')return;

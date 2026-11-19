@@ -446,7 +446,7 @@
     g.lineWidth=10;g.strokeStyle='#9b6b3f';g.strokeRect(5,5,W-10,H-10);g.lineWidth=2;g.strokeStyle='#6f4826';g.strokeRect(10,10,W-20,H-20);
     g.strokeStyle='rgba(255,220,170,.35)';g.strokeRect(1,1,W-2,H-2)}
   function makeDeco(){deco=[];var R=rng(lvN*7717+13),tries=0;
-    function free(x,y,r){if(x<22||x>W-22||y<YA-14||y>YB+40)return false;if(x<130&&y>H-70)return false;if(x>W-60&&y>H-60)return false;
+    function free(x,y,r){if(x<22||x>W-22||y<YA-14||y>YB+40)return false;if(L.X>=0&&Math.abs(x-P(L.X).x)<r+16)return false;if(x<130&&y>H-70)return false;if(x>W-60&&y>H-60)return false;
       for(var i=0;i<L.slots.length;i++){var s=L.slots[i];if(Math.hypot(s.px-x,s.py-y)<r+18)return false}
       for(i=0;i<deco.length;i++)if(Math.hypot(deco[i].x-x,deco[i].y-y)<r+deco[i].r)return false;return true}
     /* 역사(출구 선로 옆) */
@@ -614,8 +614,8 @@
     g.fillStyle='rgba(255,255,255,.25)';g.fillRect(-2,-8,14,2.5);
     g.restore();
     /* 얼굴: 앞쪽, 똑바로 */
-    var fx=x+fv.x*14,fy=y+fv.y*14-2;
-    g.fillStyle='#d9dde2';g.beginPath();g.arc(fx,fy,8.5,0,7);g.fill();g.strokeStyle='#8c949c';g.lineWidth=1.4;g.stroke();
+    var fx=x+fv.x*12,fy=y+fv.y*12-2;
+    g.fillStyle='#d9dde2';g.beginPath();g.arc(fx,fy,8,0,7);g.fill();g.strokeStyle='#8c949c';g.lineWidth=1.4;g.stroke();
     g.fillStyle='rgba(255,120,130,.5)';g.beginPath();g.arc(fx-5,fy+2.5,1.8,0,7);g.arc(fx+5,fy+2.5,1.8,0,7);g.fill();
     g.fillStyle='#2a2a2a';g.strokeStyle='#2a2a2a';g.lineWidth=1.4;
     if(face===1){g.fillStyle='#fff';g.beginPath();g.arc(fx-3,fy-1.5,2.6,0,7);g.arc(fx+3,fy-1.5,2.6,0,7);g.fill();
@@ -656,7 +656,7 @@
       g.fillStyle='rgba(0,0,0,.2)';g.fillRect(-7,-14,18,32);g.fillStyle='#ffb21f';rr(g,-9,-16,18,32,4);g.fill();
       g.fillStyle='#bfe6ff';g.fillRect(-7,6,14,6);for(var i=0;i<3;i++)g.fillRect(-7,-12+i*6,14,4);g.restore()}
     var left=L.bus-(st.n%L.bus),warn=left===1;
-    var bx=X.x+16,by=YA-22;g.fillStyle=warn?'#ff5a3a':'#ffb21f';rr(g,bx-2,by-9,40,18,6);g.fill();
+    var bx=X.x+16,by=YB+14;g.fillStyle=warn?'#ff5a3a':'#ffb21f';rr(g,bx-2,by-9,40,18,6);g.fill();
     g.fillStyle='#fff';g.fillRect(bx+2,by-5,12,8);g.fillStyle='#bfe6ff';g.fillRect(bx+3,by-4,4,3);g.fillRect(bx+8,by-4,4,3);
     g.fillStyle='#fff';g.font='12px Jua, system-ui, sans-serif';g.textAlign='left';g.fillText(left,bx+19,by+4);
     if(warn){g.fillStyle='rgba(255,60,40,'+(.5+.5*Math.sin(t*10))+')';g.beginPath();g.arc(X.x-14,X.y-14,3.5,0,7);g.arc(X.x+14,X.y+14,3.5,0,7);g.fill()}}
@@ -775,6 +775,7 @@
         var S2=L.slots[js[j]],op=st.pts[js[j]];if(S2.jn&&!st.occ[js[j]])st.pts[js[j]]=op===S2.jn.a?S2.jn.b:S2.jn.a;refresh();var ok3=good();
         st.pts[js[j]]=op;if(ol===false)st.cpl[k]=false;else delete st.cpl[k];refresh();if(ok3)return {kind:'cpl',x:cs[i].x,y:cs[i].y}}
       return {kind:'none',cur:cur}},
+    jump:function(n){load(n);prevChecks=checks},
     solveNow:function(){return solve(L,{occ:st.occ,rev:st.rev,n:st.n,pts:st.pts})},L:function(){return L},st:function(){return st}};
 
   SG.run({id:'shunting-yard',title:{ko:'꼬마 입환역',en:'Shunting Yard'},

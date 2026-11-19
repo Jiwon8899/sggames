@@ -399,7 +399,7 @@
       g.strokeStyle='rgba(25,30,20,.6)';g.beginPath();g.moveTo(ex-r,ey+1);g.lineTo(ex+r,ey+1);g.stroke()}}
 
   /* ---------- 지켜보는 이: 새와 돋보기 아이 ---------- */
-  var BIRD=[250,200];
+  var BIRD=[250,216];
   function watcherPos(ph){if(ph.w.k==='kid'){var l=lensPos(ph);return l}
     if(ph.ph==='warn')return birdCircle();return [BIRD[0]-10,BIRD[1]+8]}
   function birdCircle(){return [W/2+Math.cos(T*1.5)*125,160+Math.sin(T*3)*16]}
