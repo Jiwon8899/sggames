@@ -74,7 +74,7 @@
       side:'#3f8f3a',layers:[['#ff5a64',.55],['#ffe9e0',.15],['#8fd16a',.12],['#2f7a2c',.18]],name:{ko:'수박',en:'watermelon'}},
     hexpie:{poly:mk(arc(0,0,110,110,Math.PI/6,Math.PI/6+TAU*5/6,5)),h:8,kinds:['pep','olive','mush'],steam:1,
       side:'#c98a3e',layers:[['#ffd66b',.3],['#d8412f',.15],['#f2d39a',.55]],name:{ko:'육각 피자',en:'hex pizza'}},
-    crescent:{poly:mk(crescent()),h:12,kinds:['berry'],
+    crescent:{poly:mk(crescent()),h:12,kinds:['sesame'],
       side:'#d79a4a',layers:[['#fff1c7',.35],['#ffcf6a',.25],['#e7b26a',.4]],name:{ko:'초승달 파이',en:'moon pie'}},
     bagel:{poly:mk(bagel()),h:16,kinds:['sesame'],steam:1,
       side:'#b8732e',layers:[['#f5e3c0',.85],['#b8732e',.15]],name:{ko:'베이글',en:'bagel'}}
@@ -144,7 +144,7 @@
     {food:'sandwich',n:3,k:2,fair:['area','olive'],tops:{olive:2},sol:{t:'strips',a:64},tip:T('비스듬히 잘라도 띠의 넓이는 그대로','Slanted strips keep the same area')},
     {food:'hexpie',n:2,k:1,fair:['pep','olive'],tops:{pep:2,olive:2},sol:{t:'line',c:[-120,40,120,-25]},tip:T('두 가지 토핑을 칼질 한 번에','Two toppings, one cut')},
     {food:'melon',n:3,k:2,fair:['area','seed'],tops:{seed:2},sol:{t:'strips',a:68},tip:T('씨앗까지 공평하게!','Share the seeds fairly too!')},
-    {food:'crescent',n:3,k:1,fair:['area'],sol:{t:'line',c:[-68,-300,-68,300]},tol:.045,tip:T('칼질 한 번에 세 조각이 나올 수도?','Can one cut make three pieces?')},
+    {food:'crescent',n:3,k:1,fair:['area'],sol:{t:'line',c:[-68,-300,-68,300]},tol:.055,tip:T('칼질 한 번에 세 조각이 나올 수도?','Can one cut make three pieces?')},
     {food:'pizza',n:6,k:3,fair:['area'],sol:{t:'fan',a:[0,60,120]},tip:T('여섯 손님, 칼질 세 번','Six guests, three cuts')},
     {food:'pizza',n:5,k:3,fair:['area','mush'],tops:{mush:1},sol:{t:'fan',a:[12,84,156]},tip:T('다섯 명이면… 작은 조각 둘을 한 접시에?','Five guests… two small slices on one plate?')},
     {food:'bagel',n:2,k:1,fair:['area','sesame'],tops:{sesame:4},sol:{t:'strips',a:118},tip:T('구멍 난 베이글은 조각이 셋이 되기도 해요','A bagel can fall into three pieces')},
@@ -182,7 +182,7 @@
     for(var s=0;s<samples;s++){var a=[];for(var j=0;j<L.k;j++)a.push(R()*180);if(judge(L,fanCuts(a)).ok)hit++}return hit/samples}
   function trivialOK(L,R){if(!L.check)return true;
     var sets=centreSets(L.k);for(var i=0;i<sets.length;i++)if(judge(L,fanCuts(sets[i])).ok)return false;
-    return trivialRate(L,R,60)<=.2}
+    return trivialRate(L,R,80)<=.18}
   function build(sp,seed){var R=mulberry(seed),food=FOODS[sp.food];
     var L={food:sp.food,n:sp.n,k:sp.k,fair:sp.fair.slice(),one:!!sp.one,tol:sp.tol||defTol(sp.n),tip:sp.tip||null,tops:[],
       check:!!(sp.tops||sp.one)&&sp.check!==false,seed:seed};
