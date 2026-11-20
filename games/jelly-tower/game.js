@@ -210,15 +210,15 @@
   /* ---------- 레벨 ---------- */
   var LEVELS=[
     {q:'pud pud pud pud',t:110,hint:{ko:'흔들흔들 쌓아 올려요',en:'Stack the wobbly treats'}},
-    {q:'pud pud jel jel pud',t:125,hint:{ko:'젤리는 미끄러워요 · 맨 위에!',en:'Jello is slippery · keep it on top!'}},
-    {q:'pud moc jel moc pud jel',t:140,hint:{ko:'쫀득 모찌로 붙여 줘요',en:'Sticky mochi holds things together'}},
-    {q:'pud cak pud cak pan pud',t:160,hint:{ko:'무거운 케이크는 아래로 · ↻로 순서 바꾸기',en:'Heavy cake goes low · ↻ swaps the order'}},
-    {q:'jel pud jel pan jel pud',t:150,chill:3,hint:{ko:'흔들리면 톡! 얼려서 굳혀요',en:'Tap a wobbly treat to chill it stiff'}},
-    {q:'cak pud moc pud pan jel',t:150,mods:{tilt:.03},hint:{ko:'웨이터가 접시를 들고 가요!',en:'A waiter is carrying the plate!'}},
-    {q:'gum gum pan gum moc gum pud gum',t:150,glue:2,hint:{ko:'젤라틴 풀로 둘을 붙여요',en:'Gelatin glue bonds two treats'}},
-    {q:'cak moc pan pud moc jel gum',t:170,mods:{wind:110},chill:1,hint:{ko:'선풍기 바람 조심!',en:'Watch out for the fan breeze!'}},
-    {q:'cak pud moc gum pan jel pud',t:170,mods:{spin:10},glue:1,hint:{ko:'돌림판이 빙글빙글',en:'The turntable keeps turning'}},
-    {q:'cak cak moc pud pan moc jel gum jel',t:200,mods:{tilt:.025,wind:80},chill:2,glue:1,hint:{ko:'디저트 총출동!',en:'Everything at once!'}}
+    {q:'pud pud jel jel pud',t:150,hint:{ko:'젤리는 미끄러워요 · 맨 위에!',en:'Jello is slippery · keep it on top!'}},
+    {q:'pud moc jel moc pud jel',t:125,hint:{ko:'쫀득 모찌로 붙여 줘요',en:'Sticky mochi holds things together'}},
+    {q:'pud cak pud cak pan pud',t:190,hint:{ko:'무거운 케이크는 아래로 · ↻로 순서 바꾸기',en:'Heavy cake goes low · ↻ swaps the order'}},
+    {q:'jel pud jel pan jel pud',t:170,chill:3,hint:{ko:'흔들리면 톡! 얼려서 굳혀요',en:'Tap a wobbly treat to chill it stiff'}},
+    {q:'cak pud moc pud pan jel',t:145,mods:{tilt:.03},hint:{ko:'웨이터가 접시를 들고 가요!',en:'A waiter is carrying the plate!'}},
+    {q:'gum gum pan gum moc gum pud gum',t:125,glue:2,hint:{ko:'젤라틴 풀로 둘을 붙여요',en:'Gelatin glue bonds two treats'}},
+    {q:'cak moc pan pud moc jel gum',t:150,mods:{wind:70},chill:1,hint:{ko:'선풍기 바람 조심!',en:'Watch out for the fan breeze!'}},
+    {q:'cak pud moc gum pan jel pud',t:145,mods:{spin:10},glue:1,hint:{ko:'돌림판이 빙글빙글',en:'The turntable keeps turning'}},
+    {q:'cak cak moc pud pan moc jel gum jel',t:180,mods:{tilt:.025,wind:60},chill:2,glue:1,hint:{ko:'디저트 총출동!',en:'Everything at once!'}}
   ];
 
   function rng(s){s=(s*2654435761+1013904223)>>>0;return function(){s^=s<<13;s>>>=0;s^=s>>17;s^=s<<5;s>>>=0;return s/4294967296}}
