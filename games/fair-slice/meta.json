@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-20",
+  "emoji": "🍕",
+  "title": {"ko": "공평하게 한 판", "en": "Fair Slice"},
+  "tagline": {"ko": "칼질 퍼즐 · 똑같이 나누기", "en": "Slicing puzzle · share it fairly"},
+  "desc": {
+    "ko": "피자, 케이크, 샌드위치, 수박, 초승달 파이까지 식탁에 올라오면 배고픈 동물 손님들이 눈을 반짝입니다. 정해진 횟수만큼 직선으로 칼질해서 모든 손님이 똑같은 크기, 똑같은 토핑 개수를 받도록 나눠 주세요. 가운데를 지나는 뻔한 칼질로는 안 풀리는 단계가 많아서, 토핑 사이로 지나가는 선과 한쪽으로 비켜 간 평행선을 찾아내는 재미가 있습니다. 14개의 직접 만든 단계 뒤에는 언제나 풀 수 있도록 생성되는 단계가 끝없이 이어집니다.",
+    "en": "Pizza, cake, sandwiches, watermelon and even a crescent moon pie land on the picnic table, and a ring of hungry animal guests is watching. With a limited number of straight cuts, slice the food so that every guest gets exactly the same amount of area and the same number of toppings. Many stages cannot be solved by cutting through the middle, so you have to spot lines that slip between the pepperoni or parallel cuts that sit off-centre. After 14 handcrafted stages, freshly generated stages keep coming, each one built from a known solution so it is always solvable."
+  },
+  "controls": {
+    "ko": "모바일: 음식 위로 손가락을 끌어 선을 긋고 떼면 칼이 지나갑니다. 칼질을 다 쓰면 조각을 끌어 손님 접시에 놓거나 '나눠 주기'를 눌러 자동으로 가장 공평하게 배분하세요. '취소'는 마지막 칼질을 되돌리며 벌칙이 없습니다. PC: 방향키로 선의 한쪽 끝, Shift+방향키로 다른 쪽 끝을 움직이고 Q/E로 회전, Space로 자르기, S로 나눠 주기, Z로 취소합니다.",
+    "en": "Mobile: drag across the food to draw a cut line and release to slice. When your cuts are used up, drag pieces onto the guests' plates or tap Serve to let the waiter find the fairest distribution. Undo removes the last cut at no cost. Desktop: arrow keys move one end of the line, Shift+arrows move the other end, Q/E rotate it, Space cuts, S serves and Z undoes."
+  },
+  "tips": {
+    "ko": "선을 긋는 동안 조각마다 넓이 비율과 토핑 개수가 실시간으로 표시되고, 공평한 크기면 초록색으로 바뀝니다. 손님 수만큼 조각이 꼭 나올 필요는 없어서, 작은 조각 두 개를 한 손님에게 몰아주는 방법도 통합니다. 실패한 나눠 주기는 3초를 잃지만 칼질은 그대로 남고, 칼질을 아끼거나 오차 없이 나누면 보너스 점수를 받습니다.",
+    "en": "While you drag, every piece shows its share of the area and its topping counts live, turning green when the size is fair. You do not need one piece per guest: giving two small slices to the same guest is often the trick. A failed serve costs 3 seconds but keeps your cuts, and saving cuts or slicing with pinpoint precision earns bonus points."
+  },
+  "tags": ["puzzle", "geometry", "food", "casual", "mobile", "html5"]
+}

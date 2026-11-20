@@ -1,0 +1,20 @@
+{
+  "slug": "bee-dance",
+  "date": "2026-10-03",
+  "emoji": "🐝",
+  "title": {"ko": "꿀벌 춤", "en": "Bee Dance"},
+  "tagline": {"ko": "춤으로 꽃 위치 알리기 · 해가 움직이는 퍼즐", "en": "Tell the hive where flowers are, with a dance"},
+  "desc": {
+    "ko": "실제 꿀벌의 8자 춤(꼬리 흔들기 춤)을 그대로 옮긴 퍼즐입니다. 정찰벌이 찾아낸 꽃밭을 벌집 위에서 춤으로 알려 주면, 일벌들이 춤이 가리키는 방향과 거리로 날아가 꿀을 모아 옵니다. 벌집의 위쪽은 언제나 해 쪽이라서, 꽃이 해에서 오른쪽으로 40° 돌아 있으면 위에서 오른쪽으로 40° 기울여 춤춰야 합니다. 해는 하늘을 계속 가로지르기 때문에 같은 꽃이라도 시간이 지나면 다른 각도로 춰야 하고, 비구름과 배고픈 새가 있는 쪽은 피해서 가장 꽃이 많은 곳을 골라야 합니다.",
+    "en": "A puzzle built on the real honeybee waggle dance. Your scout has found flower patches, and you tell the hive where they are by dancing on the comb; the workers then fly out along the direction and distance your dance encodes. Up on the comb always means toward the sun, so a patch 40° to the right of the sun needs a dance tilted 40° right of straight up. The sun keeps crossing the sky, so the same patch needs a different angle a few seconds later, and rain clouds and a hungry bird make you pick a different, richer patch."
+  },
+  "controls": {
+    "ko": "모바일: 아래쪽 벌집 아무 곳에서나 손가락을 끌면 춤이 됩니다. 끈 방향이 각도, 끈 길이가 거리이고, 손을 떼면 일벌이 출발합니다. PC: 마우스로 똑같이 끌거나, 좌우 방향키로 춤 방향을 5°씩 돌리고 위아래 방향키로 길이를 조절한 뒤 스페이스로 춤을 춥니다.",
+    "en": "Mobile: drag anywhere on the comb at the bottom. The direction of the drag is the angle, its length is the distance, and lifting your finger sends the workers. Desktop: drag the same way with the mouse, or turn the dance with the Left and Right arrows in 5° steps, set its length with Up and Down, and press Space to dance."
+  },
+  "tips": {
+    "ko": "지도 위의 점선 고리와 벌집 각도기의 고리는 크기가 같아서, 꽃이 두 번째 고리 위에 있으면 두 번째 고리까지 끌면 됩니다. 실패하면 지도에 내 춤(점선)과 정답 방향(흐린 선)이 함께 그려지니 그 차이만큼 고쳐 보세요. 해가 움직이는 단계에서는 춤추기 직전에 해의 위치를 다시 확인하고, 꿀이 한 번에 많이 나오는 꽃밭을 고르면 시간이 남습니다. 단계를 깰 때마다 13초가 더해집니다.",
+    "en": "The dotted rings on the map are the same size as the rings on the comb protractor, so a patch on the second ring needs a drag out to the second ring. After a miss the map shows your dance as a dotted line next to the true direction, so correct by the gap. On moving-sun stages, check where the sun is right before you dance, and pick patches with more flowers to save time. Every cleared stage adds 13 seconds."
+  },
+  "tags": ["puzzle", "bees", "nature", "educational", "casual", "touch"]
+}

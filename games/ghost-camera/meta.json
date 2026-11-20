@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-20",
+  "emoji": "📷",
+  "title": {"ko": "유령 사진관", "en": "Ghost Camera"},
+  "tagline": {"ko": "카메라 속에만 보이는 유령 찍기", "en": "Snap ghosts only your camera can see"},
+  "desc": {
+    "ko": "오래된 집 방 안에 수줍은 꼬마 유령들이 떠다니지만, 맨눈에는 보이지 않고 카메라 뷰파인더 안에서만 모습을 드러냅니다. 흔들리는 커튼, 달그락거리는 찻잔, 펄럭이는 촛불, 고개를 돌리는 고양이 귀 같은 단서를 따라 뷰파인더를 옮기고 셔터를 누르세요. 프레임 안에 온전히 담았는지, 삼분할 구도인지, 유령이 포즈를 취한 순간인지, 사진이 흔들렸는지에 따라 점수가 매겨지고, 찍은 사진은 폴라로이드로 현상되어 앨범 줄에 걸립니다.",
+    "en": "Shy little ghosts drift around a cosy old house, but they are invisible to the naked eye and only appear inside your camera's viewfinder. Follow the clues — swaying curtains, a rattling teacup, a flickering candle, the sleeping cat's ears turning — move the viewfinder there and press the shutter. Every photo is judged on whether the ghost is fully in frame, rule-of-thirds composition, catching a cute pose, and camera shake, and each shot develops into a polaroid that hangs on your album string."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 누른 채 끌면 뷰파인더가 손가락을 따라 움직이고, 아래 가운데 빨간 셔터를 누르거나 뷰파인더 안을 두 번 탭하면 찍힙니다. 방 안의 램프를 탭하면 불이 꺼지고 켜집니다. PC: 방향키로 뷰파인더를 움직이고 스페이스로 촬영, L 키로 램프를 켜고 끕니다.",
+    "en": "Mobile: press anywhere and drag to move the viewfinder with your finger, then tap the red shutter at the bottom or double-tap inside the viewfinder to shoot. Tap the lamp in the room to switch the lights off and on. Desktop: arrow keys move the viewfinder, Space takes a photo and L toggles the lamp."
+  },
+  "tips": {
+    "ko": "유령 머리 위에 느낌표가 뜨면 곧 포즈를 취한다는 뜻이니 멈춰서 기다렸다가 찍으면 큰 보너스를 받습니다. 셔터 직전 0.2초 동안 뷰파인더를 빨리 움직이면 사진이 흔들려 점수가 절반이 되니, 찍기 전에 잠깐 멈추세요. 수줍은 유령에게는 천천히 다가가고, 거울 속 장난꾸러기는 거울을 프레임에 담아야 보이며, 'z'가 떠오르는 램프 근처에는 불을 꺼야 나타나는 졸린 유령이 숨어 있습니다.",
+    "en": "When an exclamation mark pops up over a ghost it is about to pose, so hold still and wait for the big bonus. Moving the viewfinder quickly in the last 0.2 seconds before the shutter makes the photo blurry and halves the score, so pause for a beat before you shoot. Approach shy ghosts slowly, frame the mirror to catch the prankster who lives in reflections, and dim the lamp where little z's float up to reveal the sleepy ghost."
+  },
+  "tags": ["photography", "ghosts", "cozy", "casual", "mobile", "puzzle"]
+}
