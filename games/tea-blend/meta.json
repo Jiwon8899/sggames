@@ -1,0 +1,20 @@
+{
+  "slug": "tea-blend",
+  "date": "2026-11-21",
+  "emoji": "🍵",
+  "title": {"ko": "할머니의 찻잔", "en": "Grandma's Teacup"},
+  "tagline": {"ko": "맛 추리 퍼즐 · 아늑한 찻집", "en": "Taste deduction puzzle · cosy tea house"},
+  "desc": {
+    "ko": "단풍이 지는 작은 찻집에 동물 손님들이 찾아와 '할머니가 끓여 주던 그 차'를 부탁합니다. 손님의 기억은 달콤함, 쌉쌀함, 꽃향, 상큼함, 따뜻함 다섯 축의 맛 그래프로 보이고, 여러분은 재료를 스쿱 단위로 넣어 그 모양을 맞춰야 합니다. 꿀과 장미는 둘 다 달고 생강과 계피는 둘 다 따뜻해서, 손님이 한 모금 마신 뒤 보여 주는 그래프를 보고 어떤 재료를 빼고 바꿀지 추리하는 것이 핵심입니다. 모르는 재료가 하나뿐인 잔을 내면 그 재료의 맛이 맛 노트에 기록되어 점점 능숙해집니다.",
+    "en": "Animal guests drop into a little tea house under falling maple leaves and ask for 'the tea my grandma used to make'. Their memory appears as a taste chart over five axes, sweet, bitter, floral, fresh and warm, and you add ingredients scoop by scoop to match that shape. Honey and rose are both sweet and ginger and cinnamon are both warm, so the puzzle is reading the chart after each sip and working out which ingredient to swap. Serve a cup with only one unknown ingredient and its flavour is written into your taste journal, so you get sharper as the evening goes on."
+  },
+  "controls": {
+    "ko": "모바일: 아래 병을 눌러 한 스쿱씩 넣고, 주전자 아래 동그란 스쿱을 누르면 뺍니다. 우림 막대를 끌어 차 우리는 시간을 정하고 '대접하기'를 누르세요. PC: 방향키로 병을 고르고 스페이스로 넣기, X로 빼기, [ ]로 우림 시간 조절, S로 대접, J로 맛 노트를 엽니다.",
+    "en": "Mobile: tap a jar to add a scoop and tap a round scoop under the teapot to take it out. Drag the steep slider to set the brewing time, then tap Serve. Desktop: arrow keys pick a jar, Space adds, X removes, [ and ] change the steep time, S serves and J opens the taste journal."
+  },
+  "tips": {
+    "ko": "모르는 재료는 한 가지만 넣어 대접해 보면 그 재료의 맛 모양이 그대로 드러납니다. 차 종류는 오래 우릴수록 쌉쌀함만 커지니, 쓴맛만 어긋날 때는 재료보다 우림 막대를 먼저 움직여 보세요. 두 손님이 한 주전자를 나눌 때는 두 점선 그래프의 딱 가운데를 노리면 됩니다. 한 손님에게 잔은 네 번뿐이고, 남은 잔과 연속 성공이 점수 보너스가 됩니다.",
+    "en": "Serving an unknown ingredient on its own shows its exact taste shape. Teas only get more bitter the longer they steep, so when bitterness is the only thing off, move the steep slider before swapping ingredients. When two guests share one pot, aim for the exact middle of their two dashed charts. You get four cups per guest, and leftover cups and streaks add bonus points."
+  },
+  "tags": ["puzzle", "deduction", "cozy", "tea", "logic", "casual"]
+}

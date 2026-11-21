@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🛗",
+  "title": {"ko": "엘리베이터 반장", "en": "Lift Boss"},
+  "tagline": {"ko": "엘리베이터 배차 퍼즐 · 동물 아파트", "en": "Elevator dispatch puzzle · animal apartments"},
+  "desc": {
+    "ko": "해 질 녘 동물 아파트의 엘리베이터 배차원이 되어 보세요. 주민들은 머리 위 말풍선에 가고 싶은 층을 띄우고 문 앞에서 기다리는데, 말풍선 테두리의 인내심 게이지가 다 닳으면 발을 쿵쿵 구르며 계단으로 가 버립니다. 엘리베이터는 다음 정차층이 있는 방향으로 가는 주민만 태우기 때문에, 위아래로 왔다 갔다 하기보다 한 방향으로 쭉 훑는 경로를 짜는 것이 핵심입니다. 출근·퇴근 러시, 혼자 타야 하는 졸린 부엉이, 세 자리를 차지하는 코끼리, 거의 빈 칸이 필요한 다섯 식구, 짝수층만 서는 급행, 근무 중에 점검에 들어가는 호기까지 근무마다 새로운 과제가 나옵니다.",
+    "en": "Become the dispatcher of a busy animal apartment building at dusk. Residents show the floor they want in a bubble above their heads and wait at the lift doors, and when the patience ring around that bubble runs out they stomp off to the stairs. A lift only picks up residents heading the same way as its next stop, so the real trick is planning one smooth sweep instead of zig-zagging up and down. Morning and evening rushes, a sleepy owl who must ride alone, an elephant who takes three seats, a family of five who needs a nearly empty car, an express lift that skips odd floors and a lift that goes offline mid-shift keep every shift different."
+  },
+  "controls": {
+    "ko": "모바일: 엘리베이터 칸을 눌러 고른 뒤 층을 차례로 누르면 정차 목록에 추가됩니다. 이미 넣은 층을 다시 누르면 빠지고, 아래 경로 리본의 층 칩을 좌우로 끌면 순서를 바꿀 수 있습니다. 승강로를 바로 누르면 그 칸이 선택되면서 그 층이 추가됩니다. PC: 1·2·3 키(또는 좌우 방향키)로 칸을 고르고, 위아래 방향키로 층 커서를 옮긴 뒤 스페이스로 정차층을 넣고 뺍니다.",
+    "en": "Mobile: tap a lift car to select it, then tap floors in order to add them to its stop list. Tap a queued floor again to remove it, and drag the floor chips in the route ribbon at the bottom to reorder them. Tapping directly inside a shaft selects that lift and queues that floor in one go. Desktop: press 1, 2 or 3 (or Left/Right) to pick a lift, move the floor cursor with Up/Down and press Space to add or remove a stop."
+  },
+  "tips": {
+    "ko": "타고 있는 주민의 목적층은 승강로 왼쪽 작은 꼬리표로 표시되고, 아직 경로에 없으면 깜빡입니다. 같은 방향으로 세 번 이상 정차하며 두 명 이상 내려 주면 '매끈하게!' 보너스와 2초가 더해지고, 연속으로 성공하면 배수가 커집니다. 다음 정차층을 미리 넣어 두지 않으면 칸이 멈춰 서면서 훑기가 끊기니 경로를 넉넉히 쌓아 두세요. 근무를 마치면 14초, 배달마다 1초가 늘어나고, 주민이 화가 나서 떠나면 3초가 줄어듭니다.",
+    "en": "Destinations of riders are shown as small tags on the left edge of the shaft, and they blink while that floor is not on the route yet. Stop three or more times in the same direction while dropping off at least two residents for a Smooth ride bonus plus 2 seconds, and keep chaining them for a bigger multiplier. If a lift runs out of queued stops it parks and the sweep ends, so keep its route topped up. Clearing a shift adds 14 seconds and every delivery adds 1, while each resident who storms off costs 3."
+  },
+  "tags": ["puzzle", "strategy", "elevator", "management", "casual", "cute"]
+}

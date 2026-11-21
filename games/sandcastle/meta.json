@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🏰",
+  "title": {"ko": "모래성 지키기", "en": "Sandcastle Tide"},
+  "tagline": {"ko": "밀물 물길 퍼즐 · 모래벽과 도랑", "en": "Tide-flow puzzle · sand walls and trenches"},
+  "desc": {
+    "ko": "바닷가 꽃게 왕의 모래성에 파도가 한 번씩 밀려옵니다. 물은 칸마다 높이를 가진 진짜 물처럼 낮은 곳을 찾아 흐르고, 젖은 모래는 깎이고 무너집니다. 손가락으로 모래벽을 쌓고 삽으로 도랑을 파서 물길을 바꿔 주세요. 바위, 미역, 옆에서 흘러드는 개울, 벽을 쪼는 갈매기, 성 두 채, 달 뜬 밤바다까지 해변마다 다른 물길이 기다립니다.",
+    "en": "Waves roll up the beach one by one toward the crab king's sandcastle. The water is simulated cell by cell, so it really pours downhill, finds the low spot in your wall and chews away wet sand. Drag to pile up sand walls and switch to the shovel to dig trenches that lead the water somewhere harmless. Rocks, seaweed, a side stream, wall-pecking seagulls, twin castles and a moonlit night tide make every beach a different flow puzzle."
+  },
+  "controls": {
+    "ko": "모바일: 모래밭을 끌면 그 자리에 모래벽이 쌓입니다. 왼쪽 아래 삽 버튼을 누르면 끌어서 도랑을 팔 수 있고, 양동이 버튼으로 다시 쌓기로 돌아옵니다. PC: 방향키로 커서를 옮기고 스페이스를 누른 채 움직이면 쌓기, Shift+스페이스는 파기, Tab은 도구 바꾸기입니다. 마우스로 끌어도 됩니다.",
+    "en": "Mobile: drag on the sand to pile up a wall along your finger. Tap the shovel button at the bottom left to dig trenches instead, and the bucket button to build again. Desktop: move the cursor with the arrow keys and hold Space while moving to build, hold Shift+Space to dig, and press Tab to switch tools. Mouse dragging works too."
+  },
+  "tips": {
+    "ko": "바다 위 흰 줄이 다음 파도의 크기와 도착 시간을 알려 줍니다. 물은 벽 끝을 돌아 들어오니 앞만 막지 말고 옆까지 감싸거나, 도랑을 웅덩이로 이어 물을 빼 주세요. 파면 모래가 절반 돌아오니 모래가 모자라면 도랑부터 파 보세요. 성을 둘러싼 도랑이 웅덩이와 이어지면 해자 보너스를 받습니다.",
+    "en": "The white swell line over the sea shows the size and arrival time of the next wave. Water sneaks around the ends of a wall, so wrap the sides as well, or run a trench into a pool to drain it away. Digging refunds half the sand, so when your bucket is low, dig first. A ring trench around the castle that connects to a pool earns a moat bonus."
+  },
+  "tags": ["puzzle", "simulation", "water", "strategy", "casual", "touch"]
+}

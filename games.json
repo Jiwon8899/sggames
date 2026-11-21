@@ -34,6 +34,39 @@
   },
   {
     "date": "2026-11-21",
+    "emoji": "🛗",
+    "title": {
+      "ko": "엘리베이터 반장",
+      "en": "Lift Boss"
+    },
+    "tagline": {
+      "ko": "엘리베이터 배차 퍼즐 · 동물 아파트",
+      "en": "Elevator dispatch puzzle · animal apartments"
+    },
+    "desc": {
+      "ko": "해 질 녘 동물 아파트의 엘리베이터 배차원이 되어 보세요. 주민들은 머리 위 말풍선에 가고 싶은 층을 띄우고 문 앞에서 기다리는데, 말풍선 테두리의 인내심 게이지가 다 닳으면 발을 쿵쿵 구르며 계단으로 가 버립니다. 엘리베이터는 다음 정차층이 있는 방향으로 가는 주민만 태우기 때문에, 위아래로 왔다 갔다 하기보다 한 방향으로 쭉 훑는 경로를 짜는 것이 핵심입니다. 출근·퇴근 러시, 혼자 타야 하는 졸린 부엉이, 세 자리를 차지하는 코끼리, 거의 빈 칸이 필요한 다섯 식구, 짝수층만 서는 급행, 근무 중에 점검에 들어가는 호기까지 근무마다 새로운 과제가 나옵니다.",
+      "en": "Become the dispatcher of a busy animal apartment building at dusk. Residents show the floor they want in a bubble above their heads and wait at the lift doors, and when the patience ring around that bubble runs out they stomp off to the stairs. A lift only picks up residents heading the same way as its next stop, so the real trick is planning one smooth sweep instead of zig-zagging up and down. Morning and evening rushes, a sleepy owl who must ride alone, an elephant who takes three seats, a family of five who needs a nearly empty car, an express lift that skips odd floors and a lift that goes offline mid-shift keep every shift different."
+    },
+    "controls": {
+      "ko": "모바일: 엘리베이터 칸을 눌러 고른 뒤 층을 차례로 누르면 정차 목록에 추가됩니다. 이미 넣은 층을 다시 누르면 빠지고, 아래 경로 리본의 층 칩을 좌우로 끌면 순서를 바꿀 수 있습니다. 승강로를 바로 누르면 그 칸이 선택되면서 그 층이 추가됩니다. PC: 1·2·3 키(또는 좌우 방향키)로 칸을 고르고, 위아래 방향키로 층 커서를 옮긴 뒤 스페이스로 정차층을 넣고 뺍니다.",
+      "en": "Mobile: tap a lift car to select it, then tap floors in order to add them to its stop list. Tap a queued floor again to remove it, and drag the floor chips in the route ribbon at the bottom to reorder them. Tapping directly inside a shaft selects that lift and queues that floor in one go. Desktop: press 1, 2 or 3 (or Left/Right) to pick a lift, move the floor cursor with Up/Down and press Space to add or remove a stop."
+    },
+    "tips": {
+      "ko": "타고 있는 주민의 목적층은 승강로 왼쪽 작은 꼬리표로 표시되고, 아직 경로에 없으면 깜빡입니다. 같은 방향으로 세 번 이상 정차하며 두 명 이상 내려 주면 '매끈하게!' 보너스와 2초가 더해지고, 연속으로 성공하면 배수가 커집니다. 다음 정차층을 미리 넣어 두지 않으면 칸이 멈춰 서면서 훑기가 끊기니 경로를 넉넉히 쌓아 두세요. 근무를 마치면 14초, 배달마다 1초가 늘어나고, 주민이 화가 나서 떠나면 3초가 줄어듭니다.",
+      "en": "Destinations of riders are shown as small tags on the left edge of the shaft, and they blink while that floor is not on the route yet. Stop three or more times in the same direction while dropping off at least two residents for a Smooth ride bonus plus 2 seconds, and keep chaining them for a bigger multiplier. If a lift runs out of queued stops it parks and the sweep ends, so keep its route topped up. Clearing a shift adds 14 seconds and every delivery adds 1, while each resident who storms off costs 3."
+    },
+    "tags": [
+      "puzzle",
+      "strategy",
+      "elevator",
+      "management",
+      "casual",
+      "cute"
+    ],
+    "slug": "elevator-boss"
+  },
+  {
+    "date": "2026-11-21",
     "emoji": "🔑",
     "title": {
       "ko": "열쇠 장인",
@@ -98,6 +131,71 @@
     "slug": "lighthouse"
   },
   {
+    "slug": "paper-plane",
+    "date": "2026-11-21",
+    "emoji": "✈️",
+    "title": {
+      "ko": "종이비행기 교실",
+      "en": "Paper Plane Class"
+    },
+    "tagline": {
+      "ko": "접고 날리는 비행 퍼즐 · 햇살 교실",
+      "en": "Fold-then-fly physics puzzle · sunny classroom"
+    },
+    "desc": {
+      "ko": "스테이지마다 두 단계로 진행됩니다. 먼저 책상 위 종이를 접어 코 모양, 날개 넓이, 날개 끝, 클립 무게를 고르고, 그다음 교실에서 비행기를 당겼다 놓아 날립니다. 접기에 따라 양력과 항력, 안정성, 코 무게가 달라져서 같은 힘으로 던져도 비행이 완전히 달라집니다. 긴 복도에는 넓은 날개 글라이더가, 높은 창문에는 클립을 낀 뾰족한 다트가 필요합니다. 휴지통, 창문, 종이 고리, 친구 책상을 맞히며 제한 시간 안에 최대한 많은 스테이지를 넘겨 보세요.",
+      "en": "Every stage has two steps. First you fold the sheet on your desk, choosing the nose shape, wing width, wing tips and a paperclip weight; then you pull the plane back in the classroom and let it fly. Each fold changes lift, drag, stability and nose weight, so the same throw can fly completely differently. A long hallway wants a wide-winged glider, while a high window needs a pointed dart with a clip. Hit baskets, windows, paper rings and a friend's desk, and clear as many stages as you can before the clock runs out."
+    },
+    "controls": {
+      "ko": "모바일: 접기 화면에서 원하는 접기 칸을 탭하고 '날리러 가기'를 누르세요. 교실에서는 화면을 누른 채 뒤로 당겼다가 놓으면 날아가고, 당긴 방향이 각도, 당긴 길이가 힘입니다. 날아가는 도중에 화면을 탭하면 선풍기 바람이 비행기를 살짝 띄워 줍니다(한 번 던질 때 2번). PC: 접기 화면에서 ↑↓로 줄, ←→로 선택, F나 Enter로 확인합니다. 교실에서는 ↑↓로 각도, ←→로 힘을 정하고 스페이스로 던지며, 날아가는 중 스페이스는 선풍기 바람, F는 다시 접기입니다.",
+      "en": "Mobile: on the fold screen, tap the fold options you want and press 'Go throw'. In the classroom, press and pull back, then release: the pull direction sets the angle and the pull length sets the power. Tap during flight for a fan puff that lifts the plane a little (two per throw). Desktop: on the fold screen use Up/Down to pick a row, Left/Right to pick an option and F or Enter to confirm. In the classroom Up/Down set the angle, Left/Right set the power and Space throws; Space in flight is a fan puff and F goes back to folding."
+    },
+    "tips": {
+      "ko": "조준할 때 보이는 점선은 처음 0.6초만 보여 주니, 나머지는 접기로 예측해야 합니다. 비행기가 솟았다가 뚝 떨어지면 코가 너무 가벼운 것이고, 바로 고꾸라지면 너무 무거운 것입니다. 실패하면 이유가 표시되고, 세 번 놓치면 맞는 접기 힌트가 나옵니다. 한 번에 맞히거나 공중제비를 돌면 별과 보너스 점수를 받고, 스테이지를 깰 때마다 14초가 더해집니다.",
+      "en": "The dotted preview only shows the first 0.6 seconds, so the rest is up to how you folded. If the plane swoops up and then drops, the nose is too light; if it noses straight down, it is too heavy. Every miss tells you why, and after three misses you get a hint for the right fold. First-try hits and loops earn stars and bonus points, and every clear adds 14 seconds."
+    },
+    "tags": [
+      "puzzle",
+      "physics",
+      "paper-airplane",
+      "casual",
+      "mobile"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "emoji": "🏰",
+    "title": {
+      "ko": "모래성 지키기",
+      "en": "Sandcastle Tide"
+    },
+    "tagline": {
+      "ko": "밀물 물길 퍼즐 · 모래벽과 도랑",
+      "en": "Tide-flow puzzle · sand walls and trenches"
+    },
+    "desc": {
+      "ko": "바닷가 꽃게 왕의 모래성에 파도가 한 번씩 밀려옵니다. 물은 칸마다 높이를 가진 진짜 물처럼 낮은 곳을 찾아 흐르고, 젖은 모래는 깎이고 무너집니다. 손가락으로 모래벽을 쌓고 삽으로 도랑을 파서 물길을 바꿔 주세요. 바위, 미역, 옆에서 흘러드는 개울, 벽을 쪼는 갈매기, 성 두 채, 달 뜬 밤바다까지 해변마다 다른 물길이 기다립니다.",
+      "en": "Waves roll up the beach one by one toward the crab king's sandcastle. The water is simulated cell by cell, so it really pours downhill, finds the low spot in your wall and chews away wet sand. Drag to pile up sand walls and switch to the shovel to dig trenches that lead the water somewhere harmless. Rocks, seaweed, a side stream, wall-pecking seagulls, twin castles and a moonlit night tide make every beach a different flow puzzle."
+    },
+    "controls": {
+      "ko": "모바일: 모래밭을 끌면 그 자리에 모래벽이 쌓입니다. 왼쪽 아래 삽 버튼을 누르면 끌어서 도랑을 팔 수 있고, 양동이 버튼으로 다시 쌓기로 돌아옵니다. PC: 방향키로 커서를 옮기고 스페이스를 누른 채 움직이면 쌓기, Shift+스페이스는 파기, Tab은 도구 바꾸기입니다. 마우스로 끌어도 됩니다.",
+      "en": "Mobile: drag on the sand to pile up a wall along your finger. Tap the shovel button at the bottom left to dig trenches instead, and the bucket button to build again. Desktop: move the cursor with the arrow keys and hold Space while moving to build, hold Shift+Space to dig, and press Tab to switch tools. Mouse dragging works too."
+    },
+    "tips": {
+      "ko": "바다 위 흰 줄이 다음 파도의 크기와 도착 시간을 알려 줍니다. 물은 벽 끝을 돌아 들어오니 앞만 막지 말고 옆까지 감싸거나, 도랑을 웅덩이로 이어 물을 빼 주세요. 파면 모래가 절반 돌아오니 모래가 모자라면 도랑부터 파 보세요. 성을 둘러싼 도랑이 웅덩이와 이어지면 해자 보너스를 받습니다.",
+      "en": "The white swell line over the sea shows the size and arrival time of the next wave. Water sneaks around the ends of a wall, so wrap the sides as well, or run a trench into a pool to drain it away. Digging refunds half the sand, so when your bucket is low, dig first. A ring trench around the castle that connects to a pool earns a moat bonus."
+    },
+    "tags": [
+      "puzzle",
+      "simulation",
+      "water",
+      "strategy",
+      "casual",
+      "touch"
+    ],
+    "slug": "sandcastle"
+  },
+  {
     "slug": "skate-trace",
     "date": "2026-11-21",
     "emoji": "⛸️",
@@ -128,6 +226,39 @@
       "puzzle",
       "casual",
       "winter"
+    ]
+  },
+  {
+    "slug": "tea-blend",
+    "date": "2026-11-21",
+    "emoji": "🍵",
+    "title": {
+      "ko": "할머니의 찻잔",
+      "en": "Grandma's Teacup"
+    },
+    "tagline": {
+      "ko": "맛 추리 퍼즐 · 아늑한 찻집",
+      "en": "Taste deduction puzzle · cosy tea house"
+    },
+    "desc": {
+      "ko": "단풍이 지는 작은 찻집에 동물 손님들이 찾아와 '할머니가 끓여 주던 그 차'를 부탁합니다. 손님의 기억은 달콤함, 쌉쌀함, 꽃향, 상큼함, 따뜻함 다섯 축의 맛 그래프로 보이고, 여러분은 재료를 스쿱 단위로 넣어 그 모양을 맞춰야 합니다. 꿀과 장미는 둘 다 달고 생강과 계피는 둘 다 따뜻해서, 손님이 한 모금 마신 뒤 보여 주는 그래프를 보고 어떤 재료를 빼고 바꿀지 추리하는 것이 핵심입니다. 모르는 재료가 하나뿐인 잔을 내면 그 재료의 맛이 맛 노트에 기록되어 점점 능숙해집니다.",
+      "en": "Animal guests drop into a little tea house under falling maple leaves and ask for 'the tea my grandma used to make'. Their memory appears as a taste chart over five axes, sweet, bitter, floral, fresh and warm, and you add ingredients scoop by scoop to match that shape. Honey and rose are both sweet and ginger and cinnamon are both warm, so the puzzle is reading the chart after each sip and working out which ingredient to swap. Serve a cup with only one unknown ingredient and its flavour is written into your taste journal, so you get sharper as the evening goes on."
+    },
+    "controls": {
+      "ko": "모바일: 아래 병을 눌러 한 스쿱씩 넣고, 주전자 아래 동그란 스쿱을 누르면 뺍니다. 우림 막대를 끌어 차 우리는 시간을 정하고 '대접하기'를 누르세요. PC: 방향키로 병을 고르고 스페이스로 넣기, X로 빼기, [ ]로 우림 시간 조절, S로 대접, J로 맛 노트를 엽니다.",
+      "en": "Mobile: tap a jar to add a scoop and tap a round scoop under the teapot to take it out. Drag the steep slider to set the brewing time, then tap Serve. Desktop: arrow keys pick a jar, Space adds, X removes, [ and ] change the steep time, S serves and J opens the taste journal."
+    },
+    "tips": {
+      "ko": "모르는 재료는 한 가지만 넣어 대접해 보면 그 재료의 맛 모양이 그대로 드러납니다. 차 종류는 오래 우릴수록 쌉쌀함만 커지니, 쓴맛만 어긋날 때는 재료보다 우림 막대를 먼저 움직여 보세요. 두 손님이 한 주전자를 나눌 때는 두 점선 그래프의 딱 가운데를 노리면 됩니다. 한 손님에게 잔은 네 번뿐이고, 남은 잔과 연속 성공이 점수 보너스가 됩니다.",
+      "en": "Serving an unknown ingredient on its own shows its exact taste shape. Teas only get more bitter the longer they steep, so when bitterness is the only thing off, move the steep slider before swapping ingredients. When two guests share one pot, aim for the exact middle of their two dashed charts. You get four cups per guest, and leftover cups and streaks add bonus points."
+    },
+    "tags": [
+      "puzzle",
+      "deduction",
+      "cozy",
+      "tea",
+      "logic",
+      "casual"
     ]
   },
   {
