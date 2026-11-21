@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🎬",
+  "title": {"ko": "극장 안내원", "en": "Theater Usher"},
+  "tagline": {"ko": "좌석 배치 퍼즐 · 모두가 웃게", "en": "Seating puzzle · make every face smile"},
+  "desc": {
+    "ko": "작은 동물 영화관의 안내원이 되어 까다로운 손님들을 자리에 앉혀 보세요. 기린 뒤에 앉으면 화면이 안 보이고, 팝콘 손님 옆의 잠귀 밝은 손님은 화를 내고, 커플과 아기는 짝 옆에 붙어 앉아야 해요. 모두 앉힌 뒤 상영을 시작하면 불이 꺼지고, 손님마다 웃는 얼굴이나 불만 가득한 얼굴로 결과를 알려 줍니다. 손수 만든 10개 상영관 뒤에는 풀이가 1~3가지뿐인 자동 생성 퍼즐이 계속 이어집니다.",
+    "en": "Become the usher of a tiny animal cinema and find a seat for every fussy guest. Sit behind a giraffe and you see nothing, light sleepers hate the popcorn crunchers beside them, and couples and kids must sit right next to their partner. Once everyone is seated, start the film: the lights dim and each guest answers with a smile or a grumpy face that tells you what went wrong. After ten handcrafted screens, generated puzzles with only one to three solutions keep coming."
+  },
+  "controls": {
+    "ko": "모바일: 손님을 탭한 뒤 좌석을 탭하거나, 손님을 끌어서 좌석에 놓아요. 앉은 손님을 다른 손님 자리에 놓으면 서로 자리를 바꾸고, 줄 서는 곳에 놓으면 다시 줄로 돌아가요. PC: 방향키로 이동, 스페이스로 고르고 앉히기, X로 빼기, H로 힌트, Enter로 상영 시작입니다.",
+    "en": "Mobile: tap a guest and then a seat, or drag the guest onto a seat. Dropping a guest on someone else swaps them, and dropping them in the lobby sends them back to the line. Desktop: arrow keys move the cursor, Space picks up and seats, X removes a guest, H gives a hint and Enter starts the film."
+  },
+  "tips": {
+    "ko": "만석에 가까운 상영관은 키 순서부터 생각하세요. 기린은 뒷줄로, 작은 손님은 앞줄로 보내면 남은 자리가 금방 정리됩니다. 힌트를 쓰지 않고 한 번에 성공하면 별 3개, 성공할 때마다 남은 시간도 늘어나요.",
+    "en": "In a nearly full house, start with height order. Giraffes go to the back, little guests to the front, and the rest of the seats sort themselves out quickly. Clear a screen on the first try without hints for three stars, and every clear adds time to the clock."
+  },
+  "tags": ["puzzle", "logic", "cute", "animals", "casual", "mobile"]
+}

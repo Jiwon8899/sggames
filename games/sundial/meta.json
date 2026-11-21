@@ -1,0 +1,20 @@
+{
+  "slug": "sundial",
+  "date": "2026-11-21",
+  "emoji": "🌻",
+  "title": {"ko": "해시계 정원", "en": "Sundial Garden"},
+  "tagline": {"ko": "움직이는 해 · 그림자 퍼즐", "en": "A moving sun · shadow puzzle"},
+  "desc": {
+    "ko": "해가 아침 6시에 떠서 저녁 6시에 지는 동안, 정원에 꽂은 막대의 그림자가 시곗바늘처럼 돌아갑니다. 초롱꽃마다 그늘이 필요한 시각이 꼬리표로 붙어 있고, 해바라기는 하루 종일 볕을 받아야 합니다. 막대 몇 개를 어디에 꽂아야 모든 꽃이 제때 그늘을 얻는지 생각한 뒤 하루를 흘려보내 확인해 보세요. 계절이 바뀌면 해의 높이가 달라져 같은 막대도 그림자 길이가 달라집니다.",
+    "en": "As the sun rises at 6 a.m. and sets at 6 p.m., the shadows of the sticks you plant sweep around the garden like clock hands. Each bellflower carries a tag with the hours it needs shade, while sunflowers want sunlight all day long. Work out where a handful of sticks must go so every flower gets shade at the right moment, then let the day pass and watch. When the season changes the sun sits lower in the sky, so the same stick throws a longer shadow."
+  },
+  "controls": {
+    "ko": "모바일: 아래 막대 카드를 끌어 칸에 놓거나 빈 칸을 톡 눌러 꽂고, 꽂힌 막대를 누르면 회수합니다. 하늘의 시각 버튼(6·9·12·15·18)을 누르면 그 시각의 그림자를 미리 볼 수 있습니다. PC: 마우스로 똑같이 하거나 방향키로 칸을 고르고 스페이스로 막대 놓기·바꾸기, X로 빼기, Q/E로 시각 바꾸기, 엔터로 하루를 시작합니다.",
+    "en": "Mobile: drag a stick card onto a tile or tap an empty tile to plant one, and tap a planted stick to pick it up. Tap the hour buttons in the sky (6, 9, 12, 15, 18) to preview the shadows at that hour. Desktop: do the same with the mouse, or move with the arrow keys, press Space to plant or swap a stick, X to remove, Q/E to change the hour and Enter to start the day."
+  },
+  "tips": {
+    "ko": "작은 막대의 그림자는 낮에 한 칸, 아침과 저녁에는 두 칸까지 뻗고, 큰 막대는 그 두 배입니다. 막대를 들고 있으면 다섯 시각의 그림자가 색깔 점으로 펼쳐지니 꽃의 꼬리표 색과 맞춰 보세요. 막대 하나로 서로 다른 시각의 꽃 두 송이를 맡기는 자리가 대부분의 정답입니다. 한 번에 성공하면 보너스 점수, 단계를 깰 때마다 15초가 더해집니다.",
+    "en": "A short stick's shadow reaches one tile at midday and two tiles in the morning and evening, and a tall stick doubles that. While you hold a stick, its shadows for all five hours fan out as colored dots, so match them to the colors on the flower tags. Most answers are a single stick that serves two flowers at different hours. First-try clears earn bonus points, and each cleared stage adds 15 seconds."
+  },
+  "tags": ["puzzle", "logic", "shadows", "garden", "casual", "cozy"]
+}

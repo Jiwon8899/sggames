@@ -296,6 +296,39 @@
   },
   {
     "date": "2026-11-21",
+    "emoji": "🐸",
+    "title": {
+      "ko": "연못 물결",
+      "en": "Ripple Pond"
+    },
+    "tagline": {
+      "ko": "물결로 미는 퍼즐 · 잔잔한 연못",
+      "en": "Push with ripples · a calm pond puzzle"
+    },
+    "desc": {
+      "ko": "개구리 퐁이가 탄 종이배를 연꽃 선착장까지 보내는 잔잔한 물결 퍼즐입니다. 배는 직접 만질 수 없고, 물을 톡 쳐서 조약돌을 떨어뜨리면 퍼져 나가는 물결이 배를 바깥쪽으로 밀어 줍니다. 물결은 돌과 둑에 부딪혀 되돌아오고, 두 물결이 겹치면 세지거나 서로 지워지기도 합니다. 연잎, 갈대 틈, 소용돌이, 그리고 절대 깨우면 안 되는 잠든 오리가 연못마다 다른 수를 요구합니다.",
+      "en": "A calm ripple puzzle about sending Pong the frog's paper boat to the lotus dock. You can never touch the boat; instead you tap the water to drop pebbles, and each spreading ring of ripples pushes the boat outward. Ripples bounce off rocks and banks, and two rings can add up or cancel each other out. Lily pads, narrow reed gaps, whirlpools and a sleeping duck you must never bump make every pond ask for a different plan."
+    },
+    "controls": {
+      "ko": "모바일: 물 위를 탭하면 그 자리에 조약돌이 떨어집니다. PC: 마우스로 클릭하거나, 방향키(WASD)로 조준점을 옮기고 스페이스로 조약돌을 떨어뜨리세요. 조약돌을 다 쓰고 배가 멈추면 그 연못을 처음부터 다시 하며, 기다리기 싫으면 한 번 더 탭해 바로 다시 할 수 있습니다.",
+      "en": "Mobile: tap the water to drop a pebble right there. Desktop: click with the mouse, or move the aiming ring with the arrow keys (WASD) and press Space to drop. When you run out of pebbles and the boat stops, the pond resets; tap once more if you don't want to wait."
+    },
+    "tips": {
+      "ko": "배와 가까운 곳에 떨어뜨릴수록 세게 밀리고, 멀수록 살짝 밀립니다. 배의 반대편, 가고 싶은 방향의 정반대에 떨어뜨리는 것이 기본이에요. 돌 뒤에 숨은 배는 둑이나 돌에 튕겨 돌아오는 물결로 밀 수 있고, 연잎은 배만 막을 뿐 물결은 그 아래로 지나갑니다. 남긴 조약돌 하나마다 5점이 더해지고, 연못을 건널 때마다 12초가 늘어납니다.",
+      "en": "The closer a pebble lands to the boat, the harder the push; far drops only nudge it. The basic move is to drop on the opposite side from where you want to go. A boat hidden behind a rock can be moved by ripples that bounce back off the bank, and lily pads only block the boat while ripples pass underneath. Every unused pebble is worth 5 bonus points, and each pond you cross adds 12 seconds."
+    },
+    "tags": [
+      "puzzle",
+      "physics",
+      "relaxing",
+      "water",
+      "casual",
+      "frog"
+    ],
+    "slug": "ripple-pond"
+  },
+  {
+    "date": "2026-11-21",
     "emoji": "🏰",
     "title": {
       "ko": "모래성 지키기",
@@ -361,6 +394,72 @@
     ]
   },
   {
+    "date": "2026-11-21",
+    "emoji": "🦔",
+    "title": {
+      "ko": "판화 도장",
+      "en": "Stamp Carver"
+    },
+    "tagline": {
+      "ko": "거울 퍼즐 · 파서 찍으면 좌우가 뒤집힌다",
+      "en": "Mirror puzzle · carve it, stamp it, it flips"
+    },
+    "desc": {
+      "ko": "베레모를 쓴 고슴도치 손님이 주문서를 내밀면, 고무판을 파서 주문서와 똑같은 그림을 찍어 줘야 합니다. 파낸 칸은 하얗게 남고 남겨 둔 칸에만 잉크가 묻는데, 도장은 뒤집어서 찍기 때문에 종이에는 좌우가 반대로 나옵니다. 주문이 쌓이면 그림을 하얗게 빼는 반전 인쇄, 옛 홈이 남은 헌 판을 돌려 쓰는 주문, 빨강 판과 파랑 판을 따로 파서 겹쳐 찍는 2색 주문이 섞여 들어옵니다.",
+      "en": "A hedgehog in a beret hands you an order card, and you carve a rubber block so the stamp prints exactly that picture. Carved cells stay paper white and only the raised cells take ink, but a stamp is pressed face down, so the paper always shows the mirror image of what you carved. Later orders mix in negative prints where the picture itself must be white, worn blocks with old cuts that only fit one way round, and two-colour jobs that need a red block and a blue block stamped on top of each other."
+    },
+    "controls": {
+      "ko": "모바일: 판 위를 가로나 세로로 끌면 한 줄이 한 번에 파이고, 톡 누르면 한 칸만 파입니다. 아래 버튼으로 되돌리기, 돌리기(헌 판), 판 바꾸기(2색), 찍기를 합니다. PC: 방향키나 WASD로 칸을 옮기고 Space를 누른 채 움직였다 떼면 한 줄을 파며, Enter는 찍기, Z는 되돌리기, R은 돌리기, Q는 판 바꾸기입니다.",
+      "en": "Mobile: drag across the block horizontally or vertically to carve a whole line in one stroke, or tap to carve a single cell. The buttons below undo, rotate (old blocks), switch blocks (two colours) and stamp. Desktop: move the cursor with the arrow keys or WASD, hold Space while moving and release to carve a line, then press Enter to stamp, Z to undo, R to rotate and Q to switch blocks."
+    },
+    "tips": {
+      "ko": "칼질 횟수가 정해져 있어서, 긴 줄을 한 번에 파도록 계획하면 남은 칼질만큼 보너스 점수가 붙습니다. 주문서를 거울에 비춘 모습을 떠올리고 그 모양을 남기면 됩니다. 틀리게 찍으면 3초가 줄고 틀린 칸에 빨간 동그라미가 표시되니, 되돌리기로 고친 다음 다시 찍으세요. 헌 판은 옛 홈이 모두 하얀 바탕 자리에 들어가는 방향을 먼저 찾는 것이 요령입니다.",
+      "en": "Strokes are limited, so plan long straight cuts; every stroke you save becomes bonus points. Picture the order card in a mirror and leave that shape standing. A wrong print costs 3 seconds and circles the wrong cells in red, so undo, fix them and stamp again. With an old block, first find the rotation where every old cut lands on the white background."
+    },
+    "tags": [
+      "puzzle",
+      "mirror",
+      "printmaking",
+      "stamp",
+      "logic",
+      "casual"
+    ],
+    "slug": "stamp-carve"
+  },
+  {
+    "slug": "sundial",
+    "date": "2026-11-21",
+    "emoji": "🌻",
+    "title": {
+      "ko": "해시계 정원",
+      "en": "Sundial Garden"
+    },
+    "tagline": {
+      "ko": "움직이는 해 · 그림자 퍼즐",
+      "en": "A moving sun · shadow puzzle"
+    },
+    "desc": {
+      "ko": "해가 아침 6시에 떠서 저녁 6시에 지는 동안, 정원에 꽂은 막대의 그림자가 시곗바늘처럼 돌아갑니다. 초롱꽃마다 그늘이 필요한 시각이 꼬리표로 붙어 있고, 해바라기는 하루 종일 볕을 받아야 합니다. 막대 몇 개를 어디에 꽂아야 모든 꽃이 제때 그늘을 얻는지 생각한 뒤 하루를 흘려보내 확인해 보세요. 계절이 바뀌면 해의 높이가 달라져 같은 막대도 그림자 길이가 달라집니다.",
+      "en": "As the sun rises at 6 a.m. and sets at 6 p.m., the shadows of the sticks you plant sweep around the garden like clock hands. Each bellflower carries a tag with the hours it needs shade, while sunflowers want sunlight all day long. Work out where a handful of sticks must go so every flower gets shade at the right moment, then let the day pass and watch. When the season changes the sun sits lower in the sky, so the same stick throws a longer shadow."
+    },
+    "controls": {
+      "ko": "모바일: 아래 막대 카드를 끌어 칸에 놓거나 빈 칸을 톡 눌러 꽂고, 꽂힌 막대를 누르면 회수합니다. 하늘의 시각 버튼(6·9·12·15·18)을 누르면 그 시각의 그림자를 미리 볼 수 있습니다. PC: 마우스로 똑같이 하거나 방향키로 칸을 고르고 스페이스로 막대 놓기·바꾸기, X로 빼기, Q/E로 시각 바꾸기, 엔터로 하루를 시작합니다.",
+      "en": "Mobile: drag a stick card onto a tile or tap an empty tile to plant one, and tap a planted stick to pick it up. Tap the hour buttons in the sky (6, 9, 12, 15, 18) to preview the shadows at that hour. Desktop: do the same with the mouse, or move with the arrow keys, press Space to plant or swap a stick, X to remove, Q/E to change the hour and Enter to start the day."
+    },
+    "tips": {
+      "ko": "작은 막대의 그림자는 낮에 한 칸, 아침과 저녁에는 두 칸까지 뻗고, 큰 막대는 그 두 배입니다. 막대를 들고 있으면 다섯 시각의 그림자가 색깔 점으로 펼쳐지니 꽃의 꼬리표 색과 맞춰 보세요. 막대 하나로 서로 다른 시각의 꽃 두 송이를 맡기는 자리가 대부분의 정답입니다. 한 번에 성공하면 보너스 점수, 단계를 깰 때마다 15초가 더해집니다.",
+      "en": "A short stick's shadow reaches one tile at midday and two tiles in the morning and evening, and a tall stick doubles that. While you hold a stick, its shadows for all five hours fan out as colored dots, so match them to the colors on the flower tags. Most answers are a single stick that serves two flowers at different hours. First-try clears earn bonus points, and each cleared stage adds 15 seconds."
+    },
+    "tags": [
+      "puzzle",
+      "logic",
+      "shadows",
+      "garden",
+      "casual",
+      "cozy"
+    ]
+  },
+  {
     "slug": "tea-blend",
     "date": "2026-11-21",
     "emoji": "🍵",
@@ -392,6 +491,39 @@
       "logic",
       "casual"
     ]
+  },
+  {
+    "date": "2026-11-21",
+    "emoji": "🎬",
+    "title": {
+      "ko": "극장 안내원",
+      "en": "Theater Usher"
+    },
+    "tagline": {
+      "ko": "좌석 배치 퍼즐 · 모두가 웃게",
+      "en": "Seating puzzle · make every face smile"
+    },
+    "desc": {
+      "ko": "작은 동물 영화관의 안내원이 되어 까다로운 손님들을 자리에 앉혀 보세요. 기린 뒤에 앉으면 화면이 안 보이고, 팝콘 손님 옆의 잠귀 밝은 손님은 화를 내고, 커플과 아기는 짝 옆에 붙어 앉아야 해요. 모두 앉힌 뒤 상영을 시작하면 불이 꺼지고, 손님마다 웃는 얼굴이나 불만 가득한 얼굴로 결과를 알려 줍니다. 손수 만든 10개 상영관 뒤에는 풀이가 1~3가지뿐인 자동 생성 퍼즐이 계속 이어집니다.",
+      "en": "Become the usher of a tiny animal cinema and find a seat for every fussy guest. Sit behind a giraffe and you see nothing, light sleepers hate the popcorn crunchers beside them, and couples and kids must sit right next to their partner. Once everyone is seated, start the film: the lights dim and each guest answers with a smile or a grumpy face that tells you what went wrong. After ten handcrafted screens, generated puzzles with only one to three solutions keep coming."
+    },
+    "controls": {
+      "ko": "모바일: 손님을 탭한 뒤 좌석을 탭하거나, 손님을 끌어서 좌석에 놓아요. 앉은 손님을 다른 손님 자리에 놓으면 서로 자리를 바꾸고, 줄 서는 곳에 놓으면 다시 줄로 돌아가요. PC: 방향키로 이동, 스페이스로 고르고 앉히기, X로 빼기, H로 힌트, Enter로 상영 시작입니다.",
+      "en": "Mobile: tap a guest and then a seat, or drag the guest onto a seat. Dropping a guest on someone else swaps them, and dropping them in the lobby sends them back to the line. Desktop: arrow keys move the cursor, Space picks up and seats, X removes a guest, H gives a hint and Enter starts the film."
+    },
+    "tips": {
+      "ko": "만석에 가까운 상영관은 키 순서부터 생각하세요. 기린은 뒷줄로, 작은 손님은 앞줄로 보내면 남은 자리가 금방 정리됩니다. 힌트를 쓰지 않고 한 번에 성공하면 별 3개, 성공할 때마다 남은 시간도 늘어나요.",
+      "en": "In a nearly full house, start with height order. Giraffes go to the back, little guests to the front, and the rest of the seats sort themselves out quickly. Clear a screen on the first try without hints for three stars, and every clear adds time to the clock."
+    },
+    "tags": [
+      "puzzle",
+      "logic",
+      "cute",
+      "animals",
+      "casual",
+      "mobile"
+    ],
+    "slug": "theater-usher"
   },
   {
     "slug": "bee-dance",
