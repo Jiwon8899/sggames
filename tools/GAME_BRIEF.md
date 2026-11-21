@@ -25,7 +25,7 @@ assets/sg.js (shared shell), games/one-stroke/game.js or games/shadow-match/game
 - Canvas text uses `'<size>px Jua, system-ui, sans-serif'` and is bilingual via a.lang. First level shows one line of hint text.
 - The run MUST reach a.over() within 60 seconds of idle play or random tapping (use a global countdown that successes extend, with a cap). The automated test taps 8 times then idles.
 - Visual polish: gradient background with at least 2 gently moving layers; a character/mascot with eyes that blinks and reacts; shading and shadows; every success/failure has sound plus burst or pop; smooth on phones.
-- Puzzle content must be verified solvable: factor logic so it runs headless and write a scratch node script (outside the repo, or delete it afterwards) that proves every handcrafted level / generated puzzle has a solution, and that trivial non-solutions fail.
+- Puzzle content must be verified solvable: factor logic so it runs headless and write a scratch node script (put it in /home/claude/scratch/<slug>/, outside the repo; that folder is yours alone) that proves every handcrafted level / generated puzzle has a solution, and that trivial non-solutions fail.
 
 ## Verify
 From /home/claude/sggames: `DRAFTS=1 node tools/build.js` then `node tools/check.js <slug>` must print PASS. If another agent's unfinished folder breaks the build, wait 20s and retry; never touch their files.
