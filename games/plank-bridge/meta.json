@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🌉",
+  "title": {"ko": "동물 행진 다리", "en": "Plank Bridge Parade"},
+  "tagline": {"ko": "다리 짓기 퍼즐 · 삼각형은 튼튼해", "en": "Bridge-building puzzle · triangles are strong"},
+  "desc": {
+    "ko": "생쥐, 고양이, 강아지, 곰, 코끼리가 줄지어 강을 건너려고 합니다. 정해진 동전 안에서 판자와 밧줄을 이어 다리를 짓고 출발을 누르면, 동물이 지나가는 동안 판자마다 힘이 얼마나 걸리는지 초록에서 빨강으로 물들어 보입니다. 버티지 못한 판자는 뚝 부러지고 동물들은 튜브를 타고 둥실둥실 돌아오니, 다리를 보강해서 다시 도전해 보세요. 열 개의 연습 다리가 끝나면 봇이 풀 수 있다고 확인한 새 계곡이 계속 나옵니다.",
+    "en": "A mouse, a cat, a dog, a bear and an elephant want to cross the river. Join planks and ropes into a bridge within your coin budget, press Go, and watch every member tint from green to red as the parade puts weight on it. Anything that cannot take the load snaps, the animals float back on rubber rings, and your bridge stays so you can reinforce it and try again. After ten teaching bridges, fresh valleys keep coming, each one checked by a solver bot before you see it."
+  },
+  "controls": {
+    "ko": "모바일: 볼트(관절)에서 손가락으로 끌어 부재를 잇고, 빈 곳에서 놓으면 새 관절이 생깁니다. 아래 버튼으로 판자와 밧줄을 바꾸고, 부재를 톡 누르면 지워지며, 되돌리기·모두 지우기·출발 버튼이 있습니다. PC: 방향키로 커서를 옮기고 스페이스로 시작과 끝을 찍으며, Tab은 판자/밧줄 전환, X는 삭제, Z는 되돌리기, G는 출발입니다.",
+    "en": "Mobile: drag from a bolt to lay a member; letting go in empty space makes a new joint. Use the tray to switch between plank and rope, tap a member to remove it, and use Undo, Clear and Go below. Desktop: arrow keys move the cursor, Space starts and ends a member, Tab switches plank and rope, X deletes, Z undoes and G sends the parade."
+  },
+  "tips": {
+    "ko": "판자 사슬만 일자로 이으면 가운데가 처지면서 부러지니, 삼각형을 만들어 받쳐 주세요. 높은 기둥이 있으면 밧줄 몇 가닥으로 싸게 매달 수 있고, 잡아당겨지기만 하는 부재는 판자 대신 밧줄로 바꾸면 동전이 남습니다. 남은 동전과 첫 시도 성공은 보너스 점수가 되고, 실패하면 3초가 줄어듭니다.",
+    "en": "A straight chain of planks sags in the middle and snaps, so brace it with triangles. Tall posts let a few cheap ropes hold the deck up, and any member that is only ever pulled can be a rope instead of a plank to save coins. Leftover coins and first-try clears earn bonus points, while a failed test costs 3 seconds."
+  },
+  "tags": ["puzzle", "physics", "bridge", "engineering", "animals", "casual"]
+}

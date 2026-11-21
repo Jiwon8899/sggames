@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🎨",
+  "title": {"ko": "물결 마블링", "en": "Marble Bath"},
+  "tagline": {"ko": "마블링 퍼즐 · 떨어뜨리고 끌어서 무늬 찍기", "en": "Marbling puzzle · drop, pull, print"},
+  "desc": {
+    "ko": "물 위에 잉크를 떨어뜨리면 동그랗게 퍼지면서 먼저 떨어진 잉크를 바깥으로 밀어냅니다. 그 위를 갈퀴로 끌면 고리가 화살촉이 되고, 동그라미가 하트가 됩니다. 정해진 잉크와 도구만으로 왼쪽 위 카드의 전통 마블링 무늬를 똑같이 만들어 종이에 찍어 내는 퍼즐입니다.",
+    "en": "Drop ink on the water and it blooms into a circle, pushing every earlier drop outward just like real paper marbling. Drag a stylus through it and rings turn into flames, circles into hearts. With only the inks and tools you are given, recreate the classic marbled design on the card, then lay the paper down and print it."
+  },
+  "controls": {
+    "ko": "모바일: 물 위를 톡 치면 다음 잉크를 떨어뜨리고, 끌면 갈퀴로 당깁니다. 빗과 소용돌이는 아래 버튼을 고른 뒤 끌거나 톡 하세요. 되돌리기는 공짜이고, 다 맞췄으면 인쇄를 누릅니다. PC: 방향키로 커서 이동, Space 떨어뜨리기, T를 누르고 방향키로 끝점을 옮긴 뒤 Space로 갈퀴, C는 빗, V는 소용돌이, Z 되돌리기, P 인쇄.",
+    "en": "Mobile: tap the water to drop the next ink and drag to pull a tine. For the comb or swirl, pick its button first, then drag or tap. Undo is free, and when it looks right press Print. Desktop: arrows move the cursor, Space drops, T then arrows and Space draws a tine, C combs, V swirls, Z undoes and P prints."
+  },
+  "tips": {
+    "ko": "떨어뜨린 자리와 갈퀴 시작점은 물 위의 점 격자에 맞춰지니, 목표 그림의 중심이 어느 점인지 먼저 보세요. 잉크 단지 순서대로 떨어지므로 큰 방울을 먼저, 작은 방울을 나중에 같은 자리에 떨어뜨리면 고리가 됩니다. 일치도가 목표를 넘으면 인쇄 버튼이 반짝이고, 모자라게 찍으면 3초가 깎이니 되돌리기로 고친 뒤 다시 찍으세요.",
+    "en": "Drops and tine starts snap to the dotted grid on the water, so first find which dot the target is centred on. Inks fall in pot order, so a big drop followed by smaller ones on the same spot makes rings. The Print button glows once your match passes the goal, and a print that falls short costs 3 seconds, so undo and fix it first."
+  },
+  "tags": ["puzzle", "marbling", "art", "relaxing", "creative", "mobile"]
+}
