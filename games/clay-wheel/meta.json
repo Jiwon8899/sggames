@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🏺",
+  "title": {"ko": "물레 공방", "en": "Clay Wheel"},
+  "tagline": {"ko": "손끝으로 빚는 도자기 퍼즐", "en": "Throw pots with your fingertip"},
+  "desc": {
+    "ko": "햇살 드는 공방에서 물레 위 점토를 손끝으로 빚는 게임입니다. 옆을 누르면 벽이 들어가고, 누른 채 위로 끌면 점토가 가늘고 높게 올라오며, 윗면 가운데를 누르면 그릇 안이 열립니다. 점토의 양은 줄지 않기 때문에 한쪽을 조이면 다른 곳이 솟고, 벽을 너무 얇게 만들면 그릇이 철퍼덕 주저앉습니다. 동물 손님이 보여 주는 모양과 최대한 닮게 빚은 뒤 가마에 구우면 손님의 유약 색으로 완성됩니다.",
+    "en": "Shape spinning clay with your fingertip in a sunny pottery studio. Press the side to push the wall in, press and drag upward to pull the clay taller and thinner, and press the top centre to open the pot. Clay is never lost, so squeezing one spot makes another swell, and walls pulled too thin collapse in a comical flop. Match the silhouette each animal customer shows you, then fire it in the kiln to reveal it glazed in their favourite colour."
+  },
+  "controls": {
+    "ko": "모바일: 점토 옆을 누르면 그 높이가 손가락 위치까지 들어가고, 누른 채 위로 끌면 끌어올려집니다. 윗면 가운데를 누르면 열리고, 열린 안쪽에서 바깥으로 끌면 넓어집니다. 아래 버튼으로 굽기, 새 점토, 물레 속도를 고릅니다. PC: ↑↓로 높이를 고르고 ←로 누르기, →로 넓히기, Shift+↑로 끌어올리기, O로 열기, F로 굽기, R로 새 점토, S로 속도를 바꿉니다.",
+    "en": "Mobile: press the side of the clay and the wall at that height moves in to your finger; keep pressing and drag up to pull it taller. Press the top centre to open it, then drag outward from inside to widen. Use the buttons below to fire, get fresh clay or change the wheel speed. Desktop: Up/Down pick a height, Left presses in, Right widens, Shift+Up pulls up, O opens, F fires, R resets and S switches speed."
+  },
+  "tips": {
+    "ko": "점선이 손님이 원하는 모양이니, 먼저 높이를 맞추고 나서 허리와 목을 다듬는 편이 쉽습니다. 굽기 버튼 위의 별이 지금 구웠을 때 받을 별 수이고, 별 하나만 받아도 주문은 성공입니다. 빠른 물레는 끌어올리는 힘이 세고 자국이 매끈하며, 느린 물레는 좁은 목처럼 섬세한 부분에 좋습니다. 벽이 빨갛게 깜빡이면 무너지기 직전이니 그만 당기세요.",
+    "en": "The dashed outline is the shape the customer wants, so match the height first and refine waists and necks after. The stars above the Fire button show what you would get right now, and even one star completes the order. A fast wheel pulls harder and leaves smoother curves, while a slow wheel is better for delicate parts like a narrow neck. When a wall starts flashing red it is about to collapse, so stop pulling."
+  },
+  "tags": ["pottery", "puzzle", "casual", "relaxing", "touch", "crafting"]
+}

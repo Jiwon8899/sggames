@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🗼",
+  "title": {"ko": "폭풍의 등대지기", "en": "Storm Lighthouse"},
+  "tagline": {"ko": "빛줄기 하나로 배 여러 척 이끌기", "en": "One beam, many boats, a stormy night"},
+  "desc": {
+    "ko": "폭풍우 치는 밤, 고양이 등대지기가 되어 빛줄기 하나를 돌려 배들을 항구로 이끄는 게임입니다. 선장들은 어둠 속에서 바위를 보지 못해서, 빛을 받고 있는 배만 바위를 알아보고 알아서 돌아갑니다. 빛은 하나인데 배는 여러 척이라, 곧 부딪힐 배를 골라 제때 비춰 주는 판단이 핵심입니다. 큰 바위섬은 빛을 가려 그림자를 만들고, 안개와 고래, 길 잃은 쪽배, 옆으로 미는 파도, 두 번째 등대가 차례로 등장합니다.",
+    "en": "On a stormy night you are the cat keeper of a lighthouse, and your single beam is the only way the boats can see. Captains are blind in the dark, so only a boat inside the light can spot the rocks and steer around them on its own. There is one beam and several boats, so the whole game is choosing which boat is about to get into trouble and swinging the light there in time. Tall sea stacks cast real shadows in the beam, and later nights add fog, surfacing whales, a lost rowboat, sideways storm waves and a second lighthouse."
+  },
+  "controls": {
+    "ko": "모바일: 화면 아무 곳이나 누르고 끌면 등대 빛이 손가락 쪽을 향합니다. 등대를 톡 치면 잠깐 사방을 밝히는 번쩍 빛이 나갑니다. 등대가 둘인 밤에는 손가락에 더 가까운 빛줄기가 움직입니다. PC: ←→(또는 A/D)로 빛을 돌리고, 스페이스로 번쩍, ↓(또는 Tab)으로 조종할 등대를 바꿉니다.",
+    "en": "Mobile: touch and drag anywhere and the beam swings toward your finger. Tap the lighthouse itself for a flash that briefly lights a full circle around it. On two-lighthouse nights, the beam closest to your finger is the one that moves. Desktop: Left/Right (or A/D) turn the beam, Space flashes, and Down (or Tab) switches which lighthouse you control."
+  },
+  "tips": {
+    "ko": "선장은 빛을 받고 0.35초쯤 지나야 바위를 알아보니, 빛을 너무 빨리 휙 지나가게 하면 소용이 없습니다. 빨간 느낌표와 점선은 그 배가 지금 방향으로 가면 곧 부딪힌다는 뜻이니 가장 급한 배부터 비추세요. 빛을 한곳에 오래 세워 두면 기름이 닳아 빛이 짧아지므로, 배를 비추는 동안에도 살짝살짝 흔들어 주세요. 바위섬 뒤 그림자 속 배는 빛이 닿지 않으니 그림자에 들어가기 전에 미리 방향을 잡아 주는 것이 좋습니다.",
+    "en": "A captain needs about a third of a second in the light before spotting the rocks, so a beam that whips straight past does nothing. A red exclamation mark and dashed line mean that boat will hit something on its current heading, so light the most urgent boat first. Holding the beam perfectly still burns oil and shortens its reach, so give it small wiggles even while you are guiding a boat. Boats hidden in the shadow behind a sea stack cannot be reached, so set them on course before they sail into it."
+  },
+  "tags": ["strategy", "lighthouse", "atmospheric", "attention", "mobile", "casual"]
+}

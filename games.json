@@ -1,5 +1,136 @@
 [
   {
+    "date": "2026-11-21",
+    "emoji": "🏺",
+    "title": {
+      "ko": "물레 공방",
+      "en": "Clay Wheel"
+    },
+    "tagline": {
+      "ko": "손끝으로 빚는 도자기 퍼즐",
+      "en": "Throw pots with your fingertip"
+    },
+    "desc": {
+      "ko": "햇살 드는 공방에서 물레 위 점토를 손끝으로 빚는 게임입니다. 옆을 누르면 벽이 들어가고, 누른 채 위로 끌면 점토가 가늘고 높게 올라오며, 윗면 가운데를 누르면 그릇 안이 열립니다. 점토의 양은 줄지 않기 때문에 한쪽을 조이면 다른 곳이 솟고, 벽을 너무 얇게 만들면 그릇이 철퍼덕 주저앉습니다. 동물 손님이 보여 주는 모양과 최대한 닮게 빚은 뒤 가마에 구우면 손님의 유약 색으로 완성됩니다.",
+      "en": "Shape spinning clay with your fingertip in a sunny pottery studio. Press the side to push the wall in, press and drag upward to pull the clay taller and thinner, and press the top centre to open the pot. Clay is never lost, so squeezing one spot makes another swell, and walls pulled too thin collapse in a comical flop. Match the silhouette each animal customer shows you, then fire it in the kiln to reveal it glazed in their favourite colour."
+    },
+    "controls": {
+      "ko": "모바일: 점토 옆을 누르면 그 높이가 손가락 위치까지 들어가고, 누른 채 위로 끌면 끌어올려집니다. 윗면 가운데를 누르면 열리고, 열린 안쪽에서 바깥으로 끌면 넓어집니다. 아래 버튼으로 굽기, 새 점토, 물레 속도를 고릅니다. PC: ↑↓로 높이를 고르고 ←로 누르기, →로 넓히기, Shift+↑로 끌어올리기, O로 열기, F로 굽기, R로 새 점토, S로 속도를 바꿉니다.",
+      "en": "Mobile: press the side of the clay and the wall at that height moves in to your finger; keep pressing and drag up to pull it taller. Press the top centre to open it, then drag outward from inside to widen. Use the buttons below to fire, get fresh clay or change the wheel speed. Desktop: Up/Down pick a height, Left presses in, Right widens, Shift+Up pulls up, O opens, F fires, R resets and S switches speed."
+    },
+    "tips": {
+      "ko": "점선이 손님이 원하는 모양이니, 먼저 높이를 맞추고 나서 허리와 목을 다듬는 편이 쉽습니다. 굽기 버튼 위의 별이 지금 구웠을 때 받을 별 수이고, 별 하나만 받아도 주문은 성공입니다. 빠른 물레는 끌어올리는 힘이 세고 자국이 매끈하며, 느린 물레는 좁은 목처럼 섬세한 부분에 좋습니다. 벽이 빨갛게 깜빡이면 무너지기 직전이니 그만 당기세요.",
+      "en": "The dashed outline is the shape the customer wants, so match the height first and refine waists and necks after. The stars above the Fire button show what you would get right now, and even one star completes the order. A fast wheel pulls harder and leaves smoother curves, while a slow wheel is better for delicate parts like a narrow neck. When a wall starts flashing red it is about to collapse, so stop pulling."
+    },
+    "tags": [
+      "pottery",
+      "puzzle",
+      "casual",
+      "relaxing",
+      "touch",
+      "crafting"
+    ],
+    "slug": "clay-wheel"
+  },
+  {
+    "date": "2026-11-21",
+    "emoji": "🔑",
+    "title": {
+      "ko": "열쇠 장인",
+      "en": "Key Smith"
+    },
+    "tagline": {
+      "ko": "보이는 핀으로 열쇠 깎기 · 되돌릴 수 없는 퍼즐",
+      "en": "Cut a key from the pins you can see · no undo"
+    },
+    "desc": {
+      "ko": "작은 열쇠 가게의 열쇠 장인이 되어 손님의 자물쇠에 맞는 열쇠를 깎는 퍼즐입니다. 유리로 된 자물쇠 속 핀의 줄무늬를 세어 빈 열쇠에 홈을 하나씩 깎고, 자물쇠에 꽂아 모든 핀의 틈이 전단선에 맞으면 상자가 열립니다. 한 번 깊게 깎은 홈은 절대 되돌릴 수 없어서 빈 열쇠를 아끼려면 신중해야 합니다. 주문이 진행될수록 흐린 유리로 가려진 핀, 열쇠 두 개가 모두 열어야 하는 마스터키 자물쇠, 손님 열쇠를 재서 복사하는 주문, 뒤에서 본 번호판만 있는 주문이 나옵니다.",
+      "en": "Run a tiny locksmith shop and cut keys that fit your customers' locks. Count the bands on each pin inside the glass lock, file a notch for every pin into a blank key, then test it: when every pin's gap meets the shear line, the plug turns and the treasure chest pops open. A notch that is cut too deep can never be uncut, so every stroke of the file matters and blanks are limited. Later orders bring frosted pins you must deduce from test feedback, master-keyed locks that need two different keys, copy jobs where you measure the customer's key, and back plates whose code reads in reverse."
+    },
+    "controls": {
+      "ko": "모바일: 열쇠의 홈 위치를 누른 채 아래로 끌면 줄칼이 한 칸씩 딸깍 깊어집니다. 시험 버튼을 누르면 열쇠가 자물쇠에 들어가고, 새 열쇠 버튼으로 빈 열쇠를 바꿉니다. PC: 좌우 방향키로 홈을 고르고, 아래 방향키로 한 칸 깎고, T로 시험, N으로 새 열쇠, 복사 주문에서는 G로 손님 열쇠를 잽니다.",
+      "en": "Mobile: press on a notch of the key and drag down; the file cuts one click deeper for every bit of drag. Tap Test to slide the key into the lock and New blank to swap in a fresh key. Desktop: Left/Right pick a notch, Down files it one step deeper, T tests, N takes a new blank, and G measures the customer's key on copy orders."
+    },
+    "tips": {
+      "ko": "투명한 핀은 줄무늬 수가 곧 홈 깊이입니다. 흐린 핀은 보이는 범위에서 가장 얕은 깊이로 먼저 깎고 시험하세요. ▼는 더 깎으라는 뜻이고 ✕는 이미 너무 깊다는 뜻입니다. 마스터키 자물쇠는 금색 조각 덕분에 핀마다 맞는 높이가 두 개라서, 한 핀만 위쪽 틈에 맞춰도 다른 열쇠가 됩니다. 시험 횟수가 적고 빈 열쇠가 많이 남을수록 점수가 높고, 주문을 끝낼 때마다 14초가 늘어납니다.",
+      "en": "On a clear pin, the number of bands is exactly the notch depth. For a frosted pin, cut the shallowest depth in its visible range first and test. ▼ means cut deeper and ✕ means that notch is already too deep. A master-keyed pin has two working heights thanks to its gold wafer, so moving just one pin to the upper gap makes a different key. Fewer tests and more spare blanks score higher, and every finished order adds 14 seconds."
+    },
+    "tags": [
+      "puzzle",
+      "locksmith",
+      "deduction",
+      "casual",
+      "mobile"
+    ],
+    "slug": "key-smith"
+  },
+  {
+    "date": "2026-11-21",
+    "emoji": "🗼",
+    "title": {
+      "ko": "폭풍의 등대지기",
+      "en": "Storm Lighthouse"
+    },
+    "tagline": {
+      "ko": "빛줄기 하나로 배 여러 척 이끌기",
+      "en": "One beam, many boats, a stormy night"
+    },
+    "desc": {
+      "ko": "폭풍우 치는 밤, 고양이 등대지기가 되어 빛줄기 하나를 돌려 배들을 항구로 이끄는 게임입니다. 선장들은 어둠 속에서 바위를 보지 못해서, 빛을 받고 있는 배만 바위를 알아보고 알아서 돌아갑니다. 빛은 하나인데 배는 여러 척이라, 곧 부딪힐 배를 골라 제때 비춰 주는 판단이 핵심입니다. 큰 바위섬은 빛을 가려 그림자를 만들고, 안개와 고래, 길 잃은 쪽배, 옆으로 미는 파도, 두 번째 등대가 차례로 등장합니다.",
+      "en": "On a stormy night you are the cat keeper of a lighthouse, and your single beam is the only way the boats can see. Captains are blind in the dark, so only a boat inside the light can spot the rocks and steer around them on its own. There is one beam and several boats, so the whole game is choosing which boat is about to get into trouble and swinging the light there in time. Tall sea stacks cast real shadows in the beam, and later nights add fog, surfacing whales, a lost rowboat, sideways storm waves and a second lighthouse."
+    },
+    "controls": {
+      "ko": "모바일: 화면 아무 곳이나 누르고 끌면 등대 빛이 손가락 쪽을 향합니다. 등대를 톡 치면 잠깐 사방을 밝히는 번쩍 빛이 나갑니다. 등대가 둘인 밤에는 손가락에 더 가까운 빛줄기가 움직입니다. PC: ←→(또는 A/D)로 빛을 돌리고, 스페이스로 번쩍, ↓(또는 Tab)으로 조종할 등대를 바꿉니다.",
+      "en": "Mobile: touch and drag anywhere and the beam swings toward your finger. Tap the lighthouse itself for a flash that briefly lights a full circle around it. On two-lighthouse nights, the beam closest to your finger is the one that moves. Desktop: Left/Right (or A/D) turn the beam, Space flashes, and Down (or Tab) switches which lighthouse you control."
+    },
+    "tips": {
+      "ko": "선장은 빛을 받고 0.35초쯤 지나야 바위를 알아보니, 빛을 너무 빨리 휙 지나가게 하면 소용이 없습니다. 빨간 느낌표와 점선은 그 배가 지금 방향으로 가면 곧 부딪힌다는 뜻이니 가장 급한 배부터 비추세요. 빛을 한곳에 오래 세워 두면 기름이 닳아 빛이 짧아지므로, 배를 비추는 동안에도 살짝살짝 흔들어 주세요. 바위섬 뒤 그림자 속 배는 빛이 닿지 않으니 그림자에 들어가기 전에 미리 방향을 잡아 주는 것이 좋습니다.",
+      "en": "A captain needs about a third of a second in the light before spotting the rocks, so a beam that whips straight past does nothing. A red exclamation mark and dashed line mean that boat will hit something on its current heading, so light the most urgent boat first. Holding the beam perfectly still burns oil and shortens its reach, so give it small wiggles even while you are guiding a boat. Boats hidden in the shadow behind a sea stack cannot be reached, so set them on course before they sail into it."
+    },
+    "tags": [
+      "strategy",
+      "lighthouse",
+      "atmospheric",
+      "attention",
+      "mobile",
+      "casual"
+    ],
+    "slug": "lighthouse"
+  },
+  {
+    "slug": "skate-trace",
+    "date": "2026-11-21",
+    "emoji": "⛸️",
+    "title": {
+      "ko": "얼음 위 그림",
+      "en": "Skate Trace"
+    },
+    "tagline": {
+      "ko": "관성으로 그리는 피겨 · 겨울밤 연못",
+      "en": "Draw with momentum · winter-night pond"
+    },
+    "desc": {
+      "ko": "목도리를 두른 꼬마 펭귄이 얼어붙은 연못 위에서 피겨를 새깁니다. 펭귄을 직접 움직이는 게 아니라 밀기만 할 수 있고, 한 번 밀면 얼음 위를 쭉 미끄러지며 빠를수록 크게 돌아갑니다. 희미하게 보이는 동그라미, 8자, 하트, 물고기, 별을 날 자국으로 덮으면 별점을 받습니다. 눈 더미, 두 번 지나면 깨지는 얇은 얼음, 옆으로 미는 바람이 갈수록 그림을 까다롭게 만듭니다.",
+      "en": "A little scarf-wearing penguin carves figures into a frozen pond. You never steer it directly: you only push, and it keeps gliding across the ice, turning wider the faster it goes. Cover the faint circle, figure-eight, heart, fish or star with your blade trail to earn stars. Snow patches, thin ice that breaks on the second pass and a sideways wind make each new figure a little trickier."
+    },
+    "controls": {
+      "ko": "모바일: 밀고 싶은 방향으로 스와이프하면 길이만큼 세게 밀어요. 움직이지 않고 꾹 누르고 있으면 브레이크, 빠르게 두 번 탭하면 그 자리에서 스핀합니다. 다 그렸으면 아래의 완성 버튼을 누르거나 멈춰 서 있으세요. PC: 방향키로 살살 밀고, Shift는 브레이크, Space는 스핀, D는 완성입니다.",
+      "en": "Mobile: swipe in the direction you want to push; a longer swipe pushes harder. Hold your finger still to brake, and double-tap quickly to spin on the spot. When the figure is done, tap the Done button or just come to a stop. Desktop: arrow keys give a gentle thrust, Shift brakes, Space spins and D finishes."
+    },
+    "tips": {
+      "ko": "곡선에 들어가기 전에 미리 살짝 밀어 두면 펭귄이 알아서 둥글게 미끄러집니다. 하트 끝이나 별 꼭짓점처럼 뾰족한 곳에서는 브레이크로 거의 멈춘 뒤 새 방향으로 밀어야 깔끔합니다. 물고기 눈처럼 점이 있는 도형은 그 점에서 스핀해야 별을 다 받을 수 있어요. 덮기 70%와 정확 50%를 넘기면 통과이고, 한 도형을 깰 때마다 14초가 늘어납니다.",
+      "en": "Push a little before a curve starts and the penguin will round it on its own. At sharp spots like the tip of the heart or the points of the star, brake almost to a stop, then push in the new direction. Figures with a dot, like the fish's eye, need a spin on that dot for full stars. You clear a figure at 70% cover and 50% neatness, and every clear adds 14 seconds."
+    },
+    "tags": [
+      "skating",
+      "drawing",
+      "physics",
+      "puzzle",
+      "casual",
+      "winter"
+    ]
+  },
+  {
     "slug": "bee-dance",
     "date": "2026-11-20",
     "emoji": "🐝",

@@ -1,0 +1,20 @@
+{
+  "slug": "skate-trace",
+  "date": "2026-11-21",
+  "emoji": "⛸️",
+  "title": {"ko": "얼음 위 그림", "en": "Skate Trace"},
+  "tagline": {"ko": "관성으로 그리는 피겨 · 겨울밤 연못", "en": "Draw with momentum · winter-night pond"},
+  "desc": {
+    "ko": "목도리를 두른 꼬마 펭귄이 얼어붙은 연못 위에서 피겨를 새깁니다. 펭귄을 직접 움직이는 게 아니라 밀기만 할 수 있고, 한 번 밀면 얼음 위를 쭉 미끄러지며 빠를수록 크게 돌아갑니다. 희미하게 보이는 동그라미, 8자, 하트, 물고기, 별을 날 자국으로 덮으면 별점을 받습니다. 눈 더미, 두 번 지나면 깨지는 얇은 얼음, 옆으로 미는 바람이 갈수록 그림을 까다롭게 만듭니다.",
+    "en": "A little scarf-wearing penguin carves figures into a frozen pond. You never steer it directly: you only push, and it keeps gliding across the ice, turning wider the faster it goes. Cover the faint circle, figure-eight, heart, fish or star with your blade trail to earn stars. Snow patches, thin ice that breaks on the second pass and a sideways wind make each new figure a little trickier."
+  },
+  "controls": {
+    "ko": "모바일: 밀고 싶은 방향으로 스와이프하면 길이만큼 세게 밀어요. 움직이지 않고 꾹 누르고 있으면 브레이크, 빠르게 두 번 탭하면 그 자리에서 스핀합니다. 다 그렸으면 아래의 완성 버튼을 누르거나 멈춰 서 있으세요. PC: 방향키로 살살 밀고, Shift는 브레이크, Space는 스핀, D는 완성입니다.",
+    "en": "Mobile: swipe in the direction you want to push; a longer swipe pushes harder. Hold your finger still to brake, and double-tap quickly to spin on the spot. When the figure is done, tap the Done button or just come to a stop. Desktop: arrow keys give a gentle thrust, Shift brakes, Space spins and D finishes."
+  },
+  "tips": {
+    "ko": "곡선에 들어가기 전에 미리 살짝 밀어 두면 펭귄이 알아서 둥글게 미끄러집니다. 하트 끝이나 별 꼭짓점처럼 뾰족한 곳에서는 브레이크로 거의 멈춘 뒤 새 방향으로 밀어야 깔끔합니다. 물고기 눈처럼 점이 있는 도형은 그 점에서 스핀해야 별을 다 받을 수 있어요. 덮기 70%와 정확 50%를 넘기면 통과이고, 한 도형을 깰 때마다 14초가 늘어납니다.",
+    "en": "Push a little before a curve starts and the penguin will round it on its own. At sharp spots like the tip of the heart or the points of the star, brake almost to a stop, then push in the new direction. Figures with a dot, like the fish's eye, need a spin on that dot for full stars. You clear a figure at 70% cover and 50% neatness, and every clear adds 14 seconds."
+  },
+  "tags": ["skating", "drawing", "physics", "puzzle", "casual", "winter"]
+}

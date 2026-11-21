@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "emoji": "🔑",
+  "title": {"ko": "열쇠 장인", "en": "Key Smith"},
+  "tagline": {"ko": "보이는 핀으로 열쇠 깎기 · 되돌릴 수 없는 퍼즐", "en": "Cut a key from the pins you can see · no undo"},
+  "desc": {
+    "ko": "작은 열쇠 가게의 열쇠 장인이 되어 손님의 자물쇠에 맞는 열쇠를 깎는 퍼즐입니다. 유리로 된 자물쇠 속 핀의 줄무늬를 세어 빈 열쇠에 홈을 하나씩 깎고, 자물쇠에 꽂아 모든 핀의 틈이 전단선에 맞으면 상자가 열립니다. 한 번 깊게 깎은 홈은 절대 되돌릴 수 없어서 빈 열쇠를 아끼려면 신중해야 합니다. 주문이 진행될수록 흐린 유리로 가려진 핀, 열쇠 두 개가 모두 열어야 하는 마스터키 자물쇠, 손님 열쇠를 재서 복사하는 주문, 뒤에서 본 번호판만 있는 주문이 나옵니다.",
+    "en": "Run a tiny locksmith shop and cut keys that fit your customers' locks. Count the bands on each pin inside the glass lock, file a notch for every pin into a blank key, then test it: when every pin's gap meets the shear line, the plug turns and the treasure chest pops open. A notch that is cut too deep can never be uncut, so every stroke of the file matters and blanks are limited. Later orders bring frosted pins you must deduce from test feedback, master-keyed locks that need two different keys, copy jobs where you measure the customer's key, and back plates whose code reads in reverse."
+  },
+  "controls": {
+    "ko": "모바일: 열쇠의 홈 위치를 누른 채 아래로 끌면 줄칼이 한 칸씩 딸깍 깊어집니다. 시험 버튼을 누르면 열쇠가 자물쇠에 들어가고, 새 열쇠 버튼으로 빈 열쇠를 바꿉니다. PC: 좌우 방향키로 홈을 고르고, 아래 방향키로 한 칸 깎고, T로 시험, N으로 새 열쇠, 복사 주문에서는 G로 손님 열쇠를 잽니다.",
+    "en": "Mobile: press on a notch of the key and drag down; the file cuts one click deeper for every bit of drag. Tap Test to slide the key into the lock and New blank to swap in a fresh key. Desktop: Left/Right pick a notch, Down files it one step deeper, T tests, N takes a new blank, and G measures the customer's key on copy orders."
+  },
+  "tips": {
+    "ko": "투명한 핀은 줄무늬 수가 곧 홈 깊이입니다. 흐린 핀은 보이는 범위에서 가장 얕은 깊이로 먼저 깎고 시험하세요. ▼는 더 깎으라는 뜻이고 ✕는 이미 너무 깊다는 뜻입니다. 마스터키 자물쇠는 금색 조각 덕분에 핀마다 맞는 높이가 두 개라서, 한 핀만 위쪽 틈에 맞춰도 다른 열쇠가 됩니다. 시험 횟수가 적고 빈 열쇠가 많이 남을수록 점수가 높고, 주문을 끝낼 때마다 14초가 늘어납니다.",
+    "en": "On a clear pin, the number of bands is exactly the notch depth. For a frosted pin, cut the shallowest depth in its visible range first and test. ▼ means cut deeper and ✕ means that notch is already too deep. A master-keyed pin has two working heights thanks to its gold wafer, so moving just one pin to the upper gap makes a different key. Fewer tests and more spare blanks score higher, and every finished order adds 14 seconds."
+  },
+  "tags": ["puzzle", "locksmith", "deduction", "casual", "mobile"]
+}
